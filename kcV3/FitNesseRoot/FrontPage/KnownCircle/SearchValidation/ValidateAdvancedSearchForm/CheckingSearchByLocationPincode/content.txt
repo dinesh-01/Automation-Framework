@@ -1,0 +1,13 @@
+!define keyword {93635}
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search?q=|
+|sendKeys;|/html/body/div[2]/div/section/div/section/div[1]/aside/form/div[2]/div/div[1]/div[1]/input|xpath|${keyword}|
+|waitForElementToBeDisplayed;|.selectize-dropdown.single|cssselector|10|
+|click;|.selectize-dropdown-content|cssselector|
+|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|60|
+|$data=|getText;|.search-result-list.list|cssselector|
+|closeBrowser;|
+
+!|Script|Regex|
+|check|totalCountOfString;|$data|Los Banos|15|

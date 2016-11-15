@@ -1,0 +1,15 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://login.qtz.io|
+|sendKeys;|inputUsername|id|praveen.narayanasamy@imaginea.com|
+|sendKeys;|inputPassword|id|Pramati123|
+|click;|.btn.btn-color.btn-sm|cssselector|
+|wait;|10|
+|check|isElementPresent;|navbar-header|classname|true|
+|click;|//*[@id="content-wrap"]/div/div/div/div[2]/div/div|xpath|
+|wait;|10|
+|click;|a[href*='/project/myworkspace/browse/external/mycomposer-myworkspace.apps.showcase.quantiply.net']|cssselector|
+|wait;|10|
+|switchToFrame;|//*[@id="content-wrap"]/div/project-page/div/div[2]/div/div/div/div/iframe|xpath|
+|waitForElementToBeDisplayed;|.pipeline-container.single-pipeline.ng-scope|cssselector|20|
+|mouseClick;|//h2[contains(text(),"a1")]|xpath|

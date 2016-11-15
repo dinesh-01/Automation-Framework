@@ -1,0 +1,15 @@
+|import|
+|common|
+|environment|
+|tools|
+|web|
+
+
+!define mail {imap.gmail.com}
+!define username {kctestk5@gmail.com}
+!define password {test_1234}
+
+!|Script|Mail|
+|mailConfig;|${mail}|${username}|${password}|
+|$status=|searchEmail;|Email test for knowncircle 20150807003939|Hi Kctest, body Email test for knowncircle 20150806090130|
+|closeMail;|

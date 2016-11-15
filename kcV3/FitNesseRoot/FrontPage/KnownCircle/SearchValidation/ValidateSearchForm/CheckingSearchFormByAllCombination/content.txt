@@ -1,0 +1,7 @@
+!define searchTerm {phan, enrolled agent, burnside ,portland} 
+
+!include -c .FrontPage.KnownCircle.SearchValidation.ValidateSearchForm.HeaderSearchForm
+
+!|Script|Selenium|
+|check|isElementPresent;|.search-result-list.list|cssselector|true|
+|closeBrowser;|

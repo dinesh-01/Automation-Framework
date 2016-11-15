@@ -1,0 +1,12 @@
+|import |
+|common|
+|environment|
+|tools|
+|web|
+
+!|Script|Selenium|
+|initialize;|ie|en-us|
+|launchBrowser;|http://www.google.com|
+|check|getPageTitle;|Google|
+|sendKeys;|gbqfq|id|Fitnesse|
+|click;|gbqfb|id|

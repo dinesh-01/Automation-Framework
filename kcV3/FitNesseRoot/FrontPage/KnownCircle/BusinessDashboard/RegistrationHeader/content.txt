@@ -1,0 +1,12 @@
+!include .FrontPage.KnownCircle.DynamicVariables
+
+!| Script      |Selenium |
+|initialize;   |$browser                                          |${locale}|
+|launchBrowser;|${mainURLCanary}${businessRegistrationFormUrl}                                       |
+
+!include -c .FrontPage.KnownCircle.CommonSignupContent
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|.onboarding-view|cssselector|60|
+|$profileId=|getValue;|js-bizid|classname|
+

@@ -1,0 +1,10 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://www.w3schools.com/js/tryit.asp?filename=tryjs_alert|
+|switchToFrame;|view|
+|click;|button|tagname|
+|check|isAlertPresent;|true|
+|check|getPopupMessage;|I am an alert box!|
+|dismissAlert;|
+|closeBrowser;|
+

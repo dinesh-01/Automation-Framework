@@ -1,0 +1,20 @@
+!define businessLoginEmail { ${agentContact} }
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/grow/request_referral|
+|click;|.btn.import-contacts-btn.text-bold.pull-right|cssselector|
+|waitForElementToBeDisplayed;|.modal-title|cssselector|60|
+|getTable;|class|contact-list|
+|$row=|getTableRowCount;|
+
+!|Script|Common|
+|$randrow=|getRandomNumber;|1|$row|
+
+!|Script|Selenium|
+|$fname=|getTableCellValue;|$randrow|1|
+|$lname=|getTableCellValue;|$randrow|2|
+|$email=|getTableCellValue;|$randrow|3|
+
+
+

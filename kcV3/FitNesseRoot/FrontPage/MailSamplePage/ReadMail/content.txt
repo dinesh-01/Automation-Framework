@@ -1,0 +1,15 @@
+|import|
+|common|
+|environment|
+|tools|
+|web|
+
+
+!define mail {imap.gmail.com}
+!define username {kctestk2@gmail.com}
+!define password {test_1234}
+
+!|Script|Mail|
+|mailConfig;|${mail}|${username}|${password}|
+|$text=|getSubject;|
+|closeMail;|

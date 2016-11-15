@@ -1,0 +1,7 @@
+!|Script|Selenium|
+|initialize;|${dashBoardBrowser}|${locale}|
+|launchBrowser;|${dashBoardUrl}|
+|sendKeys;|email|id|${adminEmail}|
+|sendKeys;|password|id|${adminPassword}|
+|click;|.btn.login-btn|cssselector|
+|wait;|5|

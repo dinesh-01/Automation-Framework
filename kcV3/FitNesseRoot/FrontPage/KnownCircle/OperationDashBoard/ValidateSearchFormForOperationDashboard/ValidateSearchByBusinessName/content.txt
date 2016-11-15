@@ -1,0 +1,8 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|Pramati Known Circle|
+|click;|.glyphicon.glyphicon-search|cssselector|
+|waitForElementToBeDisplayed;|users|id|60|
+|check|isElementPresent;|users|id|true|
+|$status=|isElementPresent;|users|id|
+|closeBrowser;|

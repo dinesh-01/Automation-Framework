@@ -1,0 +1,22 @@
+!define cardName {Dinesh Singh.R}
+!define cardNumber1 {3714}
+!define cardNumber2 {496353}
+!define cardNumber3 {98431}
+!define checkNumber {8431}
+!define cvv {6000}
+!define month {04}
+!define year {2019}
+
+!define businessLoginEmail {successcard@knowncircle.com}
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingPaymentSystemInBusinessDashboard.CommonCardPaymentProcess
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|.creditCard|cssselector|60|
+|$data=|getText;|.creditCard|cssselector|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|**** **** **** ${checkNumber}|$data|true|
+
+

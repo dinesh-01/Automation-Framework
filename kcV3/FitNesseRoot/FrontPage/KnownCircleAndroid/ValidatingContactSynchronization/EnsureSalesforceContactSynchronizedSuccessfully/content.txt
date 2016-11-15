@@ -1,0 +1,32 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/fabButton|id|60|
+|click;|com.knowncircle${package}:id/action_sort|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/importContacts|id|10|
+|click;|com.knowncircle${package}:id/importContacts|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/selectImportScreen|id|20|
+|click;|com.knowncircle${package}:id/salesForceLogin|id|
+|waitForElementToDisappear;|android.widget.ImageView|classname|60|
+|sendKeys;|//android.widget.EditText[@index='1']|xpath|admin@knowncircle.com|
+|hideKeypad;|
+|sendKeys;|//android.widget.EditText[@index='3']|xpath|circle_123|
+|hideKeypad;|
+|wait;|1|
+|click;|//android.widget.Button[@content-desc='Log In']|xpath|
+|wait;|25|
+|swipeScreen;|android.widget.TextView|classname|down|
+|$data=|getValues;|com.knowncircle${package}:id/nameTextView|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|Aman1 Khanna|$data|true|
+|check|checkIfStringExistsIn;|Aman2 Khanna|$data|true|
+
+
+
+
+

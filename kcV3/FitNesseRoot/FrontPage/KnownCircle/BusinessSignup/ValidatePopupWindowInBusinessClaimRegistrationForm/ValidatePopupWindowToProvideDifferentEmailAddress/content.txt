@@ -1,0 +1,31 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}signup|
+
+!define businessEmail {kctestk1@gmail.com}
+!include -c .FrontPage.KnownCircle.CommonSignupContent
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|.signup-container|cssselector|60|
+|click;|.btn.btn-green.text-upper.text-bold|cssselector|
+|clearValue;|input[data-reactid='.0.0.0.$=10:0.$=15:0.1'] | cssselector |
+|sendKeys;  |input[data-reactid='.0.0.0.$=10:0.$=15:0.1'] | cssselector |pramatitest$uniqueId@knowncircle.com|
+|click; |.btn.btn-primary.signup-btn|cssselector|
+|waitForElementToBeDisplayed;|.onboarding-view|cssselector|60|
+|check|isElementDisplayed;|.onboarding-view|cssselector|pass|
+|closeBrowser;|
+
+!* Mail
+!define businessLoginEmail { ${adminMail} }
+!define gpass { ${adminPassword} }
+!define body {Hello ${profileName}}
+
+!define subject {${profileName}, Welcome to KnownCircle!}
+!include -c .FrontPage.KnownCircle.EmailDeliveryHeader
+
+!define subject {${profileName}, Verify your Email address that you used for KnownCircle sign-up}
+!include -c .FrontPage.KnownCircle.EmailDeliveryHeader
+*!
+

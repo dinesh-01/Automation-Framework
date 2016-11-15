@@ -1,0 +1,9 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+
+!define businessLoginEmail {profileotherservice@knowncircle.com}
+!define serviceType {81}
+!define result {Other}
+
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!include -c .FrontPage.KnownCircle.SearchValidation.ValidateOtherSearchService.CommonSearchServicePage
+

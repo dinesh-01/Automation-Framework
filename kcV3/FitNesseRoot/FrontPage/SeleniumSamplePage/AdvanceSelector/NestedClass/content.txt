@@ -1,0 +1,5 @@
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}|
+|click;|div.landingpage button.btn-link.btn-search|cssselector|
+|closeBrowser;|

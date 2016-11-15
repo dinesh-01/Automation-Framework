@@ -1,0 +1,12 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!define search {Los Banos} 
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|${search}|
+|click;|.glyphicon.glyphicon-search|cssselector|
+|$result=|getText;|.list|cssselector|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|${search}|$result|true|
+|$status=|checkIfStringExistsIn;|${search}|$result|
+

@@ -1,0 +1,5 @@
+!define ownerNameClaim {oddobivatt}
+!define businessName {KnownCircle Demo Profile}
+!define businessEmail {oddobivatt-9254@yopmail.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.ValidatingAllFieldsInProfileDashboardByEnteringValidData

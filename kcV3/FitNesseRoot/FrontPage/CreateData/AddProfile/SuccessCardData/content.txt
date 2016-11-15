@@ -1,0 +1,5 @@
+!define ownerNameClaim {SuccessCard}
+!define businessNameClaim {SuccessCard KnownCircle}
+!define businessEmail {successcard@knowncircle.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader

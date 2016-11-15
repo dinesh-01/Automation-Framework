@@ -1,0 +1,16 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|$data1=|getCountOfElements;|com.knowncircle${package}:id/nameTextView|id|
+|scrollToText;|Vijay Pullur|
+|$data2=|getCountOfElements;|com.knowncircle${package}:id/nameTextView|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|check|checkIfStringAreEqual;|$data1|10|true|
+|check|checkIfStringAreEqual;|$data2|11|true|
+
+

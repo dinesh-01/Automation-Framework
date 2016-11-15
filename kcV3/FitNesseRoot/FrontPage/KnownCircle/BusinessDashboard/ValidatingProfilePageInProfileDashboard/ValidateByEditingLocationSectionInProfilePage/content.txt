@@ -1,0 +1,37 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.LoginHeaderForProfileDashboard
+!define street1 {Wild Angles1 $randomChar  }
+!define street2 {Cross Street1 $randomChar }
+!define street3 {Wild Angles2 $randomChar  }
+!define street4 {Cross Street2 $randomChar }
+!define city1 {Los Alamos CA 93440}
+!define city2 {Los Gatos CA 95032}
+!define city3 {Lostine OR 97857}
+!define city4 {Avon CT 06001}
+
+
+!|Script|Common|
+|$city1=|getRandomValueFromArray;|${city1},${city2},${city3},${city4}|
+
+!|Script|Selenium|
+| click; |other-locations-label|classname|
+| waitForElementToBeDisplayed; | .modal-body.default-location | cssselector | 60 |
+| clearValue; | input[data-ng-model="location.street1"] | cssselector |
+| clearValue; | input[data-ng-model="location.street2"] | cssselector |
+| sendKeys; | input[data-ng-model="location.street1"] | cssselector | ${street1} |
+| sendKeys; | input[data-ng-model="location.street2"] | cssselector | ${street2} |
+| changeElementView;|input[data-ng-model="location.city"]|cssselector|block      |
+| clearValue; | input[data-ng-model="location.city"] | cssselector |
+| sendKeys; | input[data-ng-model="location.city"] | cssselector | $city1 |
+| click; |button[data-ng-click="saveLocations()"]|cssselector|
+| wait;|2|
+| $data=|getText;|.address|cssselector|
+| closeBrowser;|
+
+!|Script| Common |
+| check  | checkIfStringExistsIn; | ${street1} | $data| true |
+| check  | checkIfStringExistsIn; | ${street2} | $data| true |
+| check  | checkIfStringExistsIn; | $city1 | $data| true |
+
+
+
+

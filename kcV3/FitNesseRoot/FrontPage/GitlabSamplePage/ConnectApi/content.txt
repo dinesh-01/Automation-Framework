@@ -1,0 +1,11 @@
+|import|
+|common|
+|environment|
+|tools|
+|web|
+
+!|Script|Gitlab|
+|initialize;|https://gitlab.knowncircle.com|dinesh.singh@imaginea.com|pramati123|
+|$value=|closeIssues;|
+
+

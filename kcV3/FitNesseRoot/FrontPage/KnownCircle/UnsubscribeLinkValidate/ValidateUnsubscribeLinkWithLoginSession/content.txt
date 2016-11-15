@@ -1,0 +1,7 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}unsubscribe|
+|wait;|5|
+|check|isElementPresent;|.dashboard-settings|cssselector|true|
+|closeBrowser;|
+

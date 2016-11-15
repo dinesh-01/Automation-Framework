@@ -1,0 +1,6 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script|Selenium|
+|click;|a[href*='dashboard/settings']|cssselector|
+|click;|a[href='#accounts']|cssselector|
+|check|isElementPresent;|accounts|id|true|
+|closeBrowser;|

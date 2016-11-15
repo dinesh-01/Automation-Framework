@@ -1,0 +1,8 @@
+!|Script|Selenium|
+|browserStack;|anroid|Google Nexus 5|
+|launchBrowser;|https://knowncircle.com/login|
+|sendKeys;|username|name|support+10@knowncircle.com|
+|sendKeys;|password|name|support10|
+|click;|.btn.btn-primary.btn-login|cssselector|
+|wait;|10|
+|closeBrowser;|

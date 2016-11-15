@@ -1,0 +1,11 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURLCanary}|
+|wait;|5|
+
+!|Script|Common|
+|$path=|getPath;|ui/home1|fullpath|
+
+!|Script|Selenium|
+|takeScreenshot;|$path|
+|closeBrowser;|

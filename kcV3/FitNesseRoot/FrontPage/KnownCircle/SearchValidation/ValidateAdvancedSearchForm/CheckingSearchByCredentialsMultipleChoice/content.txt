@@ -1,0 +1,12 @@
+!define parameter {search?q=&vertical=taxprep&city=Los+Banos%2C+CA&neighbourhood=-120.8499151%2C37.0582786&services=Certified+Public+Accountant&services=Enrolled+Actuary&services=Supervised+Reg.+Tax+Preparer}
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}${parameter}|
+|check|isElementPresent;|.search-result-list.list|cssselector|true|
+|$status=|isElementPresent;|.search-result-list.list|cssselector|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|KC-22|${build}||$status|
+
+!|Script|Selenium|
+|closeBrowser;|

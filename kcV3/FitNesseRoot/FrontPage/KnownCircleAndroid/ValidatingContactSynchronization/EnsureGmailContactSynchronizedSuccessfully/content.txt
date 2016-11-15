@@ -1,0 +1,25 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!define email { ${gemail1} } 
+!define gpass {test_1234}
+!include -c .FrontPage.KnownCircleAndroid.GmailContactSynchronization
+
+!|Script|Selenium|
+|swipeMultipleTimes;|com.knowncircle${package}:id/fastscroller_handle|id|down|6|
+|$data=|getValues;|com.knowncircle${package}:id/nameTextView|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|kctestk1|$data|true|
+|check|checkIfStringExistsIn;|kctest2|$data|true|
+|check|checkIfStringExistsIn;|kctestk3@gmail.com|$data|true|
+|check|checkIfStringExistsIn;|kctestk4@gmail.com|$data|true|
+|check|checkIfStringExistsIn;|Known test|$data|true|
+
+
+
+
+

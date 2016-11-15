@@ -1,0 +1,15 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Feb 01 00:12:22 IST 2015
+http\://repository.pentaho.org/artifactory/pentaho/.lastUpdated=1422729740578
+36c1847e2fa0198b3688251baa7286304035546f@10.211.236.186\:8081>@default-http\://clojars.org/repo/.lastUpdated=1419838291703
+http\://repository.pentaho.org/artifactory/pentaho/.error=
+http\://repo.maven.apache.org/maven2/.lastUpdated=1422729203754
+http\://clojars.org/repo/.lastUpdated=1422729742071
+@default-http\://central/.lastUpdated=1422729739953
+http\://10.211.236.186\:8081/nexus/content/groups/public/.lastUpdated=1419844454350
+http\://repo.maven.apache.org/maven2/.error=
+36c1847e2fa0198b3688251baa7286304035546f@10.211.236.186\:8081>@default-http\://10.211.236.186\:8081/nexus/content/groups/public/.lastUpdated=1419838281660
+http\://central/.error=Could not transfer artifact AutoIt\:jacob\:pom\:1.18 from/to central (http\://central)\: central
+http\://clojars.org/repo/.error=
+http\://repository.pentaho.org/artifactory/repo/.lastUpdated=1422729741788
+http\://repository.pentaho.org/artifactory/repo/.error=

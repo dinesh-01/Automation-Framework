@@ -1,0 +1,14 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!define email1 {kctestk3@gmail.com}
+
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/grow/card?card_type=thank|
+|click;|copyOfMail|id|
+|sendKeys;|//*[@id="mailer"]/div/div[1]/div/div[2]/div[1]/div[1]/input|xpath|${email1}|
+|waitForElementToBeDisplayed;|.create|cssselector|60|
+|click;|.create|cssselector|
+|click;|img[alt="GiftCard"]|cssselector|
+|click;|a[href="/business/dashboard/settings"]|cssselector|
+|check|isElementPresent;|.creditCard|cssselector|true|
+|closeBrowser;|
+

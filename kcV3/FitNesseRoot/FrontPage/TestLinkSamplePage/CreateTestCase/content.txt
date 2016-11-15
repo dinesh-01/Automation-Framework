@@ -1,0 +1,13 @@
+|import|
+|common|
+|environment|
+|tools|
+|web|
+
+!define Notes {notes}
+
+!|Script|Testlink|ab25425c21386d5b4b5d1ea51f98bb6b|http://localhost/testlink/lib/api/xmlrpc/v1/xmlrpc.php|
+|createTestCase;|NewTestFromApi1|2|1|admin|MEDIUM|
+|addToPlan;|${testProject}|${testPlan}|NewTestFromApi1|
+|executeTestCase;|${testProject}|${testPlan}|NewTestFromApi1|${build}|${Notes}|true|
+

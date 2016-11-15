@@ -1,0 +1,29 @@
+!define ownerNameClaim {profile test}
+!define businessNameClaim {profile dummy business}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!include .FrontPage.CreateData.DummyProfile.CreateLocation
+

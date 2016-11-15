@@ -1,0 +1,12 @@
+!define pageName {settings_gift_card}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderLoginPage
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|navigateToUrl;|${uiMainURL}business/dashboard/settings|
+|wait;|10|
+|click;|a[href='#gift_cards']|cssselector|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

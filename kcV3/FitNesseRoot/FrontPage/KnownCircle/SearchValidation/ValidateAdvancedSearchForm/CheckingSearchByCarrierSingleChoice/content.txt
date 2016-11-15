@@ -1,0 +1,16 @@
+!define parameter {search?q=&vertical=insurance&city=Los+Alamos%2C+CA&neighbourhood=-120.8499151%2C37.0582786&carriers=Allstate&services=Auto}
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}${parameter}|
+|click;|a[href*='pramatitfughs']|cssselector|
+|$carrier1=|getText;|.profile-section.profile-carrier-section|cssselector|
+!|Script|Common|
+|check|checkIfStringExistsIn;|Allstate|$carrier1|true|
+|$status1=|checkIfStringExistsIn;|Allstate|$carrier1|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|KC-20|${build}||$status1|
+
+
+!|Script|Selenium|
+|closeBrowser;|

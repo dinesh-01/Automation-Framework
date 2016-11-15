@@ -1,0 +1,5 @@
+!define ownerNameClaim {ForgotPassword}
+!define businessNameClaim {ForgotPassword KnownCircle}
+!define businessEmail {forgotpassword@knowncircle.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader

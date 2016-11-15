@@ -1,0 +1,15 @@
+!|Script         |Common                                                                                                                     |
+|$path=          |getPath;                               |email_csv/no_header.csv                              |fullpath                     |
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidateImportContactPage.ValidateImportContactForCsvFile.CommonCsvImport
+
+!|Script|Selenium|
+|closeBrowser;   |
+
+!|Script|Common|
+|$mail1= |checkIfStringExistsIn;|dinesh_01@hotmail.com |$result|
+|$mail2=|checkIfStringExistsIn;|dinesh_02@hotmail.com  |$result|
+|$mail3= |checkIfStringExistsIn;|dinesh_03@hotmail.com |$result|
+|$mail4= |checkIfStringExistsIn;|dinesh_04@hotmail.com |$result|
+|$mail5=|checkIfStringExistsIn;|dinesh_05@hotmail.com  |$result|
+|check|checkIfStringAreEqualInArray;|$mail1,$mail2,$mail3,$mail4,$mail5|true|

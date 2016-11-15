@@ -1,0 +1,4 @@
+!|Script|Common                               |
+|$path= |getPath;|profile/high_mb.jpeg|fullpath|
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ProfileImageValidation.ValidateTeamProfileImage.CommonTeamProfileInvalidImageUpload

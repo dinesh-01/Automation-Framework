@@ -1,0 +1,2 @@
+!define action2 {customer-rejected}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingLeadPageInProfileDashboard.CommonLeadPage

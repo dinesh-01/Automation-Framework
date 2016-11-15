@@ -1,0 +1,16 @@
+!|Script         |Common                                                                                                                     |
+|$path=          |getPath;                               |email_csv/with_multiple_email_headers.csv                              |fullpath                     |
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidateImportContactPage.ValidateImportContactForCsvFile.CommonCsvImport
+
+!|Script|Selenium|
+|$count=|getText;|//*[@id="react-root"]/div/div/div[1]/h3/span[2]/span[6]|xpath|
+|closeBrowser;   |
+
+!|Script|Common|
+|check|checkIfStringAreEqual;|$count|30|true|
+|$mail1= |checkIfStringExistsIn;|dinesh_01@hotmail.com |$result|
+|$mail2=|checkIfStringExistsIn;|dinesh_02@hotmail.com  |$result|
+|$mail3= |checkIfStringExistsIn;|dinesh_03@hotmail.com |$result|
+|$mail4= |checkIfStringExistsIn;|dinesh_04@hotmail.com |$result|
+|check|checkIfStringAreEqualInArray;|$mail1,$mail2,$mail3,$mail4|true|

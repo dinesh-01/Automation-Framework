@@ -1,0 +1,18 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!include -c .FrontPage.KnownCircle.QuoteRequestHeader
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/quotes|
+|click;|.quote-item-content|cssselector|
+|click;|currentQuoteStatus|id|
+|click;|div.quote-status.pull-right span.quote-status-indicator.${action2}|cssselector|
+|click;|dropdownMenu|id|
+|click;|div.btn-toolbar.quote-control-group span.quote-status-indicator.${action2}|cssselector|
+|$content=|getText;|.quote-info.ellipsis.pull-left|cssselector|
+|closeBrowser;|
+
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|${profileName}|$content|true|
+|$status=|checkIfStringExistsIn;|${profileName}|$content|

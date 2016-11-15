@@ -1,0 +1,29 @@
+!|Script|Common|
+|$path=|getPath;|email_csv/with_multiple_email_headers.csv|fullpath|
+|$randrow1=|getRandomNumber;|1|5|
+|$randrow2=|getRandomNumber;|6|15|
+|$randrow3=|getRandomNumber;|15|20|
+
+                     
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidateImportContactPage.ValidateImportContactForCsvFile.CommonCsvImport
+
+!|Script|Selenium|
+|click;|//*[@id="react-root"]/div/table/tbody/tr[$randrow1]/td[2]|xpath|
+|$data1=|getText;|//*[@id="react-root"]/div/table/tbody/tr[$randrow1]/td[4]|xpath|
+|click;|//*[@id="react-root"]/div/table/tbody/tr[$randrow2]/td[2]|xpath|
+|$data2=|getText;|//*[@id="react-root"]/div/table/tbody/tr[$randrow2]/td[4]|xpath|
+|click;|//*[@id="react-root"]/div/table/tbody/tr[$randrow3]/td[2]|xpath|
+|$data3=|getText;|//*[@id="react-root"]/div/table/tbody/tr[$randrow3]/td[4]|xpath|
+|click;|.icon.icon-kc-delete_1|cssselector|
+|waitForElementToBeDisplayed;|.sweet-alert.showSweetAlert.visible|cssselector|10|
+|click;|.confirm|cssselector|
+|wait;|5|
+|$result=|getTableColumnContents;|3|,|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|$data1 |$result|false|
+|check|checkIfStringExistsIn;|$data2|$result|false|
+|check|checkIfStringExistsIn;|$data3 |$result|false|
+
+

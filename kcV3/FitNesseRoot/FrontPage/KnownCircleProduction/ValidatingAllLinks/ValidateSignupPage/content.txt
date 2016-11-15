@@ -1,0 +1,5 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURL}signup|
+|check|isElementPresent;|.signup-view|cssselector|true|
+|closeBrowser;|

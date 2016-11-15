@@ -1,0 +1,4 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://www.xxx4444.com|
+|check|mouseHover;|pic_10662345|id|true|

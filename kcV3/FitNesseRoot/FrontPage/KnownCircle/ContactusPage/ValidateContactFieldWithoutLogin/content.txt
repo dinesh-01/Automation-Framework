@@ -1,0 +1,18 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!define subject {Your Inquiry to KnownCircle}
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}contactus|
+|sendKeys;|name|id|Contact Test Name|
+|sendKeys;|company|id|Contact Test Business|
+|sendKeys;|email|id|contact_test@knowncircle.com|
+|sendKeys;|phone|id|9962541005|
+|sendKeys;|message|name|Contact Test Feedback|
+|click;|.btn.btn-contact-submit.text-bold.text-upper|cssselector|
+|wait;|10|
+|closeBrowser;|
+
+!|Script|Mail|
+|mailConfig;|${gImap}|${adminMail}|${adminPassword}|
+|check|searchEmail;|${subject}|true|
+|closeMail;|

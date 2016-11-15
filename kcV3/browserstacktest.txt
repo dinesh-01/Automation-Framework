@@ -1,0 +1,58 @@
+	
+	/**
+	 * Initializes Mobile with browser stack the Selenium object <code>webDriver</code> fro mobile web 
+	 * 
+	 * @param platform
+	 *           which platform to run either in Anroid or ios or windows 
+	 * @param url
+	 *            this is the remote url in which the browser will open. The values
+	 *            vary depending on the remote url.
+	 *            
+	 *@param devictype
+	 *             the possiable values are emulator or real device            
+	 *            
+	 * @throws Exception
+	 */
+
+	public static void browserStack (String platform , String deviceType)
+			throws Exception {
+		
+		if (Selenium.webDriver != null) { return; 	}
+		
+		final String USERNAME = "knowncircle1";
+		final String AUTOMATE_KEY = "LA2xksBVwiw2mcHtRvZn";
+		final String URL = "http://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+
+	
+	switch (platform.toLowerCase()) {
+	
+		case "ios":
+			DesiredCapabilities caps = new DesiredCapabilities();
+			caps.setCapability("browserName", "iPhone");
+			caps.setPlatform(Platform.MAC);
+			caps.setCapability("device", deviceType);
+			Selenium.webDriver = new RemoteWebDriver(new URL(URL), caps);
+            break;
+            
+		case "windows":
+			DesiredCapabilities caps1 = new DesiredCapabilities();
+		    caps1.setCapability("browser", "IE");
+		    caps1.setCapability("browser_version", deviceType);
+		    caps1.setCapability("os", "Windows");
+		    caps1.setCapability("os_version", "7");
+		    caps1.setCapability("resolution", "1024x768");
+		    Selenium.webDriver = new RemoteWebDriver(new URL(URL), caps1);
+            break;
+            
+		default:
+			DesiredCapabilities caps11 = new DesiredCapabilities();
+			caps11.setCapability("browserName", "android");
+			caps11.setPlatform(Platform.ANDROID);
+			caps11.setCapability("device", deviceType);
+			Selenium.webDriver = new RemoteWebDriver(new URL(URL), caps11);
+            break;
+		
+		}
+		
+	}
+	

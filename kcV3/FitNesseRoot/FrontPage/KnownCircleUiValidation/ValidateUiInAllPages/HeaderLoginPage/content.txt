@@ -1,0 +1,10 @@
+!|Script|Selenium|
+|initialize;|${uiBrowser}|${locale}|
+|launchBrowser;|${uiMainURL}|
+|click;|.btn.btn-secondary.btn-business-login.text-upper.text-bold|cssselector|
+|wait;|4|
+|click;|.btn.login-btn.text-bold|cssselector|
+|sendKeys;|username|id|${uiUser}|
+|sendKeys;|password|id|${uiPassword}|
+|click;|.btn.btn-primary.login-btn-lg|cssselector|
+|wait;|10|

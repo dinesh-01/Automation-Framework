@@ -1,0 +1,38 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+
+!define email {knowncircletest@hotmail.com }
+!define hpass {knowncircle_123}
+
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/contacts|
+|click;|.btn.btn-import-contacts|cssselector|
+|waitForElementToBeDisplayed;|.import-contacts|cssselector|10|
+|click;|.btn.import-mails.outlook-btn|cssselector|
+|wait;|5|
+|selectBrowserTab;|2|
+|sendKeys;|i0116|id|${email}|
+|sendKeys;|i0118|id|${hpass}|
+|click;|idSIButton9|id|
+|wait;|5|
+|click;|.btn.btn-save|cssselector|
+|waitForElementToBeDisplayed;|.sweet-alert.visible.showSweetAlert|cssselector|10|
+|click;|.confirm|cssselector|
+|wait;|2|
+|selectBrowserTab;|1|
+|wait;|2|
+|waitForElementToBeDisplayed;|.contacts-table|cssselector|10|
+|getTable;|class|contacts-table|
+|$result=|getTableColumnContents;|3|,|
+
+
+!|Script|Selenium|
+|closeBrowser;   |
+
+!|Script|Common|
+|$mail1= |checkIfStringExistsIn;|kctestk1@gmail.com|$result|
+|$mail2=|checkIfStringExistsIn;|kctestk2@gmail.com|$result|
+|$mail3= |checkIfStringExistsIn;|kctestk3@gmail.com|$result|
+|$mail4= |checkIfStringExistsIn;|kctestk4@gmail.com|$result|
+|$mail5=|checkIfStringExistsIn;|kctestk5@gmail.com|$result|
+|check|checkIfStringAreEqualInArray;|$mail1,$mail2,$mail3,$mail4,$mail5|true|
+

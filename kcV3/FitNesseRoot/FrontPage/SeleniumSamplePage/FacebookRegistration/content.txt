@@ -1,0 +1,14 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|https://www.facebook.com/signup|
+|sendKeys;|u_0_0|id|kcdinesh|
+|sendKeys;|u_0_1|id|kcsingh|
+|sendKeys;|u_0_2|id|kctestk5@gmail.com|
+|sendKeys;|u_0_4|id|kctestk5@gmail.com|
+|sendKeys;|u_0_5|id|test_123|
+|selectDropdownValue;|month|id|4|
+|selectDropdownValue;|day|id|12|
+|selectDropdownValue;|year|id|1985|
+|click;|u_0_7|id|
+|click;|u_0_9|id|
+

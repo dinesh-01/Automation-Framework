@@ -1,0 +1,49 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!define bzid2 (${bzid})
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/countTextView|id|120|
+|check|isElementDisplayed;|com.knowncircle${package}:id/countTextView|id|pass|
+|resetApplication;|
+|closeApplication;|
+|clearDriver;|
+
+!|Script|Selenium|
+|wait;|240|
+|initialize;|chrome|en-us|
+|launchBrowser;|https://${mobileserver}.knowncircle.com/poc/allNews?bizid=${bzid2}|
+|$data1=|getText;|/html/body/div[2]/div/div/p|xpath|
+|closeBrowser;|
+
+
+
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!define bzid4 (${bzid})
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/countTextView|id|120|
+|check|isElementDisplayed;|com.knowncircle${package}:id/countTextView|id|pass|
+|resetApplication;|
+|closeApplication;|
+|clearDriver;|
+
+!|Script|Selenium|
+|wait;|420|
+|initialize;|chrome|en-us|
+|navigateToUrl;|https://${mobileserver}.knowncircle.com/poc/allNews?bizid=${bzid4}|
+|$data2=|getText;|/html/body/div[2]/div/div/p|xpath|
+|closeBrowser;|
+
+!|Script|Regex|
+|$value1=|removeNumberFromString;|$data1|
+|$value2=|removeNumberFromString;|$data2|
+
+!|Script|Common|
+|check|comparisonResult;|$value2|>=|$value1|true|
+
+
+

@@ -1,0 +1,7 @@
+!include -c .FrontPage.KnownCircle.CommonLoginHeader
+
+!|Script|Selenium|
+|sendKeys;|username|id|${businessLoginEmail}|
+|sendKeys;|password|id|${businessLoginPassword}|
+|click;|.btn.btn-primary.login-btn-lg|cssselector|
+|wait;|2|

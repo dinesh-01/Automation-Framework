@@ -1,0 +1,39 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!include -c .FrontPage.KnownCircleAndroid.GmailContactSynchronization
+!include -c .FrontPage.KnownCircleAndroid.ValidateContactDuplication.CommonResolveDuplicate
+
+!|Script|Selenium|
+|check|isElementPresent;|//android.widget.TextView[@text='12 Duplicates']|xpath|true|
+|clickAll;|android.widget.CheckBox|classname|
+|$searchname=|getValues;|com.knowncircle${package}:id/nameTextView|id|
+
+!|Script|Common|
+|$searchtext1=|splitString;|$searchname|,|0|
+|$searchtext2=|splitString;|$searchname|,|2|
+
+!|Script|Selenium|
+|click;|//android.widget.TextView[@text='Ignore Selected']|xpath|
+|check|isElementPresent;|//android.widget.TextView[@text='10 Duplicates']|xpath|true|
+|click;|android.widget.ImageButton|classname|
+|swipeScreen;|android.widget.TextView|classname|down|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/fabButton|id|10|
+|click;|com.knowncircle${package}:id/fabButton|id|
+|sendKeys;|android.widget.EditText|classname|$searchtext1|
+|waitForElementToBeDisplayed;|android.widget.RelativeLayout|classname|10|
+|check|isElementPresent;|//android.widget.TextView[@text='No data found']|xpath|false|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='0']|xpath|true|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='1']|xpath|true|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='2']|xpath|false|
+|click;|com.knowncircle${package}:id/img_tool_back|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/fabButton|id|10|
+|click;|com.knowncircle${package}:id/fabButton|id|
+|sendKeys;|android.widget.EditText|classname|$searchtext2|
+|waitForElementToBeDisplayed;|android.widget.RelativeLayout|classname|10|
+|check|isElementPresent;|//android.widget.TextView[@text='No data found']|xpath|false|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='0']|xpath|true|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='1']|xpath|true|
+|check|isElementPresent;|//android.widget.RelativeLayout[@index='2']|xpath|false|
+|resetApplication;|
+|closeApplication;|

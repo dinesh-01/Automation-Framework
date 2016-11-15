@@ -1,0 +1,41 @@
+!define businessLoginEmail {kctestk3@gmail.com}
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.CommonGiftCardProcess
+
+!** Check for Email delivary
+!|Script|Mail|
+|wait;|20|
+|mailConfig;|${gImap}|${adminMail}|${adminPassword}|
+|$body=|getBody;|
+|closeMail;|
+*!
+
+!|Script|Common|
+|$url=|getSubStringByString;|$body|a href="|" data-reactid="|
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|$url|
+|$profileOwnnerlink=|currentUrl;|
+|click;|AmazoncomGiftCardCustom|id|
+|click;|joinMe|id|
+|click;|claimNow|id|
+|waitForElementToBeDisplayed;|.react-modal.kc-modal.claimSuccess|cssselector|60|
+|closeBrowser;|
+
+!|Script|Common|
+|$bzid=|getSubStringByString;|$profileOwnnerlink|profile/|?tid|
+
+!** Check for coupon delivery  delivary
+!|Script|Mail|
+|wait;|20|
+|mailConfig;|${gImap}|${email1}|${gpass}|
+|check|searchEmail;|Gift Card|Reward message sent by business $bzid|true|
+|deleteMessage;|
+|closeMail;|
+*!
+
+
+
+
+

@@ -1,0 +1,5 @@
+!define ownerNameClaim {Profile Edit}
+!define businessName {Profileedit KnownCircle}
+!define businessEmail {profileedit@knowncircle.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.ValidatingAllFieldsInProfileDashboardByEnteringValidData

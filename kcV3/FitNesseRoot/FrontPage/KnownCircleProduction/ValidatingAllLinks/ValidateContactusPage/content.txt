@@ -1,0 +1,7 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURL}|
+|click;|a[href*='contactus']|cssselector|
+|waitForElementToBeDisplayed;|contact-us-section|classname|60|
+|check|isElementPresent;|contact-us-section|classname|true|
+|closeBrowser;|

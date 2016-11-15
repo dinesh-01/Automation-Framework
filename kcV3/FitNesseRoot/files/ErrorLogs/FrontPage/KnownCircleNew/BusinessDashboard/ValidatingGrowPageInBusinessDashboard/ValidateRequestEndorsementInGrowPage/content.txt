@@ -1,0 +1,437 @@
+
+!3 !-slim:fitnesse.slim.SlimService-!
+|'''Date: '''| 11:05:52 PM (IST) on Friday, August 28, 2015 |
+|'''Test Page: '''|.FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage|
+|'''Command: '''| !-"C:\Program Files\Java\jdk1.8.0_45\bin\java" -cp C:\Users\dineshs\.m2\repository\org\fitnesse\fitnesse\20140630\fitnesse-20140630.jar;classes;C:\Users\dineshs\.m2\repository\automation\commonlibrary\0.0.1-SNAPSHOT\commonlibrary-0.0.1-SNAPSHOT.jar;C:\Users\dineshs\.m2\repository\ssh2\ssh2\1.0\ssh2-1.0.jar;C:\Users\dineshs\.m2\repository\AutoIt\AutoItX4Java\3.3.12\AutoItX4Java-3.3.12.jar;C:\Users\dineshs\.m2\repository\AutoIt\jacob\1.18\jacob-1.18.jar;C:\Users\dineshs\.m2\repository\Testlink\Testlink\2.0\Testlink-2.0.jar;C:\Users\dineshs\.m2\repository\br\eti\kinoshita\testlink-java-api\1.9.6-1\testlink-java-api-1.9.6-1.jar;C:\Users\dineshs\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\dineshs\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\dineshs\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\dineshs\.m2\repository\org\slf4j\slf4j-simple\1.6.1\slf4j-simple-1.6.1.jar;C:\Users\dineshs\.m2\repository\commons-configuration\commons-configuration\1.7\commons-configuration-1.7.jar;C:\Users\dineshs\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\dineshs\.m2\repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\Users\dineshs\.m2\repository\org\apache\xmlrpc\xmlrpc-common\3.1.3\xmlrpc-common-3.1.3.jar;C:\Users\dineshs\.m2\repository\org\apache\ws\commons\util\ws-commons-util\1.0.2\ws-commons-util-1.0.2.jar;C:\Users\dineshs\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\dineshs\.m2\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;C:\Users\dineshs\.m2\repository\com\jcraft\jsch\0.1.51\jsch-0.1.51.jar;C:\Users\dineshs\.m2\repository\com\vmware\vijava\5.1\vijava-5.1.jar;C:\Users\dineshs\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\dineshs\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\dineshs\.m2\repository\it\cnr\isti\domoware\org.postgresql.jdbc4\8.3-603\org.postgresql.jdbc4-8.3-603.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-client\2.7\jersey-client-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-common\2.7\jersey-common-2.7.jar;C:\Users\dineshs\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.7\jersey-guava-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;C:\Users\dineshs\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0\javax.ws.rs-api-2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-api\2.2.0\hk2-api-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-utils\2.2.0\hk2-utils-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.2.0\aopalliance-repackaged-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\external\javax.inject\2.2.0\javax.inject-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-locator\2.2.0\hk2-locator-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\dineshs\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.7\jersey-media-multipart-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-server\2.7\jersey-server-2.7.jar;C:\Users\dineshs\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\dineshs\.m2\repository\org\jvnet\mimepull\mimepull\1.9.3\mimepull-1.9.3.jar;C:\Users\dineshs\.m2\repository\org\apache\directory\studio\org.apache.commons.io\2.4\org.apache.commons.io-2.4.jar;C:\Users\dineshs\.m2\repository\commons-net\commons-net\20030805.205232\commons-net-20030805.205232.jar;C:\Users\dineshs\.m2\repository\org\mongodb\mongo-java-driver\2.13.0\mongo-java-driver-2.13.0.jar;C:\Users\dineshs\.m2\repository\com\jayway\android\robotium\robotium-solo\5.3.1\robotium-solo-5.3.1.jar;C:\Users\dineshs\.m2\repository\org\apache\xmlrpc\xmlrpc-client\3.1.3\xmlrpc-client-3.1.3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-server\2.46.0\selenium-server-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\dineshs\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\dineshs\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\dineshs\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\dineshs\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-java\2.46.0\selenium-java-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.46.0\selenium-chrome-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.46.0\selenium-remote-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-api\2.46.0\selenium-api-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.46.0\selenium-htmlunit-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.17\htmlunit-2.17.jar;C:\Users\dineshs\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\dineshs\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\dineshs\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpmime\4.4.1\httpmime-4.4.1.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\dineshs\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\dineshs\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.11.v20150529\websocket-client-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\jetty-util\9.2.11.v20150529\jetty-util-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\jetty-io\9.2.11.v20150529\jetty-io-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.11.v20150529\websocket-common-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.11.v20150529\websocket-api-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.46.0\selenium-firefox-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.46.0\selenium-ie-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\dineshs\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.46.0\selenium-safari-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-support\2.46.0\selenium-support-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\dineshs\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.46.0\selenium-leg-rc-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\dineshs\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\dineshs\.m2\repository\io\appium\java-client\3.1.0\java-client-3.1.0.jar;C:\Users\dineshs\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\dineshs\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\dineshs\.m2\repository\cglib\cglib\3.1\cglib-3.1.jar;C:\Users\dineshs\.m2\repository\org\ow2\asm\asm\4.2\asm-4.2.jar;C:\Users\dineshs\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\dineshs\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpclient\4.3.5\httpclient-4.3.5.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\dineshs\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\dineshs\.m2\repository\org\fitnesse\fitnesse\20140630\fitnesse-20140630.jar;C:\Users\dineshs\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\dineshs\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\dineshs\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\dineshs\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\dineshs\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\dineshs\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.2.1\diffutils-1.2.1.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jgit\org.eclipse.jgit\2.3.1.201302201838-r\org.eclipse.jgit-2.3.1.201302201838-r.jar;C:\Users\dineshs\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.6\maven-classpath-plugin-1.6.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\dineshs\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\dineshs\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\dineshs\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8087-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 302.29 seconds |
+
+----
+'''Standard Output:'''
+{{{2015-08-28 23:00:51 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-28 23:00:51 INFO  Log.java:43 - chrome
+2015-08-28 23:00:51 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-28 23:00:51 INFO  Log.java:43 - canary
+2015-08-28 23:00:51 INFO  Log.java:43 - FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage.ValidateRequestEndorsementForCsvImport
+2015-08-28 23:00:54 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-28 23:00:54 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/
+2015-08-28 23:01:04 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:01:04 INFO  Log.java:43 - Waiting for element [.btn.btn-secondary.btn-business-login.text-upper.login-btn] to appear for 12 seconds.
+2015-08-28 23:01:04 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:01:04 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:06 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .btn.btn-secondary.btn-business-login.text-upper.login-btn]
+2015-08-28 23:01:06 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:08 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:01:09 INFO  Log.java:43 - Waiting for element [.btn.login-btn.text-bold] to appear for 12 seconds.
+2015-08-28 23:01:09 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:01:09 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:11 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .btn.login-btn.text-bold]
+2015-08-28 23:01:11 INFO  Log.java:43 - Getting localized data for keyword kctestk5@gmail.com
+2015-08-28 23:01:11 INFO  Log.java:43 - Sending keys
+2015-08-28 23:01:11 INFO  Log.java:43 - Finding element by identifier username using id
+2015-08-28 23:01:11 INFO  Log.java:43 - Getting localized data for keyword test
+2015-08-28 23:01:11 INFO  Log.java:43 - Sending keys
+2015-08-28 23:01:11 INFO  Log.java:43 - Finding element by identifier password using id
+2015-08-28 23:01:11 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:01:11 INFO  Log.java:43 - Waiting for element [.btn.btn-primary.login-btn-lg] to appear for 12 seconds.
+2015-08-28 23:01:11 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:01:11 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:13 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .btn.btn-primary.login-btn-lg]
+2015-08-28 23:01:13 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:15 INFO  Log.java:43 - Generating random string of ALPHA type and of 6 characters length.
+2015-08-28 23:01:15 INFO  Log.java:43 - Navigating to Urlhttps://kcadmin:Kc@dm1n@canary.knowncircle.com/business/dashboard/grow/request_endorsement
+2015-08-28 23:01:17 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:01:17 INFO  Log.java:43 - Waiting for element [.import-contacts.text-upper.pull-right] to appear for 12 seconds.
+2015-08-28 23:01:17 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:01:17 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:19 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .import-contacts.text-upper.pull-right]
+2015-08-28 23:01:19 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-28 23:01:20 INFO  Log.java:43 - Finding element by identifier .file-upload.pull-left.ng-isolate-scope using cssselector
+2015-08-28 23:01:21 INFO  Log.java:43 - Class name has been changed successfully
+2015-08-28 23:01:21 INFO  Log.java:43 - Getting localized data for keyword C:\Project\knownCircle\email_csv\with_header.csv
+2015-08-28 23:01:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier emailContacts using id
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:01:21 INFO  Log.java:43 - The Value is cleared ininput[data-ng-model="subject"]element
+2015-08-28 23:01:21 INFO  Log.java:43 - Getting localized data for keyword subject Email test for knowncircle 20150828230115
+2015-08-28 23:01:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:01:21 INFO  Log.java:43 - The Value is cleared inql-editor-1element
+2015-08-28 23:01:21 INFO  Log.java:43 - Getting localized data for keyword Hi Kctest, body Email test for knowncircle 20150828230115
+2015-08-28 23:01:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:01:21 INFO  Log.java:43 - Waiting for element [.btn.data-send-btn.btn.text-upper] to appear for 12 seconds.
+2015-08-28 23:01:21 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:01:21 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:23 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .btn.data-send-btn.btn.text-upper]
+2015-08-28 23:01:23 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:01:23 INFO  Log.java:43 - Waiting for element [.btn.btn-ok] to appear for 12 seconds.
+2015-08-28 23:01:23 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:01:25 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:27 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9f48060d511714adabc5287b85f36401)] -> css selector: .btn.btn-ok]
+2015-08-28 23:01:30 INFO  Log.java:43 - Closing browser.
+2015-08-28 23:01:30 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:32 INFO  Log.java:43 - Waiting for time: 6 seconds 
+2015-08-28 23:01:42 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-28 23:01:42 INFO  Log.java:43 - chrome
+2015-08-28 23:01:42 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-28 23:01:42 INFO  Log.java:43 - canary
+2015-08-28 23:01:42 INFO  Log.java:43 - FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage.ValidateRequestEndorsementForGmailAccount
+2015-08-28 23:01:43 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-28 23:01:44 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/
+2015-08-28 23:01:54 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:01:54 INFO  Log.java:43 - Waiting for element [.btn.btn-secondary.btn-business-login.text-upper.login-btn] to appear for 12 seconds.
+2015-08-28 23:01:54 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:01:54 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:56 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .btn.btn-secondary.btn-business-login.text-upper.login-btn]
+2015-08-28 23:01:56 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:01:58 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:01:59 INFO  Log.java:43 - Waiting for element [.btn.login-btn.text-bold] to appear for 12 seconds.
+2015-08-28 23:01:59 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:01:59 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:01 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .btn.login-btn.text-bold]
+2015-08-28 23:02:01 INFO  Log.java:43 - Getting localized data for keyword kctestk5@gmail.com
+2015-08-28 23:02:01 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:01 INFO  Log.java:43 - Finding element by identifier username using id
+2015-08-28 23:02:01 INFO  Log.java:43 - Getting localized data for keyword test
+2015-08-28 23:02:01 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:01 INFO  Log.java:43 - Finding element by identifier password using id
+2015-08-28 23:02:01 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:02:01 INFO  Log.java:43 - Waiting for element [.btn.btn-primary.login-btn-lg] to appear for 12 seconds.
+2015-08-28 23:02:01 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:02:01 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:03 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .btn.btn-primary.login-btn-lg]
+2015-08-28 23:02:03 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:05 INFO  Log.java:43 - Generating random string of ALPHA type and of 6 characters length.
+2015-08-28 23:02:05 INFO  Log.java:43 - Navigating to Urlhttps://kcadmin:Kc@dm1n@canary.knowncircle.com/business/dashboard/grow/request_endorsement
+2015-08-28 23:02:07 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:02:07 INFO  Log.java:43 - Waiting for element [.import-contacts.text-upper.pull-right] to appear for 12 seconds.
+2015-08-28 23:02:07 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:02:07 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:09 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .import-contacts.text-upper.pull-right]
+2015-08-28 23:02:09 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:11 INFO  Log.java:43 - Finding element by identifier a[data-import="gmail"] using cssselector
+2015-08-28 23:02:11 INFO  Log.java:43 - Waiting for element [a[data-import="gmail"]] to appear for 12 seconds.
+2015-08-28 23:02:11 INFO  Log.java:43 - Finding element by identifier a[data-import="gmail"] using cssselector
+2015-08-28 23:02:11 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:13 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: a[data-import="gmail"]]
+2015-08-28 23:02:13 INFO  Log.java:43 - Waiting for time: 5 seconds 
+2015-08-28 23:02:19 INFO  Log.java:43 - Switched to window index #2. Window handle :: [CDwindow-55BD6785-86DF-49F6-84E2-0CF0876F3DEC].
+2015-08-28 23:02:19 INFO  Log.java:43 - Switched window title :: Sign in - Google Accounts
+2015-08-28 23:02:19 INFO  Log.java:43 - Getting localized data for keyword kctestk1@gmail.com
+2015-08-28 23:02:19 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:19 INFO  Log.java:43 - Finding element by identifier Email using id
+2015-08-28 23:02:19 INFO  Log.java:43 - Finding element by identifier next using id
+2015-08-28 23:02:19 INFO  Log.java:43 - Waiting for element [next] to appear for 12 seconds.
+2015-08-28 23:02:19 INFO  Log.java:43 - Finding element by identifier next using id
+2015-08-28 23:02:19 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:21 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> id: next]
+2015-08-28 23:02:21 INFO  Log.java:43 - Getting localized data for keyword test_1234
+2015-08-28 23:02:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:21 INFO  Log.java:43 - Finding element by identifier Passwd using id
+2015-08-28 23:02:21 INFO  Log.java:43 - Finding element by identifier signIn using id
+2015-08-28 23:02:21 INFO  Log.java:43 - Waiting for element [signIn] to appear for 12 seconds.
+2015-08-28 23:02:21 INFO  Log.java:43 - Finding element by identifier signIn using id
+2015-08-28 23:02:21 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:23 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> id: signIn]
+2015-08-28 23:02:23 INFO  Log.java:43 - Waiting for time: 5 seconds 
+2015-08-28 23:02:28 INFO  Log.java:43 - Finding element by identifier .select-all using cssselector
+2015-08-28 23:02:28 INFO  Log.java:43 - Waiting for element [.select-all] to appear for 12 seconds.
+2015-08-28 23:02:28 INFO  Log.java:43 - Finding element by identifier .select-all using cssselector
+2015-08-28 23:02:29 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:31 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .select-all]
+2015-08-28 23:02:31 INFO  Log.java:43 - Finding element by identifier .done-btn.pull-right using cssselector
+2015-08-28 23:02:31 INFO  Log.java:43 - Waiting for element [.done-btn.pull-right] to appear for 12 seconds.
+2015-08-28 23:02:31 INFO  Log.java:43 - Finding element by identifier .done-btn.pull-right using cssselector
+2015-08-28 23:02:31 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:33 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .done-btn.pull-right]
+2015-08-28 23:02:33 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:35 INFO  Log.java:43 - Switched to window index #1. Window handle :: [CDwindow-EF93B2BD-29E2-44A4-9D2D-978FACB43DBB].
+2015-08-28 23:02:35 INFO  Log.java:43 - Switched window title :: KnownCircle
+2015-08-28 23:02:35 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:02:37 INFO  Log.java:43 - The Value is cleared ininput[data-ng-model="subject"]element
+2015-08-28 23:02:37 INFO  Log.java:43 - Getting localized data for keyword subject Email test for knowncircle 20150828230205
+2015-08-28 23:02:37 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:02:37 INFO  Log.java:43 - The Value is cleared inql-editor-1element
+2015-08-28 23:02:37 INFO  Log.java:43 - Getting localized data for keyword Hi Kctest, body Email test for knowncircle 20150828230205
+2015-08-28 23:02:37 INFO  Log.java:43 - Sending keys
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:02:37 INFO  Log.java:43 - Waiting for element [.btn.data-send-btn.btn.text-upper] to appear for 12 seconds.
+2015-08-28 23:02:37 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:02:37 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:39 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .btn.data-send-btn.btn.text-upper]
+2015-08-28 23:02:40 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:02:40 INFO  Log.java:43 - Waiting for element [.btn.btn-ok] to appear for 12 seconds.
+2015-08-28 23:02:40 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:02:41 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:43 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (6f1d25933995b0dc4501f1e42b19e83d)] -> css selector: .btn.btn-ok]
+2015-08-28 23:02:46 INFO  Log.java:43 - Closing browser.
+2015-08-28 23:02:46 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:02:48 INFO  Log.java:43 - Waiting for time: 6 seconds 
+2015-08-28 23:02:57 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-28 23:02:57 INFO  Log.java:43 - chrome
+2015-08-28 23:02:57 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-28 23:02:57 INFO  Log.java:43 - canary
+2015-08-28 23:02:57 INFO  Log.java:43 - FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage.ValidateRequestEndorsementForHotmailAccount
+2015-08-28 23:02:58 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-28 23:02:59 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/
+2015-08-28 23:03:08 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:03:08 INFO  Log.java:43 - Waiting for element [.btn.btn-secondary.btn-business-login.text-upper.login-btn] to appear for 12 seconds.
+2015-08-28 23:03:08 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:03:08 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:10 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .btn.btn-secondary.btn-business-login.text-upper.login-btn]
+2015-08-28 23:03:10 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:12 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:03:13 INFO  Log.java:43 - Waiting for element [.btn.login-btn.text-bold] to appear for 12 seconds.
+2015-08-28 23:03:13 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:03:13 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:15 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .btn.login-btn.text-bold]
+2015-08-28 23:03:15 INFO  Log.java:43 - Getting localized data for keyword kctestk5@gmail.com
+2015-08-28 23:03:15 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:15 INFO  Log.java:43 - Finding element by identifier username using id
+2015-08-28 23:03:15 INFO  Log.java:43 - Getting localized data for keyword test
+2015-08-28 23:03:15 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:15 INFO  Log.java:43 - Finding element by identifier password using id
+2015-08-28 23:03:15 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:03:15 INFO  Log.java:43 - Waiting for element [.btn.btn-primary.login-btn-lg] to appear for 12 seconds.
+2015-08-28 23:03:15 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:03:15 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:17 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .btn.btn-primary.login-btn-lg]
+2015-08-28 23:03:17 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:19 INFO  Log.java:43 - Generating random string of ALPHA type and of 6 characters length.
+2015-08-28 23:03:19 INFO  Log.java:43 - Navigating to Urlhttps://kcadmin:Kc@dm1n@canary.knowncircle.com/business/dashboard/grow/request_endorsement
+2015-08-28 23:03:21 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:03:21 INFO  Log.java:43 - Waiting for element [.import-contacts.text-upper.pull-right] to appear for 12 seconds.
+2015-08-28 23:03:21 INFO  Log.java:43 - Finding element by identifier .import-contacts.text-upper.pull-right using cssselector
+2015-08-28 23:03:21 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:23 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .import-contacts.text-upper.pull-right]
+2015-08-28 23:03:23 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:25 INFO  Log.java:43 - Finding element by identifier a[data-import="outlook"] using cssselector
+2015-08-28 23:03:25 INFO  Log.java:43 - Waiting for element [a[data-import="outlook"]] to appear for 12 seconds.
+2015-08-28 23:03:25 INFO  Log.java:43 - Finding element by identifier a[data-import="outlook"] using cssselector
+2015-08-28 23:03:25 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:27 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: a[data-import="outlook"]]
+2015-08-28 23:03:27 INFO  Log.java:43 - Waiting for time: 5 seconds 
+2015-08-28 23:03:32 INFO  Log.java:43 - Switched to window index #2. Window handle :: [CDwindow-5F3DCDD1-1EAC-4418-A9CF-631276BBBA12].
+2015-08-28 23:03:33 INFO  Log.java:43 - Switched window title :: Sign in to your Microsoft account
+2015-08-28 23:03:33 INFO  Log.java:43 - Getting localized data for keyword knowncircletest@hotmail.com
+2015-08-28 23:03:33 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:33 INFO  Log.java:43 - Finding element by identifier i0116 using id
+2015-08-28 23:03:33 INFO  Log.java:43 - Getting localized data for keyword knowncircle_123
+2015-08-28 23:03:33 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:33 INFO  Log.java:43 - Finding element by identifier i0118 using id
+2015-08-28 23:03:33 INFO  Log.java:43 - Finding element by identifier idSIButton9 using id
+2015-08-28 23:03:33 INFO  Log.java:43 - Waiting for element [idSIButton9] to appear for 12 seconds.
+2015-08-28 23:03:33 INFO  Log.java:43 - Finding element by identifier idSIButton9 using id
+2015-08-28 23:03:33 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:35 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> id: idSIButton9]
+2015-08-28 23:03:35 INFO  Log.java:43 - Waiting for time: 5 seconds 
+2015-08-28 23:03:40 INFO  Log.java:43 - Finding element by identifier .select-all using cssselector
+2015-08-28 23:03:40 INFO  Log.java:43 - Waiting for element [.select-all] to appear for 12 seconds.
+2015-08-28 23:03:40 INFO  Log.java:43 - Finding element by identifier .select-all using cssselector
+2015-08-28 23:03:40 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:42 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .select-all]
+2015-08-28 23:03:42 INFO  Log.java:43 - Finding element by identifier .done-btn.pull-right using cssselector
+2015-08-28 23:03:42 INFO  Log.java:43 - Waiting for element [.done-btn.pull-right] to appear for 12 seconds.
+2015-08-28 23:03:42 INFO  Log.java:43 - Finding element by identifier .done-btn.pull-right using cssselector
+2015-08-28 23:03:42 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:44 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .done-btn.pull-right]
+2015-08-28 23:03:44 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:46 INFO  Log.java:43 - Switched to window index #1. Window handle :: [CDwindow-FE4AFC58-7AD3-44C0-A596-6FA57B9FD699].
+2015-08-28 23:03:46 INFO  Log.java:43 - Switched window title :: KnownCircle
+2015-08-28 23:03:46 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:48 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:03:48 INFO  Log.java:43 - The Value is cleared ininput[data-ng-model="subject"]element
+2015-08-28 23:03:48 INFO  Log.java:43 - Getting localized data for keyword subject Email test for knowncircle 20150828230319
+2015-08-28 23:03:48 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:48 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:03:48 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:03:49 INFO  Log.java:43 - The Value is cleared inql-editor-1element
+2015-08-28 23:03:49 INFO  Log.java:43 - Getting localized data for keyword Hi Kctest, body Email test for knowncircle 20150828230319
+2015-08-28 23:03:49 INFO  Log.java:43 - Sending keys
+2015-08-28 23:03:49 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:03:49 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:03:49 INFO  Log.java:43 - Waiting for element [.btn.data-send-btn.btn.text-upper] to appear for 12 seconds.
+2015-08-28 23:03:49 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:03:49 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:51 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .btn.data-send-btn.btn.text-upper]
+2015-08-28 23:03:51 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:03:51 INFO  Log.java:43 - Waiting for element [.btn.btn-ok] to appear for 12 seconds.
+2015-08-28 23:03:51 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:03:52 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:54 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (07d28ea4da2e7291b83d121da54d025e)] -> css selector: .btn.btn-ok]
+2015-08-28 23:03:57 INFO  Log.java:43 - Closing browser.
+2015-08-28 23:03:57 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:03:59 INFO  Log.java:43 - Waiting for time: 6 seconds 
+2015-08-28 23:04:08 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-28 23:04:08 INFO  Log.java:43 - chrome
+2015-08-28 23:04:08 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-28 23:04:08 INFO  Log.java:43 - canary
+2015-08-28 23:04:08 INFO  Log.java:43 - FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage.ValidateRequestEndorsementForMultipleEmail
+2015-08-28 23:04:10 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-28 23:04:10 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/
+2015-08-28 23:04:20 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:04:20 INFO  Log.java:43 - Waiting for element [.btn.btn-secondary.btn-business-login.text-upper.login-btn] to appear for 12 seconds.
+2015-08-28 23:04:20 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:04:20 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:22 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .btn.btn-secondary.btn-business-login.text-upper.login-btn]
+2015-08-28 23:04:22 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:24 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:04:24 INFO  Log.java:43 - Waiting for element [.btn.login-btn.text-bold] to appear for 12 seconds.
+2015-08-28 23:04:24 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:04:24 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:26 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .btn.login-btn.text-bold]
+2015-08-28 23:04:26 INFO  Log.java:43 - Getting localized data for keyword kctestk5@gmail.com
+2015-08-28 23:04:26 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:26 INFO  Log.java:43 - Finding element by identifier username using id
+2015-08-28 23:04:27 INFO  Log.java:43 - Getting localized data for keyword test
+2015-08-28 23:04:27 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:27 INFO  Log.java:43 - Finding element by identifier password using id
+2015-08-28 23:04:27 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:04:27 INFO  Log.java:43 - Waiting for element [.btn.btn-primary.login-btn-lg] to appear for 12 seconds.
+2015-08-28 23:04:27 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:04:27 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:29 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .btn.btn-primary.login-btn-lg]
+2015-08-28 23:04:29 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:31 INFO  Log.java:43 - Generating random string of ALPHA type and of 6 characters length.
+2015-08-28 23:04:31 INFO  Log.java:43 - Navigating to Urlhttps://kcadmin:Kc@dm1n@canary.knowncircle.com/business/dashboard/grow/request_endorsement
+2015-08-28 23:04:33 INFO  Log.java:43 - Getting localized data for keyword kctestk1@gmail.com
+2015-08-28 23:04:33 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:33 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/div/div/div/div[1]/div[2]/div[1]/input using xpath
+2015-08-28 23:04:33 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:33 INFO  Log.java:43 - Waiting for element [.create] to appear for 12 seconds.
+2015-08-28 23:04:33 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:34 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:36 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .create]
+2015-08-28 23:04:36 INFO  Log.java:43 - Getting localized data for keyword kctestk2@gmail.com
+2015-08-28 23:04:36 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:36 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/div/div/div/div[1]/div[2]/div[1]/input using xpath
+2015-08-28 23:04:36 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:36 INFO  Log.java:43 - Waiting for element [.create] to appear for 12 seconds.
+2015-08-28 23:04:36 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:36 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:38 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .create]
+2015-08-28 23:04:38 INFO  Log.java:43 - Getting localized data for keyword kctestk3@gmail.com
+2015-08-28 23:04:38 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:38 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/div/div/div/div[1]/div[2]/div[1]/input using xpath
+2015-08-28 23:04:38 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:38 INFO  Log.java:43 - Waiting for element [.create] to appear for 12 seconds.
+2015-08-28 23:04:38 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:04:38 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:40 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .create]
+2015-08-28 23:04:40 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:04:40 INFO  Log.java:43 - The Value is cleared ininput[data-ng-model="subject"]element
+2015-08-28 23:04:40 INFO  Log.java:43 - Getting localized data for keyword subject Email test for knowncircle 20150828230431
+2015-08-28 23:04:40 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:40 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:04:41 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:04:41 INFO  Log.java:43 - The Value is cleared inql-editor-1element
+2015-08-28 23:04:41 INFO  Log.java:43 - Getting localized data for keyword Hi Kctest, body Email test for knowncircle 20150828230431
+2015-08-28 23:04:41 INFO  Log.java:43 - Sending keys
+2015-08-28 23:04:41 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:04:41 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:04:41 INFO  Log.java:43 - Waiting for element [.btn.data-send-btn.btn.text-upper] to appear for 12 seconds.
+2015-08-28 23:04:41 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:04:41 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:43 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .btn.data-send-btn.btn.text-upper]
+2015-08-28 23:04:43 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:04:43 INFO  Log.java:43 - Waiting for element [.btn.btn-ok] to appear for 12 seconds.
+2015-08-28 23:04:43 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:04:44 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:46 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (b76bfc9ba8e61a741a7956a1ca2503d2)] -> css selector: .btn.btn-ok]
+2015-08-28 23:04:48 INFO  Log.java:43 - Closing browser.
+2015-08-28 23:04:48 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:04:50 INFO  Log.java:43 - Waiting for time: 6 seconds 
+2015-08-28 23:04:59 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-28 23:04:59 INFO  Log.java:43 - chrome
+2015-08-28 23:04:59 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-28 23:04:59 INFO  Log.java:43 - canary
+2015-08-28 23:04:59 INFO  Log.java:43 - FrontPage.KnownCircleNew.BusinessDashboard.ValidatingGrowPageInBusinessDashboard.ValidateRequestEndorsementInGrowPage.ValidateRequestEndorsementForOneEmail
+2015-08-28 23:05:01 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-28 23:05:01 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/
+2015-08-28 23:05:14 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:05:14 INFO  Log.java:43 - Waiting for element [.btn.btn-secondary.btn-business-login.text-upper.login-btn] to appear for 12 seconds.
+2015-08-28 23:05:14 INFO  Log.java:43 - Finding element by identifier .btn.btn-secondary.btn-business-login.text-upper.login-btn using cssselector
+2015-08-28 23:05:15 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:17 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .btn.btn-secondary.btn-business-login.text-upper.login-btn]
+2015-08-28 23:05:17 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:19 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:05:19 INFO  Log.java:43 - Waiting for element [.btn.login-btn.text-bold] to appear for 12 seconds.
+2015-08-28 23:05:19 INFO  Log.java:43 - Finding element by identifier .btn.login-btn.text-bold using cssselector
+2015-08-28 23:05:19 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:21 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .btn.login-btn.text-bold]
+2015-08-28 23:05:21 INFO  Log.java:43 - Getting localized data for keyword kctestk5@gmail.com
+2015-08-28 23:05:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:05:21 INFO  Log.java:43 - Finding element by identifier username using id
+2015-08-28 23:05:21 INFO  Log.java:43 - Getting localized data for keyword test
+2015-08-28 23:05:21 INFO  Log.java:43 - Sending keys
+2015-08-28 23:05:21 INFO  Log.java:43 - Finding element by identifier password using id
+2015-08-28 23:05:21 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:05:21 INFO  Log.java:43 - Waiting for element [.btn.btn-primary.login-btn-lg] to appear for 12 seconds.
+2015-08-28 23:05:21 INFO  Log.java:43 - Finding element by identifier .btn.btn-primary.login-btn-lg using cssselector
+2015-08-28 23:05:21 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:23 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .btn.btn-primary.login-btn-lg]
+2015-08-28 23:05:23 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:25 INFO  Log.java:43 - Generating random string of ALPHA type and of 6 characters length.
+2015-08-28 23:05:25 INFO  Log.java:43 - Navigating to Urlhttps://kcadmin:Kc@dm1n@canary.knowncircle.com/business/dashboard/grow/request_endorsement
+2015-08-28 23:05:27 INFO  Log.java:43 - Getting localized data for keyword kctestk2@gmail.com
+2015-08-28 23:05:27 INFO  Log.java:43 - Sending keys
+2015-08-28 23:05:27 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/div/div/div/div[1]/div[2]/div[1]/input using xpath
+2015-08-28 23:05:28 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:05:28 INFO  Log.java:43 - Waiting for element [.create] to appear for 12 seconds.
+2015-08-28 23:05:28 INFO  Log.java:43 - Finding element by identifier .create using cssselector
+2015-08-28 23:05:28 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:30 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .create]
+2015-08-28 23:05:30 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:05:30 INFO  Log.java:43 - The Value is cleared ininput[data-ng-model="subject"]element
+2015-08-28 23:05:30 INFO  Log.java:43 - Getting localized data for keyword Email test for knowncircle 20150828230525
+2015-08-28 23:05:30 INFO  Log.java:43 - Sending keys
+2015-08-28 23:05:30 INFO  Log.java:43 - Finding element by identifier input[data-ng-model="subject"] using cssselector
+2015-08-28 23:05:30 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:05:30 INFO  Log.java:43 - The Value is cleared inql-editor-1element
+2015-08-28 23:05:30 INFO  Log.java:43 - Getting localized data for keyword Hi Kctest, body Email test for knowncircle 20150828230525
+2015-08-28 23:05:30 INFO  Log.java:43 - Sending keys
+2015-08-28 23:05:30 INFO  Log.java:43 - Finding element by identifier ql-editor-1 using id
+2015-08-28 23:05:30 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:05:31 INFO  Log.java:43 - Waiting for element [.btn.data-send-btn.btn.text-upper] to appear for 12 seconds.
+2015-08-28 23:05:31 INFO  Log.java:43 - Finding element by identifier .btn.data-send-btn.btn.text-upper using cssselector
+2015-08-28 23:05:31 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:33 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .btn.data-send-btn.btn.text-upper]
+2015-08-28 23:05:33 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:05:33 INFO  Log.java:43 - Waiting for element [.btn.btn-ok] to appear for 12 seconds.
+2015-08-28 23:05:33 INFO  Log.java:43 - Finding element by identifier .btn.btn-ok using cssselector
+2015-08-28 23:05:34 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:36 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (cf4910c2ef8db1d9661f336cefd92200)] -> css selector: .btn.btn-ok]
+2015-08-28 23:05:37 INFO  Log.java:43 - Closing browser.
+2015-08-28 23:05:37 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-28 23:05:39 INFO  Log.java:43 - Waiting for time: 6 seconds 
+}}}
+----
+'''Standard Error:'''
+{{{Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 46444
+Only local connections are allowed.
+Aug 28, 2015 11:01:30 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@4b2bac3f
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 39711
+Only local connections are allowed.
+Aug 28, 2015 11:02:45 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@3e44f2a5
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 38622
+Only local connections are allowed.
+Aug 28, 2015 11:03:57 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@27508c5d
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 43656
+Only local connections are allowed.
+Aug 28, 2015 11:04:48 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@5c669da8
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 39052
+Only local connections are allowed.
+Aug 28, 2015 11:05:37 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@68f4865
+}}}

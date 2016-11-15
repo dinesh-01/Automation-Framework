@@ -1,0 +1,12 @@
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search|
+|sendKeys;|searchBox|id|insurance|
+|sendControlKey;|searchBox|id|ENTER|
+|check|isElementPresent;|.ajax-loader|cssselector|true|
+|$status=|isElementPresent;|.ajax-loader|cssselector|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|KC-10|${build}||$status|
+!|Script|Selenium|
+|closeBrowser;|

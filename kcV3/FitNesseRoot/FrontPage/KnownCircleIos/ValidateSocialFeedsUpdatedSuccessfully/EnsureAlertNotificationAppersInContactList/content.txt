@@ -1,0 +1,15 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/alertIcon|id|120|
+|$data1=|getCountOfElements;|com.knowncircle${package}:id/alertIcon|id|
+|scrollToText;|Vijay Pullur|
+|$data2=|getCountOfElements;|com.knowncircle${package}:id/alertIcon|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|$value=|getResultOfCalculation;|$data1|+|$data2|
+|check|comparisonResult;|$value|>|1|true|

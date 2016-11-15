@@ -1,0 +1,2 @@
+!1 Test suite for delete opertion
+!contents -R2 -g -p -f -h

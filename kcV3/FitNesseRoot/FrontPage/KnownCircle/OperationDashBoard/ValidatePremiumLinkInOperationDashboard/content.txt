@@ -1,0 +1,33 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!define subject {${profileName}, Welcome to KnownCircle!}
+!define subject1 {${profileName}, Verify your Email address that you used for KnownCircle sign-up}
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}signup|
+
+!include -c .FrontPage.KnownCircle.CommonSignupContent
+
+!|Script|Selenium|
+|wait;|10|
+|closeBrowser;|
+
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!|Script|Selenium|
+|navigateToUrl;|${dashBoardUrl}/search/profiles/1?q=${businessEmail}|
+|$paramater=|getText;|.col-md-2.list-item.ellipsis|cssselector|
+|click;|.col-md-2.list-item.ellipsis|cssselector|
+|wait;|4|
+|click;|label[for='premium-toggle']|cssselector|
+|wait;|3|
+|sendKeys;|contact_link|id|https://knowncircle.com|
+|click;|.btn.btn-primary|cssselector|
+|wait;|4|
+|navigateToUrl;|${mainURLCanary}business/profile/$paramater|
+|click;|.btn.btn-contact.pull-right|cssselector|
+|selectBrowserTab;|1|
+|waitForElementToBeDisplayed;|container|classname|60|
+|check|isElementPresent;|container|classname|true|
+|closeBrowser;|
+
+

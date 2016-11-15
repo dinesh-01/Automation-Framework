@@ -1,0 +1,62 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.LoginHeaderForProfileDashboard
+
+!|Script|Common|
+|$phoneId=|getRandomNumber;|1000|9999|
+!define phone {(996) 254-$phoneId}
+!define URL {http://www.knowncircle$randomChar.com}
+!define twitter {https://twitter.com/knowncircle$randomChar}
+!define facebook {https://www.facebook.com/pages/KnownCircle$randomChar/628658897249689}
+!define google {https://plus.google.com/u/1/106194930107228028831$randomChar/posts}
+!define linkedin {https://www.linkedin.com/company/knowncircle$randomChar}
+!define timezone {Pacific Time}
+!define days {Tue}
+!define fromTime {9:00 AM}
+!define toTime {7:00 PM}
+!define personalNotes {Automation testing for profile dashboard page $randomChar}
+
+!|Script|Selenium|
+| click;|.btn.edit.contact-edit|cssselector|
+| clearValue; | phone | id |
+| clearValue; | website | id |
+| clearValue; | twitter | id |
+| clearValue; | facebook | id |
+| clearValue; | gplus | id |
+| clearValue; | linkedin | id |
+| sendKeys; | phone| id | ${phone} |
+| sendKeys; | website| id | ${URL} |
+| sendKeys; | twitter| id | ${twitter} |
+| sendKeys; | facebook| id | ${facebook} |
+| sendKeys; | gplus | id | ${google} |
+| sendKeys; | linkedin | id | ${linkedin} |
+| click;|button[data-ng-click='save("contact"); setMode()']|cssselector|
+| click;|button[data-ng-click="setMode('mode.edit.working_hrs')"]|cssselector|
+| selectDropdownValue;|timezone|id|${timezone}|
+| selectDropdownValue;|days|id|${days}|
+| selectDropdownValue;|fromTime|id|${fromTime}|
+| selectDropdownValue;|toTime|id|${toTime}|
+| click;|button[data-ng-click='addWorkingTime()']|cssselector|
+| click; |button[data-ng-click='save("work_time"); setMode()']|cssselector|
+| click;|button[data-ng-click="setMode('mode.edit.note'); editNote()"]|cssselector|
+| clearValue; | personal_note | id |
+| sendKeys; | personal_note | id |  ${personalNotes} |
+| click; | button[data-ng-click='save("note"); setMode()']|cssselector|
+| $details= | getText; |.profile-section.profile-contact-section | cssselector|
+| $facebookIcon= | isElementPresent; |.icon.icon-social.icon-social-facebook-profile|cssselector|
+| $gplusIcon= | isElementPresent; |.icon.icon-social.icon-social-gplus-profile|cssselector|
+| $linkedIcon= | isElementPresent; |.icon.icon-social.icon-social-linkedin-profile|cssselector|
+| $twitterIcon= | isElementPresent; |.icon.icon-social.icon-social-twitter-profile|cssselector|
+
+!|Script| Common |
+| $phoneStatus= | checkIfStringExistsIn; | (996) 254-1005 | $details |
+| $urlStatus= | checkIfStringExistsIn; | ${URL} | $details |
+| $timeStatus= | checkIfStringExistsIn; | ${timezone} | $details | 
+| $dayStatus=| checkIfStringExistsIn; | ${days} | $details | 
+| $fromStatus=| checkIfStringExistsIn; | ${fromTime} | $details | 
+| $toStatus=| checkIfStringExistsIn; | ${toTime} | $details | 
+| $personalNotesStatus= | checkIfStringExistsIn; | ${personalNotes} | $details | 
+| $contactDetails= | checkIfStringAreEqualInArray; | $dayStatus,$fromStatus,$toStatus,$timeStatus,$phoneStatus,$urlStatus,$timeStatus,$personalNotesStatus,$facebookIcon,$gplusIcon,$linkedIcon,$twitterIcon |
+
+
+
+!|Script| Selenium|
+|closeBrowser;|

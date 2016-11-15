@@ -1,0 +1,6 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!define search {Jaclyn}
+!include -c .FrontPage.KnownCircleAndroid.ValidatingContactSearch.CommonContactSearch
+

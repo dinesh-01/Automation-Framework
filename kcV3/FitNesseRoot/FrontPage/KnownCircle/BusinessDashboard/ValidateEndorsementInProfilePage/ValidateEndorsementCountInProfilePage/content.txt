@@ -1,0 +1,30 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+
+!define fEmail { kctestk1@gmail.com }
+!define fPassword {test_123}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonEndorsementContent
+
+!define fEmail { kctestk2@gmail.com }
+!define fPassword {test_123}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonEndorsementContent
+
+!define fEmail { kctestk3@gmail.com }
+!define fPassword {test_123}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonEndorsementContent
+
+!define fEmail { dinesh_284@hotmail.com }
+!define fPassword { ${facebookLoginPassword} }
+!|Script|Selenium|
+|closeBrowser;|
+|initialize;   |${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}business/profile/$profileId|
+|click;|.fb-button|cssselector|
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent
+
+!|Script|Selenium|
+|$count=|getTagCountInElement;|.friends_list.ng-isolate-scope|cssselector|li|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringAreEqual;|$count|3|true|

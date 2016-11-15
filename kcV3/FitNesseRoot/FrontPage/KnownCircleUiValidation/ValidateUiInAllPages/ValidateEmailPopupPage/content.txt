@@ -1,0 +1,22 @@
+!define pageName {email_popup}
+!define email {kctestk1@gmail.com}
+!define gpass  {test_1234}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderLoginPage
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|navigateToUrl;|${uiMainURL}business/dashboard/grow/request_referral|
+|click;|.import-contacts.text-upper.pull-right|cssselector|
+|wait;|2|
+|click;|a[data-import="gmail"]|cssselector|
+|wait;|10|
+|selectBrowserTab;|2|
+|sendKeys;|Email|id|${email}|
+|click;|next|id|
+|sendKeys;|Passwd|id|${gpass}|
+|click;|signIn|id|
+|wait;|10|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

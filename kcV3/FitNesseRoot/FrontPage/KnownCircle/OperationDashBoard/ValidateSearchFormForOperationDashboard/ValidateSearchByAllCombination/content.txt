@@ -1,0 +1,13 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|Michael Tirabassi Camino Real Earthquake|
+|click;|.glyphicon.glyphicon-search|cssselector|
+|wait;|4|
+|check|isElementPresent;|users|id|true|
+|$status=|isElementPresent;|users|id|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|OperationDashboardSearchByAllCombination|${build}||$status|
+
+!|Script|Selenium|
+|closeBrowser;|

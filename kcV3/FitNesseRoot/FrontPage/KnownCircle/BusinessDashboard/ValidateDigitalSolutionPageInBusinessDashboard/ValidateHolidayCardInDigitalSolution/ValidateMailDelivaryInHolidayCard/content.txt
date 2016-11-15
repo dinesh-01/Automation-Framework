@@ -1,0 +1,2 @@
+!define pageName {holiday}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.CommonEmailProcess

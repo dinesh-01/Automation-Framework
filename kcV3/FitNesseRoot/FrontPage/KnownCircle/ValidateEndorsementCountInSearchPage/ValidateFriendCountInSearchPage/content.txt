@@ -1,0 +1,85 @@
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!** First user
+!|Script|Selenium|
+|deleteAllCookies;|
+|navigateToUrl;|${mainURLCanary}business/profile/$profileId|
+|wait;|3|
+|mouseHover;|.known_you|cssselector|
+|waitForElementToBeDisplayed;|.btn-success.yes-btn|cssselector|60|
+|click;|.btn-success.yes-btn|cssselector|
+!define fEmail {kctestk1@gmail.com}
+!define fPassword {test_123} 
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent
+!|Script|Selenium|
+|closeBrowser;|
+**!
+
+!** Second user
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}business/profile/$profileId|
+|wait;|3|
+|mouseHover;|.known_you|cssselector|
+|waitForElementToBeDisplayed;|.btn-success.yes-btn|cssselector|60|
+|click;|.btn-success.yes-btn|cssselector|
+!define fEmail {kctestk2@gmail.com}
+!define fPassword {test_123} 
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent
+!|Script|Selenium|
+|closeBrowser;|
+**!
+
+!** third user
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}business/profile/$profileId|
+|wait;|3|
+|mouseHover;|.known_you|cssselector|
+|waitForElementToBeDisplayed;|.btn-success.yes-btn|cssselector|60|
+|click;|.btn-success.yes-btn|cssselector|
+!define fEmail {kctestk3@gmail.com}
+!define fPassword {test_123} 
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent
+!|Script|Selenium|
+|closeBrowser;|
+**!
+
+!** fourth user
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}business/profile/$profileId|
+|wait;|3|
+|mouseHover;|.known_you|cssselector|
+|waitForElementToBeDisplayed;|.btn-success.yes-btn|cssselector|60|
+|click;|.btn-success.yes-btn|cssselector|
+!define fEmail {kctestk5@gmail.com}
+!define fPassword {test_123} 
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent
+!|Script|Selenium|
+|closeBrowser;|
+**!
+
+
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search?q=$profileId|
+|click;|.seperator.fb-popover.text-aqua|cssselector|
+|waitForElementToBeDisplayed;|.popover.fade.right.in|cssselector|60|
+|click;|a[href='/auth/facebook']|cssselector|
+!include -c .FrontPage.KnownCircle.LoginApiForConsumerDashboard.FacebookLoginPage
+!|Script|Selenium|
+|refresh;|
+|$count=|getText;|.widget-count.js-kc-count.seperator|cssselector|
+|$knownlist=|getTagCountInElement;|.list.known-list|cssselector|li|
+|$listCount=|getTagCountInElement;|moreFriendsList|id|li|
+|closeBrowser;|
+
+
+!|Script|Common|
+|check|checkIfStringAreEqual;|$count|4|true|
+|check|checkIfStringAreEqual;|$knownlist|2|true|
+|check|checkIfStringAreEqual;|$listCount|2|true|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|KC-29|${build}||$status|

@@ -1,0 +1,1 @@
+!define name {Stanley W.C.D. Brenk}

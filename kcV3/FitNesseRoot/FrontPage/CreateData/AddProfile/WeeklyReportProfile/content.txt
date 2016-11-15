@@ -1,0 +1,5 @@
+!define profileName {Knowncircle Weekly Report}
+!define businessName {KnownCircle Weekly Report Profile}
+!define businessEmail {kctestk4@gmail.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.ValidatingAllFieldsInProfileDashboardByEnteringValidData

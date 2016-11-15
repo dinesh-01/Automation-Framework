@@ -1,0 +1,11 @@
+!define browserValue {4443:chrome,5443:ie,6443:browserx}
+!define server {4443:canary,5443:canary,6443:serverx}
+
+!|Script|Selenium|
+|setBaseUrl;|http://172.17.0.43:5566/wd/hub|
+
+!|Script|Json|
+|$browser=|getValueFromJSON;|{${browserValue}}|${FITNESSE_PORT}|
+|$server=|getValueFromJSON;|{${server}}|${FITNESSE_PORT}|
+!define browser {$browser}
+!define server {$server}

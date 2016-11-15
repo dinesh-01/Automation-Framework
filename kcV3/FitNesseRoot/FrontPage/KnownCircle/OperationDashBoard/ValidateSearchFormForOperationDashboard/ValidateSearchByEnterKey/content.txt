@@ -1,0 +1,13 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|Pramati Test|
+|sendControlKey;|.form-control.search-input|cssselector|ENTER|
+|check|isElementPresent;|users|id|true|
+|$status=|isElementPresent;|users|id|
+
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|OperationDashboardSearchByEnterKey|${build}||$status|
+
+!|Script|Selenium|
+|closeBrowser;|

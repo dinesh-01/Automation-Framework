@@ -1,0 +1,6 @@
+!|Script|Regex|
+|check|totalCountOfString;|$data|${searchTerm}|15|
+
+!|Script|Selenium|
+|closeBrowser;|
+

@@ -1,0 +1,10 @@
+!define searchTerm {93635} 
+
+!include -c .FrontPage.KnownCircle.SearchValidation.ValidateSearchForm.HeaderSearchForm
+
+!|Script|Regex|
+|check|totalCountOfString;|$data|Los Banos|15|
+
+!|Script|Selenium|
+|closeBrowser;|
+

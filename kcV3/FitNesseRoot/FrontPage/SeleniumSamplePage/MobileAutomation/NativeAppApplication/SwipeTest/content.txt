@@ -1,0 +1,17 @@
+!|Script|Common|
+|$apk=|getPath;|apk/BookMyShow.apk|fullpath|
+
+
+!|Script|Selenium|
+|setBaseUrl;|http://127.0.0.1:4723/wd/hub|
+|nativeApp;|android|$apk|intel|
+|waitForElementToBeDisplayed;|com.bt.bms:id/btnLogin|id|60|
+|click;|com.bt.bms:id/btnNoThanks|id|
+|waitForElementToBeDisplayed;|com.bt.bms:id/dismiss|id|60|
+|click;|com.bt.bms:id/dismiss|id|
+|swipeScreen;|com.bt.bms:id/ctxv_region_name|id|up|
+
+
+
+
+

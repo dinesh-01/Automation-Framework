@@ -1,0 +1,5 @@
+!define ownerNameClaim {Payment Process}
+!define businessNameClaim {Payment Process KnownCircle}
+!define businessEmail {kctestk3@gmail.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader

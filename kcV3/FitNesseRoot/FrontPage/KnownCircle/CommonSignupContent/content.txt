@@ -1,0 +1,8 @@
+!|Script|Selenium|
+|sendKeys;       |ownerName |id |${profileName}|
+|sendKeys;       |name |id |${businessName}|
+|click; | //*[@id="react-root"]/div/div/form/fieldset/div[3]/div/div[1] | xpath |
+|click;	| .selectize-dropdown-content | cssselector |
+|sendKeys;  |input[data-reactid='.0.0.0.$=10:0.$=15:0.1'] | cssselector |${businessEmail}|
+|sendKeys;  |input[data-reactid='.0.0.0.$=10:0.$=16:0.1'] | cssselector |${businessConfirmPassword}|
+|click; |.btn.btn-primary.signup-btn|cssselector|

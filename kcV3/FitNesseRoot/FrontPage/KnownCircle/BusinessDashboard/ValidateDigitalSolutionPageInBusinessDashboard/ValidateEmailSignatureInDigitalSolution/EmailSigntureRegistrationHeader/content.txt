@@ -1,0 +1,90 @@
+!define phone {9962541005}
+!define URL {http://www.knowncircle.com}
+!define twitter {knowncircle}
+!define facebook {pages/KnownCircle/628658897249689}
+!define google {u/1/106194930107228028831/posts}
+!define linkedin {company/knowncircle}
+!define city {Los Banos, CA, 93635}
+!define timezone {Pacific Time}
+!define days {Mon}
+!define fromTime {9:00 AM}
+!define toTime {7:00 PM}
+!define personalNotes {Automation testing for profile dashboard page}
+!define carrier {Allstate}
+!define businessNameClaim {}
+!define businessName {Knowncircle Profile Test}
+
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+
+
+!*** checking Business field with valid Data
+!|Script|Selenium|
+|navigateToUrl; |${mainURLCanary}business/dashboard/profile|
+| $addressData= | getText; |.profile-section.profile-main-section| cssselector |
+*!
+
+!*** checking Location field with valid Data
+!define street1 {104 W Pacheco Blvd  }
+!define street2 {255 N Mercey Springs Rd}
+!define city {Los Banos, CA, 93635}
+
+
+!|Script|Selenium|
+| click; |div[data-ng-controller="DashboardLocationController"]|cssselector|
+| waitForElementToBeDisplayed; | .modal-body.default-location | cssselector | 60 |
+| clearValue; | input[data-ng-model="location.street1"] | cssselector |
+| clearValue; | input[data-ng-model="location.street2"] | cssselector |
+| sendKeys; | input[data-ng-model="location.street1"] | cssselector | ${street1} |
+| sendKeys; | input[data-ng-model="location.street2"] | cssselector | ${street2} |
+| changeElementView;|input[data-ng-model="location.city"]|cssselector|block      |
+| clearValue; | input[data-ng-model="location.city"] | cssselector |
+| sendKeys; | input[data-ng-model="location.city"] | cssselector | ${city} |
+| click; |button[data-ng-click="saveLocations()"]|cssselector|
+| wait;|2|
+| $data=|getText;|.address|cssselector|
+*!
+
+
+!*** Profile Image Upload
+!|Script|Common                               |
+|$path= |getPath;|profile/profile.jpg|fullpath|
+
+!|Script|Selenium|
+|wait;|5|
+|changeClassName;|avatar|id|form-control file-input|
+|sendKeys;|avatar|id|$path|
+|waitForElementToDisappear;|spinner|className|60|
+*!
+
+!*** Checking Contact fields with valid data
+
+!define phone {(996) 254 1005}
+!define URL {http://www.knowncircle$randomChar.com}
+!define twitter {knowncircle$randomChar}
+!define facebook {pages/KnownCircle$randomChar/628658897249689}
+!define google {u/1/106194930107228028831$randomChar/posts}
+!define linkedin {company/knowncircle$randomChar}
+!define timezone {Pacific Time}
+!define days {Tue}
+!define fromTime {9:00 AM}
+!define toTime {7:00 PM}
+!define personalNotes {Automation testing for profile dashboard page $randomChar}
+
+!|Script|Selenium|
+| click;|button[data-ng-click="setMode('mode.edit.contact')"]|cssselector|
+| sendKeys; | phone| id | ${phone} |
+| sendKeys; | website| id | ${URL} |
+| sendKeys; | twitter| id | ${twitter} |
+| sendKeys; | facebook| id | ${facebook} |
+| sendKeys; | gplus | id | ${google} |
+| sendKeys; | linkedin | id | ${linkedin} |
+| click;|button[data-ng-click='save("contact"); setMode()']|cssselector|
+| $details= | getText; |.profile-section.profile-contact-section | cssselector|
+|refresh;|
+|$imageValue=|getElementAttribute;|.sr-only.js-profile-avatar|cssselector|src|
+**!
+
+!|Script|Common|
+|$finalImageValue=|getSubStringByString;|$imageValue/profile|profile/|/profile|
+

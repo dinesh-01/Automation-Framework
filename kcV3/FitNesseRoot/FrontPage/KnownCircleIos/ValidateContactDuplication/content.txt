@@ -1,0 +1,2 @@
+!1 Test suite for Contact Duplication
+!contents -R2 -g -p -f -h

@@ -1,0 +1,20 @@
+!* Registration
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+!|Script|Selenium|
+|closeBrowser;|
+*!
+!* Endorsement
+!define fEmail { ${facebookLoginEmail} }
+!define fPassword { ${facebookLoginPassword} }
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonEndorsementContent
+!|Script|Selenium|
+|closeBrowser;|
+*!
+!* Validting promotion email
+!define subject {John Mathew has endorsed your business on KnownCircle}
+!define body {Hello ${profileName}}
+!define businessLoginEmail { ${adminMail} }
+!define gpass { ${adminPassword} }
+!include -c .FrontPage.KnownCircle.EmailDeliveryHeader
+*!
+

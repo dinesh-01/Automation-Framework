@@ -1,0 +1,16 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!include -c .FrontPage.KnownCircle.QuoteRequestHeader
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|Contact Request Submitted|$getText|true|
+|$status=|checkIfStringExistsIn;|Contact Request Submitted|$getText|
+
+!define subject  {Pramati Test $randomChar is requesting to be contacted by email or phone}
+!|Script|Mail|
+|mailConfig;|${gImap}|${adminMail}|${adminPassword}|
+|check|searchEmail;|${subject}|true|
+|closeMail;|
+
+!|Script|Selenium|
+|closeBrowser;|
+

@@ -1,0 +1,8 @@
+!2 Remote Grid setting used only during running test in remote machine
+| Port 4443 | single systems '''this port is default one ''' |
+| Port 5443 | single system with multiple browsers example:- '''4443 for chrome & 5443 for Firefox''' |
+| Port 6443 | Remote Machine example '''Linux''' |
+| Port 7443 | Remote Machine example '''Mac''' |
+| Port 8443 | Remote Machine mostly For '''Mobile Application''' |
+
+

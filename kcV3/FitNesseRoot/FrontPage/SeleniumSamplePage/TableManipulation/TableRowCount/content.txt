@@ -1,0 +1,6 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://homepage.cs.uri.edu/book/html_liststables/html_liststables.htm|
+|check|getTagCountInElement;|center|id|table|14|
+|closeBrowser|
+

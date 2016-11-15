@@ -1,0 +1,13 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!|Script|Selenium|
+|initialize;|android|$apk|moto|
+|launchApplication;|
+|waitForElementToBeDisplayed;|android.widget.Button|classname|60|
+|click;|com.android.packageinstaller:id/permission_allow_button|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/toolbar|id|60|
+|check|isElementPresent;|com.knowncircle${package}:id/syncContacts|id|true|
+|resetApplication;|
+|closeApplication;|
+
+

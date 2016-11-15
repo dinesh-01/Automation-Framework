@@ -1,0 +1,11 @@
+!|Script|Selenium|
+|initialize;|firefox|en-us|
+|launchBrowser;|http://tympanus.net/Tutorials/StickyTableHeaders/|
+|getTable;|class|sticky-enabled|
+|$fullTable=|getTableContents;|,|
+|check|getTableColumnCountInRow;|4|4|
+|$columnDetails=|getHeaderValues;|,|
+|$rowDetails=|getTableColumnValuesInRow;|8|,|
+|$cellValue=|getTableCellValue;|5|3|
+|closeBrowser;|
+

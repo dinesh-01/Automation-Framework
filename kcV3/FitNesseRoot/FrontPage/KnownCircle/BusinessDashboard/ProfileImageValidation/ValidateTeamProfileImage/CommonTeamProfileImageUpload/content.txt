@@ -1,0 +1,16 @@
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/profile|
+|$value1=|getElementAttribute;|.team-member-avatar|cssselector|src|
+|click; |/html/body/div[1]/section/div/main/div/div[4]/div[1]/div/div[1]/div/div/p[1]/button|xpath|
+|changeClassName;|team_avatar_0|id|form-control file-input|
+|sendKeys;|team_avatar_0|id|$path|
+|waitForElementToDisappear;|spinner|className|60|
+|wait;|10|
+|click;|button[data-ng-click="updateTeam()"] |cssselector|
+|refresh;|
+|$value2=|getElementAttribute;|.team-member-avatar|cssselector|src|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringAreEqual;|$value1|$value2|false|
+

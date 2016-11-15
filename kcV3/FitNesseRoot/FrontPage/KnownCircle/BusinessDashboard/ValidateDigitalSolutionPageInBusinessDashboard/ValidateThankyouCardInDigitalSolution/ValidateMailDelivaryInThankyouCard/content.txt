@@ -1,0 +1,2 @@
+!define pageName {thank}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.CommonEmailProcess

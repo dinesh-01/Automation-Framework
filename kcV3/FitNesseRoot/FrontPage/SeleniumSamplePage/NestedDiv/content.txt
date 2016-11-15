@@ -1,0 +1,9 @@
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search|
+|sendKeys;|searchBox|id|$uniqueId|
+|click;|div.landingpage button.btn-link.btn-search|cssselector|
+|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|60|
+|check|isElementPresent;|.search-result-list.list|cssselector|true|
+|closeBrowser;|

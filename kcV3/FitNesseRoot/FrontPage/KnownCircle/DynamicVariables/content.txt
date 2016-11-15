@@ -1,0 +1,3 @@
+!|Script|Common|
+|$uniqueId=|getCurrentDateTimeStamp;|yMMddHHmmss|
+|$randomChar =|getRandomString;|6|ALPHA|

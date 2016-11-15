@@ -1,0 +1,17 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|https://accounts.google.com/SignUp|
+|sendKeys;|FirstName|id|kctest|
+|sendKeys;|LastName|id|test|
+|sendKeys;|GmailAddress|id|kctestk5|
+|sendKeys;|Passwd|id|test_123|
+|sendKeys;|PasswdAgain|id|test_123|
+|click;|BirthMonth|id|
+|click;|/html/body/div[1]/div[2]/div/div[1]/div/form/div[5]/fieldset/label[1]/span/div[2]/div[4]/div|xpath|
+|sendKeys;|BirthDay|id|12|
+|sendKeys;|BirthYear|id|1985|
+|click;|/html/body/div[1]/div[2]/div/div[1]/div/form/div[6]/label/div/div[1]|xpath|
+|click;|/html/body/div[1]/div[2]/div/div[1]/div/form/div[6]/label/div/div[2]/div[2]/div|xpath|
+|click;|TermsOfService|id|
+|wait;|10|
+|click;|submitbutton|id|

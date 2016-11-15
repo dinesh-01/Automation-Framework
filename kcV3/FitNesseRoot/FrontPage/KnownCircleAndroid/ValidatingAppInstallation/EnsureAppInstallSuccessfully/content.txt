@@ -1,0 +1,11 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+
+!|Script|Selenium|
+|initialize;|android|$apk|moto|
+|launchApplication;|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/toolbar|id|60|
+|check|isElementPresent;|com.knowncircle${package}:id/syncContacts|id|true|
+|resetApplication;|
+|closeApplication;|
+
+

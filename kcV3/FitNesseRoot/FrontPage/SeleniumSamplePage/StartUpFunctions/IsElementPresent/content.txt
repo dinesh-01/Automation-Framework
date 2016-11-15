@@ -1,0 +1,7 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://torrentz.com/|
+|sendKeys;|thesearchbox|id|Selenium|
+|click;|thesearchbutton|id|
+|check|isElementPresent;|results|classname|true|
+

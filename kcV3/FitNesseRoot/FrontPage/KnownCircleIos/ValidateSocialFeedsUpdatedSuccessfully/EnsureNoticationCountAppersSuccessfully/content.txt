@@ -1,0 +1,12 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/countTextView|id|120|
+|$value=|getText;|com.knowncircle${package}:id/countTextView|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|check|comparisonResult;|$value|>|1|true|

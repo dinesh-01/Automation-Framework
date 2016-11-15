@@ -1,0 +1,7 @@
+!|Script|Selenium|
+|wait;|5|
+|clearValue;|email|id|
+|sendKeys;|email|id|${fEmail}|
+|sendKeys;|pass|id|${fPassword}|
+|click;|loginbutton|id|
+|wait;|10|

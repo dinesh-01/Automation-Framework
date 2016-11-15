@@ -1,0 +1,12 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script         |Selenium |
+|navigateToUrl;|${mainURLCanary}business/dashboard/profile|
+|click; |/html/body/div[1]/section/div/main/div/div[4]/div[1]/div/div[1]/div/div/p[1]/button|xpath|
+|changeClassName;|team_avatar_0|id|form-control file-input|
+|sendKeys;       |team_avatar_0|id|$path|
+|wait;           |2  |
+|check|isElementPresent;|.btn.btn-ok|cssselector|true|
+|click;|.btn.btn-ok|cssselector|
+
+!|Script|Selenium|
+|closeBrowser;   |

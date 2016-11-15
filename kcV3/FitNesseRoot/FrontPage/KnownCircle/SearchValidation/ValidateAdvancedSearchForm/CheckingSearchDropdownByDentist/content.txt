@@ -1,0 +1,11 @@
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search?q=|
+|click;|dropdownMenu-business|id|
+|click;|a[data-vertical='dentists']|cssselector|
+|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|60|
+|$data=|innerHtmlCode;|Id|searchResults|
+|closeBrowser;|
+!define value {<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p>}
+!|Script|Regex|
+|check|totalCountOfString;|$data|${value}|15|

@@ -1,0 +1,10 @@
+!include -c .GlobalSettings.CommonInclude
+!* Browser and server settings
+!define browserValue {4443:firefox,5443:chrome}
+!|Script|Json|
+|$browser=|getValueFromJSON;|{${browserValue}}|${FITNESSE_PORT}|
+*!
+
+!|Script|RestService|
+|addUrlParameter;|browser|chrome|
+|$browser=|getResponseHeader;|browser|

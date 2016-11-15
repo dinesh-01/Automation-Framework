@@ -1,0 +1,23 @@
+!define emailToValidate {kctest$uniqueId@knowncircle.com}
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidateRequestReferralInDigitalSolution.CommonReferralPageContent
+
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|modal-title|classname|10|
+|sendKeys;|fname|id|kctestFirst$randomChar|
+|sendKeys;|lname|id|kctestLast$randomChar|
+|click;|.btn.btn-save|cssselector|
+|waitForElementToBeDisplayed;|.sweet-alert.showSweetAlert.visible|cssselector|60|
+|click;|.confirm|cssselector|
+|wait;|2|
+|navigateToUrl;|${mainURLCanary}business/dashboard/contacts|
+|sendKeys;|filterText|id|${emailToValidate}|
+|click;|.icon-ico_search_1.search-icon-tiny|cssselector|
+|getTable;|class|contacts-table|
+|waitForElementToBeDisplayed;|.select-contact|cssselector|60|
+|$result=|getTableColumnContents;|3|,|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|${emailToValidate}|$result|true|

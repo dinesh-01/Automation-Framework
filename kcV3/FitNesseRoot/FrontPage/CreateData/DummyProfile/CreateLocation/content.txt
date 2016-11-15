@@ -1,0 +1,23 @@
+!*** checking Location field with valid Data
+!define street1 {104 W Pacheco Blvd  }
+!define street2 {255 N Mercey Springs Rd}
+!define city {Los Banos, CA, 93635}
+
+
+!|Script|Selenium|
+|navigateToUrl;           |${mainURLCanary}business/dashboard/profile                    |
+| click; |div[data-ng-controller="DashboardLocationController"]|cssselector|
+| waitForElementToBeDisplayed; | .modal-body.default-location | cssselector | 60 |
+| clearValue; | input[data-ng-model="location.street1"] | cssselector |
+| clearValue; | input[data-ng-model="location.street2"] | cssselector |
+| sendKeys; | input[data-ng-model="location.street1"] | cssselector | ${street1} |
+| sendKeys; | input[data-ng-model="location.street2"] | cssselector | ${street2} |
+| changeElementView;|input[data-ng-model="location.city"]|cssselector|block      |
+| clearValue; | input[data-ng-model="location.city"] | cssselector |
+| sendKeys; | input[data-ng-model="location.city"] | cssselector | ${city} |
+| click; |button[data-ng-click="saveLocations()"]|cssselector|
+| wait;|2|
+| $data=|getText;|.address|cssselector|
+|wait;|5|
+|closeBrowser;|
+*!

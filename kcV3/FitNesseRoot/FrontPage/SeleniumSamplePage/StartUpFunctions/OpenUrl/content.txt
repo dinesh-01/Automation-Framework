@@ -1,0 +1,7 @@
+!|Script|Log|
+|info;|${PAGE_PATH}.${PAGE_NAME}|
+
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://www.google.com|
+

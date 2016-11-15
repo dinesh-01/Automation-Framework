@@ -1,0 +1,19 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!define email { ${gemail2} } 
+!define gpass {test_12345}
+!include -c .FrontPage.KnownCircleAndroid.GmailContactSynchronization
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|kctestk1|$data|true|
+|check|checkIfStringExistsIn;|kctest2|$data|true|
+|check|checkIfStringExistsIn;|kctestk3@gmail.com|$data|true|
+|check|checkIfStringExistsIn;|kctestk4@gmail.com|$data|true|
+|check|checkIfStringExistsIn;|Known test|$data|true|
+
+
+
+
+

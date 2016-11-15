@@ -1,0 +1,21 @@
+!|Script|Common|
+|$apk=|getPath;|apk/BookMyShow.apk|fullpath|
+
+
+!|Script|Selenium|
+|setBaseUrl;|http://127.0.0.1:4723/wd/hub|
+|nativeApp;|android|$apk|moto|
+|waitForElementToBeDisplayed;|com.bt.bms:id/btnLogin|id|60|
+|click;|com.bt.bms:id/btnLogin|id|
+|scrollToClick;|Sign up|
+|sendKeys;|com.bt.bms:id/edtFirstName|id|Appium First Name|
+|sendKeys;|com.bt.bms:id/edtLastName|id|Appium Last Name|
+|sendKeys;|com.bt.bms:id/edtEmailId|id|test@appium|
+|sendKeys;|com.bt.bms:id/edtPassword|id|test_123|
+|click;|com.bt.bms:id/action_icon|id|
+|waitForElementToBeDisplayed;|android.widget.TextView|classname|60|
+|check|isElementPresent;|com.bt.bms:id/message|id|true|
+
+
+
+

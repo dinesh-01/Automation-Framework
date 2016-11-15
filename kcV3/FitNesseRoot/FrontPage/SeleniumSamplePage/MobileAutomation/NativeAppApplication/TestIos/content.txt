@@ -1,0 +1,11 @@
+!|Script|Common|
+|$apk=|getPath;|apk/KnownCircle.ipa|fullpath|
+
+!|Script|Selenium|
+|setBaseUrl;|http://172.17.0.43:4723/wd/hub|
+|nativeApp;|ios|$apk|iphone6|
+
+
+
+
+

@@ -1,0 +1,16 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
+
+
+!include -c .FrontPage.KnownCircle.PremiumSubscription.CommonCardDetails
+
+!|Script|Selenium|
+|wait;|5|
+|click;|label[for="subscription-toggle"]|cssselector|
+|wait;|5|
+|check|isElementPresent;|navbar-text|classname|false|
+|closeBrowser;|
+
+
+
+
+

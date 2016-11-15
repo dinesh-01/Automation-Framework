@@ -1,0 +1,12 @@
+!define package {.debug} 
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/fabButton|id|120|
+|click;|com.knowncircle${package}:id/fabButton|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/parent_toolbar_search|id|20|
+|sendKeys;|com.knowncircle${package}:id/edt_tool_search|id|${name}|
+|waitForElementToBeDisplayed;|android.widget.RelativeLayout|classname|20|
+|click;|com.knowncircle${package}:id/nameTextView|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/profileDetailView|id|20|
+|check|isElementPresent;|com.knowncircle${package}:id/profileDetailView|id|true|
+|click;|	com.knowncircle.debug:id/backIcon|	id|

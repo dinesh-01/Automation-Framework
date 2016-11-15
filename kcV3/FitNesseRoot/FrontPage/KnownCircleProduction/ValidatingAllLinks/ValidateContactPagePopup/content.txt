@@ -1,0 +1,6 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script|Selenium|
+|click;|a[href*='dashboard/contacts']|cssselector|
+|click;|.icon.icon-kc-plus|cssselector|
+|check|isElementPresent;|.react-modal-content|cssselector|true|
+|closeBrowser;|

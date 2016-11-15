@@ -1,0 +1,11 @@
+!define pageName {request_endorsement_external}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderLoginPage
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|navigateToUrl;|${uiMainURL}business/grow/request_endorsement|
+|wait;|10|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

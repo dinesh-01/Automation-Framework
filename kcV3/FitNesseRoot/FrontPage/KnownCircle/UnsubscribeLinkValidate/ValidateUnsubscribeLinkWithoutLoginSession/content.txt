@@ -1,0 +1,10 @@
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}unsubscribe|
+|wait;|5|
+|sendKeys;|username|id|${businessLoginEmail}|
+|sendKeys;|password|id|${businessLoginPassword}|
+|click;|.btn.btn-primary.login-btn-lg|cssselector|
+|wait;|5|
+|check|isElementPresent;|.dashboard-menu|cssselector|true|
+|closeBrowser;|

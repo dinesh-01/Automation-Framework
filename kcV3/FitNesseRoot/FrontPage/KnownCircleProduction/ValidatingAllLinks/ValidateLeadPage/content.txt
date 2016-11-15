@@ -1,0 +1,5 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script|Selenium|
+|click;|a[href*='dashboard/quotes']|cssselector|
+|check|isElementPresent;|.dashboard-leads|cssselector|true|
+|closeBrowser;|

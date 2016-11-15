@@ -1,0 +1,32 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|click;|com.knowncircle${package}:id/action_sort|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/importContacts|id|10|
+|click;|com.knowncircle${package}:id/importContacts|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/selectImportScreen|id|20|
+|click;|com.knowncircle${package}:id/salesForceLogin|id|
+|wait;|10|
+|sendKeys;|//android.widget.EditText[@content-desc='Username']|xpath|admin@knowncircle.com|
+|sendKeys;|//android.widget.EditText[@index='3']|xpath|c!rcl#123|
+|hideKeypad;|
+|wait;|1|
+|click;|//android.widget.Button[@content-desc='Log In']|xpath|
+|wait;|15|
+|$data=|getValues;|com.knowncircle${package}:id/nameTextView|id|
+|scrollToText;|Mark Zuckerberg|
+|$data1=|getValues;|com.knowncircle${package}:id/nameTextView|id|
+|resetApplication;|
+|closeApplication;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|Aman1 Khanna|$data|true|
+|check|checkIfStringExistsIn;|Aman2 Khanna|$data|true|
+|check|checkIfStringExistsIn;|Mark Zuckerberg|$data1|true|
+
+
+
+
+

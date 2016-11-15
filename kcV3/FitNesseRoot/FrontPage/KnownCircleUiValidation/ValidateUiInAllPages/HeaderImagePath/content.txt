@@ -1,0 +1,3 @@
+http://files/${uiImageFolder}/${uiBrowser}/before_deploy/${pageName}.png
+http://files/${uiImageFolder}/${uiBrowser}/after_deploy/${pageName}.png
+http://files/${uiImageFolder}/${uiBrowser}/error/${pageName}_error.png

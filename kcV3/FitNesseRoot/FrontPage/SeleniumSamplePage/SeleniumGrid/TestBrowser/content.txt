@@ -1,0 +1,9 @@
+!include -c .GlobalSettings.KnownCircleSettings
+!include -c .GlobalSettings.BrowserAndServerSettings
+!include -c .FrontPage.KnownCircle.DynamicVariables
+
+!|Script|Selenium|
+|setBaseUrl;|http://172.17.0.43:5566/wd/hub|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURL}|
+|closeBrowser;|

@@ -1,0 +1,8 @@
+!|Script|Selenium|
+|initialize;|chrome|en-us|
+|launchBrowser;|http://torrentz.com/|
+|sendKeys;|thesearchbox|id|Selenium|
+|click;|thesearchbutton|id|
+|$content=|getText;|results|classname|
+!|Script|Common|
+|check|checkIfStringExistsIn;|Selenium cells;|$content|true|

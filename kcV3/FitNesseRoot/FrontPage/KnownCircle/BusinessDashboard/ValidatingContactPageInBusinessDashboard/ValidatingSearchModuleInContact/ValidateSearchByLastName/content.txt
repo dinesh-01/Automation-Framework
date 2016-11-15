@@ -1,0 +1,11 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidatingSearchModuleInContact.CommonContactSearchContent
+
+!|Script|Selenium|
+|sendKeys;|filterText|id|$clName|
+|click;|.icon-ico_search_1.search-icon-tiny|cssselector|
+|wait;|2|
+|$result=|getTableColumnContents;|2|,|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|$clName|$result|true|

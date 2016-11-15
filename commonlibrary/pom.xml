@@ -1,0 +1,244 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>automation</groupId>
+	<artifactId>commonlibrary</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>commonlibrary</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+		<resources>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>log4j.properties</include>
+					<include>automation.properties</include>
+					<include>Driver.xml</include>
+					<include>chromedriver.exe</include>
+					<include>chromedriverLinux</include>
+					<include>IEDriverServer_32.exe</include>
+					<include>IEDriverServer_64.exe</include>
+				    <include>AutoItX3_x64.dll</include>
+					<include>AutoItX3.dll</include>
+					<include>jacob-1.18-M2-x64.dll</include>
+					<include>jacob-1.18-M2-x86.dll</include>
+				</includes>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.6</version>
+					<executions>
+						<execution>
+							<id>copy-resources</id>
+							<!-- here the phase you need -->
+							<phase>validate</phase>
+							<goals>
+								<goal>copy-resources</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${basedir}/target</outputDirectory>
+								<resources>
+									<resource>
+										<directory>${basedir}/src/main/resources</directory>
+										<filtering>true</filtering>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<archive>
+							<index>true</index>
+							<manifest>
+								<mainClass>common.Execute</mainClass>
+								<addClasspath>true</addClasspath>
+								<classpathPrefix>./dependency/</classpathPrefix>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+	<dependencies>
+	
+	     <dependency>
+            <groupId>ssh2</groupId>
+			<artifactId>ssh2</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		
+		<dependency>
+            <groupId>AutoIt</groupId>
+			<artifactId>AutoItX4Java</artifactId>
+			<version>3.3.12</version>
+		</dependency>
+		
+		 <dependency>
+            <groupId>AutoIt</groupId>
+			<artifactId>jacob</artifactId>
+			<version>1.18</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>Testlink</groupId>
+			<artifactId>Testlink</artifactId>
+			<version>2.0</version>
+		</dependency>
+		
+		<dependency>
+			  <groupId>br.eti.kinoshita</groupId>
+			  <artifactId>testlink-java-api</artifactId>
+			  <version>1.9.6-1</version>
+        </dependency>
+	   
+	     <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.32</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.51</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.vmware</groupId>
+			<artifactId>vijava</artifactId>
+			<version>5.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>it.cnr.isti.domoware</groupId>
+			<artifactId>org.postgresql.jdbc4</artifactId>
+			<version>8.3-603</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>compile</scope>
+		</dependency>
+		
+	
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>2.7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.directory.studio</groupId>
+			<artifactId>org.apache.commons.io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.fitnesse</groupId>
+			<artifactId>fitnesse</artifactId>
+			<version>20140630</version>
+		</dependency>
+		
+			
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>20030805.205232</version>
+		</dependency>
+		
+		<dependency>
+	       <groupId>org.mongodb</groupId>
+	       <artifactId>mongo-java-driver</artifactId>
+	       <version>2.13.0</version>
+        </dependency>
+		
+		<dependency>
+		  <groupId>com.jayway.android.robotium</groupId>
+		  <artifactId>robotium-solo</artifactId>
+		  <version>5.3.1</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.apache.xmlrpc</groupId>
+			<artifactId>xmlrpc-client</artifactId>
+			<version>3.1.3</version>
+		</dependency>
+
+		 <dependency>
+		        <groupId>org.seleniumhq.selenium</groupId>
+		        <artifactId>selenium-server</artifactId>
+		        <version>2.52.0</version>
+		 </dependency>  
+		 
+		<dependency>
+		  <groupId>io.appium</groupId>
+		  <artifactId>java-client</artifactId>
+		  <version>4.1.2</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+		
+		<dependency>
+	       <groupId>org.apache.httpcomponents</groupId>
+	       <artifactId>httpclient</artifactId>
+	       <version>4.3.5</version>
+        </dependency>
+        
+
+</dependencies>
+	
+</project>

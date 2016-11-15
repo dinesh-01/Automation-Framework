@@ -1,0 +1,72 @@
+!* Default Values
+!define secure {true}
+!define locale {en-us}
+!define IP {10.10.20.30}
+!define credentials {}
+!define credentials1 {kcadmin:Kc@dm1n@}
+!define mainURL {https://knowncircle.com/}
+!define profileid {zxbziiqi}
+!define profileBusinessName {zxbziiqi tafmail}
+!define mainURLCanary {https://${credentials}${server}.knowncircle.com/}
+!define quoteFormUrl {search?q=${profileid}&escape_seq=e3e750bff3bc38d2e6f3a331a6aa573f89f52551004273d339609ebe4eb700f8}
+!define quoteFormProfileUrl {business/profile/${profileid}}
+!define businessRegistrationFormUrl {signup} 
+!define ownerNameClaim {profile owner name test}
+!define businessNameClaim {profile business name test}
+*!
+
+
+!* Signup Values
+!define profileName  {Pramati Test $randomChar}
+!define businessName {Pramati Known Circle $randomChar}
+!define businessEmail {pramatitest$uniqueId@knowncircle.com}
+!define businessPhone {(400) 567-8909}
+!define businessWebsite {https://${server}.knowncircle.com}
+!define businessPassword {test}
+!define businessConfirmPassword {test}
+!define businessTestUniqueEmail {test$uniqueId}
+*!
+
+!* Operation Dashboard Variables
+!define dashBoardBrowser {chrome}
+!define dashBoardUrl {https://${credentials}${server}.knowncircle.com/admin}
+!define adminEmail {srinath.s@imaginea.com}
+!define adminMail {admin@knowncircle.com}
+!define adminPassword {c!rcl#123}
+*!
+
+!* Login Variables
+!define businessLoginEmail {zxbziiqi@tafmail.com}
+!define businessLoginPassword {test}
+!define businessLoginProfileEmail {profileedit@knowncircle.com}
+!define businessLoginProfilePassword {test}
+!define facebookLoginEmail {dinesh_284@hotmail.com}
+!define facebookLoginPassword {c!rcl#123}
+!define businessLoginImageEmail {profiletest@knowncircle.com}
+!define businessLoginImagePassword {test}
+!define businessForgotEmail {forgotpassword@knowncircle.com}
+*!
+
+!* Contact Details
+!define contactEmail {kctest$uniqueId@knowncircle.com}
+!define contactFirstName {kctestFirst$randomChar}
+!define contactLastName {kctestLast$randomChar}
+!define agentContact {profilecontacts@knowncircle.com}
+
+*!
+
+!* Production Variables
+!define prodBrowser {chrome}
+!define productionLoginEmail {support+10@knowncircle.com}
+!define productionLoginPassword {support10}
+*!
+
+!* Mail Settings
+!define gImap {imap.gmail.com}
+!define gemail1 {kctestk1@gmail.com}
+!define gemail2 {kctestk2@gmail.com}
+!define gemail3 {kctestk3@gmail.com}
+!define gemail4 {kctestk4@gmail.com}
+!define gemail5 {kctestk5@gmail.com}
+!define gpass {test_1234}
+*!

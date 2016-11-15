@@ -1,0 +1,5 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidatePickContactWidgetInDigitalSolution.ValidateSearchContactInPickupPopup.HeaderSearchContent
+
+!define searchContent {$email}
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidatePickContactWidgetInDigitalSolution.ValidateSearchContactInPickupPopup.FooterSearchContent

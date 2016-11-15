@@ -1,0 +1,2 @@
+!define action2 {processing}
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingLeadPageInProfileDashboard.CommonLeadPage

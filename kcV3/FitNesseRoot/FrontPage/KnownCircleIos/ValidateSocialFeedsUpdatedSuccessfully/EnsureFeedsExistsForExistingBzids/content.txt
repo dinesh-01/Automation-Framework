@@ -1,0 +1,14 @@
+!include -c .FrontPage.KnownCircleIos.IosSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/countTextView|id|120|
+|click;|com.knowncircle${package}:id/countTextView|id|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/newsDetailView|id|20|
+|check|isElementPresent;|com.knowncircle${package}:id/newsDetailView|id|true|
+|check|isElementPresent;|com.knowncircle${package}:id/timeSiteTextView|id|true|
+|check|isElementPresent;|com.knowncircle${package}:id/titleTextView|id|true|
+|check|isElementPresent;|com.knowncircle${package}:id/summaryTextView|id|true|
+|check|isElementPresent;|com.knowncircle${package}:id/urlImage|id|true|
+|resetApplication;|
+|closeApplication;|

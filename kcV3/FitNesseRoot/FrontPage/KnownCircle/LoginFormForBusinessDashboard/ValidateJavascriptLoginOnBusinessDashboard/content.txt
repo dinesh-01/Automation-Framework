@@ -1,0 +1,6 @@
+!include -c .FrontPage.KnownCircle.LoginFormForBusinessDashboard.CommonLoginHeader
+
+!|Script|Selenium|
+|click;|.btn.btn-primary.login-btn-lg|cssselector|
+|check|isElementPresent;|.error-text|cssselector|true|
+|closeBrowser;|

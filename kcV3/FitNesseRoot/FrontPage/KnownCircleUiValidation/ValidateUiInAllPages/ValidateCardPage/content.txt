@@ -1,0 +1,11 @@
+!define pageName {settings_card}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderLoginPage
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|navigateToUrl;|${uiMainURL}business/dashboard/settings|
+|wait;|10|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

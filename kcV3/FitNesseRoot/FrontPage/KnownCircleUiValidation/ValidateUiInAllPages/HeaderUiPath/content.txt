@@ -1,0 +1,5 @@
+!|Script|Common|
+|$oldPath=|getPath;|${uiImagePath}/${uiBrowser}/before_deploy/${pageName}.png|fullpath|
+|$newPath=|getPath;|${uiImagePath}/${uiBrowser}/after_deploy/${pageName}.png|fullpath|
+|$errorPath=|getPath;|${uiImagePath}/${uiBrowser}/error/${pageName}_error.png|fullpath|
+|$screenPath=|getPath;|${uiImagePath}/${uiBrowser}/${uiFolder}/${pageName}|fullpath|

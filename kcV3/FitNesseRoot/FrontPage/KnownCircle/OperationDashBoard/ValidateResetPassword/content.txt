@@ -1,0 +1,19 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!define subject {Forgot your password on KnownCircle?}
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|${businessForgotEmail}|
+|sendControlKey;|.form-control.search-input|cssselector|ENTER|
+|click;|.profile-link|cssselector|
+|wait;|2|
+|click;|.btn.btn-default.reset-btn|cssselector|
+|acceptAlert;|
+|wait;|10|
+|closeBrowser;|
+
+
+!|Script|Mail|
+|mailConfig;|${gImap}|${adminMail}|${adminPassword}|
+|check|searchEmail;|${subject}|true|
+|$status=|searchEmail;|${subject}|
+|closeMail;|
+

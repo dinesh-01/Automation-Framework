@@ -1,0 +1,5 @@
+!|Script|Selenium|
+|initialize;|ie|en-us|
+|launchBrowser;|http://tympanus.net/Tutorials/StickyTableHeaders/|
+|takeScreenshot;|F:\Testing\sample|
+|closeBrowser;|

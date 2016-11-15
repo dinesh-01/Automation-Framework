@@ -1,0 +1,31 @@
+!-
+<span style="font-family: Avenir, Verdana, sans-serif; line-height: 1.42857143;"><h2>Demo Links</h2></span>
+<table>  
+<tr>    <th>Title</th>    <th>Demo Link</th>  </tr>  
+<tr>    <td>Selenium</td>  <td><a href=".FrontPage.SeleniumSamplePage"><b>Page Link</b></a></td>   </tr> 
+<tr>    <td>Gitlab</td>    <td><a href=".FrontPage.GitlabSamplePage"><b>Page Link</b></a></td>   </tr> 
+<tr>    <td>Testlink</td>    <td><a href=".FrontPage.TestLinkSamplePage"><b>Page Link</b></a></td>   </tr> 
+<tr>    <td>fitnesse</td>    <td><a href=".FrontPage.FitnesseSamplePage"><b>Page Link</b></a></td>   </tr> 
+<tr>    <td>Mail</td>    <td><a href=".FrontPage.MailSamplePage"><b>Page Link</b></a></td>   </tr> 
+<tr>    <td>Sudha Project</td>    <td><a href=".FrontPage.SudhaProject"><b>Page Link</b></a></td>   </tr> 
+
+</table>
+<br/>
+
+<h2>Known Circle Project  [<a target="_blank" href="https://knowncircle.com/"><b>Link</b></a>]  </h2>
+
+<table>  
+<tr>    <th>Title</th>    <th>Links</th>  </tr>  
+<!-- <tr>    <td>Global Settings</td>    <td><a href=".GlobalSettings"><b>Settings</b></a></td>   </tr>
+<tr>    <td>Known Circle Variable Settings</td> <td><a href=".GlobalSettings.KnownCircleSettings?edit"><b>Change Variables</b></a></td></tr> 
+<tr>    <td>Known Circle Browser & Server Settings</td> <td><a href=".GlobalSettings.BrowserAndServerSettings?edit"><b>Change Variables</b></a></td></tr> 
+<tr>    <td>Test Suites & Test Cases</td>    <td><a href="FrontPage.KnownCircle"><b>View</b></a></td>   </tr> 
+<tr>    <td>Knowncircle Production Test Suites</td>    <td><a href="FrontPage.KnownCircleProduction"><b>View</b></a></td>   </tr> 
+<tr>    <td>Known Circle UI Variable Settings</td> <td><a href=".GlobalSettings.UiVariableSettings?edit"><b>Change Variables</b></a></td></tr> 
+<tr>    <td>Knowncircle UI Validation</td>    <td><a href="FrontPage.KnownCircleUiValidation"><b>View</b></a></td>   </tr> -->
+<tr>    <td>Known Circle Mobile Variable Settings</td> <td><a href=".GlobalSettings.KnownCircleSettingsMobile?edit"><b>Change Variables</b></a></td></tr> 
+<tr>    <td>Knowncircle Android</td>    <td><a href="FrontPage.KnownCircleAndroid"><b>View</b></a></td>   </tr> 
+<tr>    <td>Knowncircle IOS</td>    <td><a href="FrontPage.KnownCircleIos"><b>View</b></a></td>   </tr> 
+</table>
+
+-!

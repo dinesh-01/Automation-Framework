@@ -1,0 +1,26 @@
+!| Script | Selenium |
+|navigateToUrl;|${mainURLCanary}business/dashboard/profile|
+| click; | .btn.btn-action | cssselector |
+| click; | .btn-link.btn-delete.pull-left | cssselector |
+| acceptAlert; |
+| click; | button[data-ng-click='addCategory()'] | cssselector |
+| click; | .selectize-input.items.not-full.has-options | cssselector |
+| waitForElementToBeDisplayed; | .selectize-input.items.not-full.has-options.focus.input-active.dropdown-active | cssselector | 4 |
+| click; | div[data-value='${serviceType}'] | cssselector |
+| click;| input[placeholder="Choose services"]|cssselector|
+| wait;|2|
+| sendKeys; | input[placeholder='Choose services'] | cssselector | other$uniqueId |
+| waitForElementToBeDisplayed; | .create.active | cssselector | 60 |
+| click; | .create.active | cssselector |
+| click; | button[data-ng-click='saveCategory()'] | cssselector |
+| wait; | 5 |
+|navigateToUrl;|${mainURLCanary}search|
+| sendKeys; | searchBox | id | other$uniqueId |
+| click; | .btn-link.btn-search | cssselector |
+| waitForElementToBeDisplayed; | .search-result-list.list | cssselector | 60 |
+| check | isElementPresent; | .search-result-list.list | cssselector | true |
+| $otherService= | getText; | .prof-label.js-biz-profession | cssselector |
+| closeBrowser; |
+
+!|Script | Common |
+| check | checkIfStringExistsIn; | ${result} | $otherService | true |

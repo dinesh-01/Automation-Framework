@@ -1,0 +1,15 @@
+!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
+!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
+
+!include -c .FrontPage.KnownCircleAndroid.ValidateSocialFeedsUpdatedSuccessfully.CommonFeedsAlert
+
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/newsView|id|20|
+|check|isElementPresent;|com.knowncircle${package}:id/newsView|id|true|
+|click;|com.knowncircle.debug:id/contactNewsDesc|id|
+|waitForElementToBeDisplayed;|com.knowncircle.debug:id/feedIcon|id|20|
+|check|isElementDisplayed;|com.knowncircle.debug:id/feedView|id|pass|
+|check|isElementDisplayed;|com.knowncircle.debug:id/bottomActionView|id|pass|
+|resetApplication;|
+|closeApplication;|

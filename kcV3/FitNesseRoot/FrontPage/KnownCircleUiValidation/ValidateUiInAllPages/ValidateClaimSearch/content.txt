@@ -1,0 +1,11 @@
+!define pageName {claim_search}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|initialize;|${uiBrowser}|${locale}|
+|launchBrowser;|${uiMainURL}business/signup?step=1&vertical=all&business=dinesh&city=94040|
+|wait;|10|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

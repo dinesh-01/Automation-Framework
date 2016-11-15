@@ -1,0 +1,1102 @@
+
+!3 !-slim:fitnesse.slim.SlimService-!
+|'''Date: '''| 12:28:37 PM (IST) on Friday, August 21, 2015 |
+|'''Test Page: '''|.FrontPage.KnownCircleNew.SearchValidation.ValidateAdvancedSearchForm|
+|'''Command: '''| !-"C:\Program Files\Java\jdk1.8.0_45\bin\java" -cp C:\Users\dineshs\.m2\repository\org\fitnesse\fitnesse\20140630\fitnesse-20140630.jar;classes;C:\Users\dineshs\.m2\repository\automation\commonlibrary\0.0.1-SNAPSHOT\commonlibrary-0.0.1-SNAPSHOT.jar;C:\Users\dineshs\.m2\repository\ssh2\ssh2\1.0\ssh2-1.0.jar;C:\Users\dineshs\.m2\repository\AutoIt\AutoItX4Java\3.3.12\AutoItX4Java-3.3.12.jar;C:\Users\dineshs\.m2\repository\AutoIt\jacob\1.18\jacob-1.18.jar;C:\Users\dineshs\.m2\repository\Testlink\Testlink\2.0\Testlink-2.0.jar;C:\Users\dineshs\.m2\repository\br\eti\kinoshita\testlink-java-api\1.9.6-1\testlink-java-api-1.9.6-1.jar;C:\Users\dineshs\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\dineshs\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\dineshs\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\dineshs\.m2\repository\org\slf4j\slf4j-simple\1.6.1\slf4j-simple-1.6.1.jar;C:\Users\dineshs\.m2\repository\commons-configuration\commons-configuration\1.7\commons-configuration-1.7.jar;C:\Users\dineshs\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\dineshs\.m2\repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\Users\dineshs\.m2\repository\org\apache\xmlrpc\xmlrpc-common\3.1.3\xmlrpc-common-3.1.3.jar;C:\Users\dineshs\.m2\repository\org\apache\ws\commons\util\ws-commons-util\1.0.2\ws-commons-util-1.0.2.jar;C:\Users\dineshs\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\dineshs\.m2\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;C:\Users\dineshs\.m2\repository\com\jcraft\jsch\0.1.51\jsch-0.1.51.jar;C:\Users\dineshs\.m2\repository\com\vmware\vijava\5.1\vijava-5.1.jar;C:\Users\dineshs\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\dineshs\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\dineshs\.m2\repository\it\cnr\isti\domoware\org.postgresql.jdbc4\8.3-603\org.postgresql.jdbc4-8.3-603.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-client\2.7\jersey-client-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-common\2.7\jersey-common-2.7.jar;C:\Users\dineshs\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.7\jersey-guava-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;C:\Users\dineshs\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0\javax.ws.rs-api-2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-api\2.2.0\hk2-api-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-utils\2.2.0\hk2-utils-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.2.0\aopalliance-repackaged-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\external\javax.inject\2.2.0\javax.inject-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\glassfish\hk2\hk2-locator\2.2.0\hk2-locator-2.2.0.jar;C:\Users\dineshs\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\dineshs\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.7\jersey-media-multipart-2.7.jar;C:\Users\dineshs\.m2\repository\org\glassfish\jersey\core\jersey-server\2.7\jersey-server-2.7.jar;C:\Users\dineshs\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\dineshs\.m2\repository\org\jvnet\mimepull\mimepull\1.9.3\mimepull-1.9.3.jar;C:\Users\dineshs\.m2\repository\org\apache\directory\studio\org.apache.commons.io\2.4\org.apache.commons.io-2.4.jar;C:\Users\dineshs\.m2\repository\commons-net\commons-net\20030805.205232\commons-net-20030805.205232.jar;C:\Users\dineshs\.m2\repository\org\mongodb\mongo-java-driver\2.13.0\mongo-java-driver-2.13.0.jar;C:\Users\dineshs\.m2\repository\com\jayway\android\robotium\robotium-solo\5.3.1\robotium-solo-5.3.1.jar;C:\Users\dineshs\.m2\repository\org\apache\xmlrpc\xmlrpc-client\3.1.3\xmlrpc-client-3.1.3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-server\2.46.0\selenium-server-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\dineshs\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\dineshs\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\dineshs\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\dineshs\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-java\2.46.0\selenium-java-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.46.0\selenium-chrome-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.46.0\selenium-remote-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-api\2.46.0\selenium-api-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.46.0\selenium-htmlunit-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.17\htmlunit-2.17.jar;C:\Users\dineshs\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\dineshs\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\dineshs\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpmime\4.4.1\httpmime-4.4.1.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\dineshs\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\dineshs\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\dineshs\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.11.v20150529\websocket-client-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\jetty-util\9.2.11.v20150529\jetty-util-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\jetty-io\9.2.11.v20150529\jetty-io-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.11.v20150529\websocket-common-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.11.v20150529\websocket-api-9.2.11.v20150529.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.46.0\selenium-firefox-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.46.0\selenium-ie-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\dineshs\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.46.0\selenium-safari-driver-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-support\2.46.0\selenium-support-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\dineshs\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\dineshs\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.46.0\selenium-leg-rc-2.46.0.jar;C:\Users\dineshs\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\dineshs\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\dineshs\.m2\repository\io\appium\java-client\3.1.0\java-client-3.1.0.jar;C:\Users\dineshs\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\dineshs\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\dineshs\.m2\repository\cglib\cglib\3.1\cglib-3.1.jar;C:\Users\dineshs\.m2\repository\org\ow2\asm\asm\4.2\asm-4.2.jar;C:\Users\dineshs\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\dineshs\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpclient\4.3.5\httpclient-4.3.5.jar;C:\Users\dineshs\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\dineshs\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\dineshs\.m2\repository\org\fitnesse\fitnesse\20140630\fitnesse-20140630.jar;C:\Users\dineshs\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\dineshs\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\dineshs\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\dineshs\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\dineshs\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\dineshs\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.2.1\diffutils-1.2.1.jar;C:\Users\dineshs\.m2\repository\org\eclipse\jgit\org.eclipse.jgit\2.3.1.201302201838-r\org.eclipse.jgit-2.3.1.201302201838-r.jar;C:\Users\dineshs\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.6\maven-classpath-plugin-1.6.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\dineshs\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\dineshs\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\dineshs\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\dineshs\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\dineshs\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\dineshs\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8092-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 396.571 seconds |
+
+----
+'''Standard Output:'''
+{{{2015-08-21 12:22:01 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:22:01 INFO  Log.java:43 - chrome
+2015-08-21 12:22:01 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:22:01 INFO  Log.java:43 - canary
+2015-08-21 12:22:04 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:22:04 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=&vertical=insurance&city=Los+Lunas&carriers=Nationwide&carriers=The+Hartford&services=Accident&services=Umbrella
+2015-08-21 12:22:14 INFO  Log.java:43 - Finding element by identifier a[href*='dinesh'] using cssselector
+2015-08-21 12:22:19 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-21 12:22:20 INFO  Log.java:43 - Getting the text value...
+2015-08-21 12:22:20 INFO  Log.java:43 - Finding element by identifier .profile-section.profile-carrier-section using cssselector
+2015-08-21 12:22:30 INFO  Log.java:43 - Unable to interact with TestCase Results Report with follwing error testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+2015-08-21 12:22:33 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:22:33 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:22:35 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:22:35 INFO  Log.java:43 - chrome
+2015-08-21 12:22:35 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:22:35 INFO  Log.java:43 - canary
+2015-08-21 12:22:37 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:22:37 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=&vertical=insurance&city=Los+Alamos%2C+CA&neighbourhood=-120.8499151%2C37.0582786&carriers=Allstate&services=Auto
+2015-08-21 12:22:48 INFO  Log.java:43 - Finding element by identifier a[href*='pramatitfughs'] using cssselector
+2015-08-21 12:22:53 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-21 12:22:54 INFO  Log.java:43 - Getting the text value...
+2015-08-21 12:22:54 INFO  Log.java:43 - Finding element by identifier .profile-section.profile-carrier-section using cssselector
+2015-08-21 12:23:03 INFO  Log.java:43 - Unable to interact with TestCase Results Report with follwing error testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+2015-08-21 12:23:06 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:23:06 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:23:08 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:23:08 INFO  Log.java:43 - chrome
+2015-08-21 12:23:08 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:23:08 INFO  Log.java:43 - canary
+2015-08-21 12:23:09 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:23:10 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=&vertical=taxprep&city=Los+Banos%2C+CA&neighbourhood=-120.8499151%2C37.0582786&services=Certified+Public+Accountant&services=Enrolled+Actuary&services=Supervised+Reg.+Tax+Preparer
+2015-08-21 12:23:20 INFO  Log.java:43 - Checking for element present: .search-result-list.list
+2015-08-21 12:23:20 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:23:22 INFO  Log.java:43 - Checking for element present: .search-result-list.list
+2015-08-21 12:23:22 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:23:26 INFO  Log.java:43 - Unable to interact with TestCase Results Report with follwing error testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+2015-08-21 12:23:29 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:23:29 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:23:31 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:23:31 INFO  Log.java:43 - chrome
+2015-08-21 12:23:31 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:23:31 INFO  Log.java:43 - canary
+2015-08-21 12:23:32 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:23:33 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=&vertical=taxprep&city=Los+Banos%2C+CA&neighbourhood=-120.8499151%2C37.0582786&services=Certified+Public+Accountant
+2015-08-21 12:23:43 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:23:43 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:23:44 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:23:46 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-21 12:23:47 INFO  Log.java:43 - Getting the text value...
+2015-08-21 12:23:47 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:23:48 INFO  Log.java:43 - The text value is:Pramati Test Irfvqo
+Pramati Known Circle Jqwwae
+Tax Preparer
+2501 S. Fallbrook DR., LOS Banos, CA
+CONTACT
+SERVICES Certified Public Accountant, Enrolled Agent, Attorney, Reg. Tax Return Preparer, Certified Acceptance Agent, Enrolled Actuary, Enrolled Retirement Plan Agent, Supervised Reg. Tax PreparerSEE MORE
+David Sheets
+Berger Lewis Accountancy Corporation
+Tax Preparer
+55 Almaden Blvd, STE 600, SAN Jose, CA
+CONTACT
+SERVICES Certified Public Accountant
+Lynda Renee Boman
+Boman Accounting Group, INC.
+Tax Preparer
+Known To:3PeopleKnown to your friends?
+30 Union Avenue, Suite 210, Campbell, CA
+CONTACT
+SERVICES Certified Public Accountant
+Olivia Mirsa Trenggono
+Moss Adams LLP
+Tax Preparer
+635 Campbell Technology Pkwy, Campbell, CA
+CONTACT
+SERVICES Certified Public Accountant
+Earnest Deaton
+Deaton, Michaels, Richards & Hall
+Tax Preparer
+Known To:1PersonKnown to your friends?
+987 University AVE. #22, LOS Gatos, CA
+CONTACT
+SERVICES Certified Public Accountant
+Loreen Huddleston
+Loreen E. Huddleston, Certified Public Accountant
+Tax Preparer
+236 N. Santa Cruz AVE., Suite 236, LOS Gatos, CA
+CONTACT
+SERVICES Certified Public Accountant
+Nicholas R Howes
+Krikorian & Company
+Tax Preparer
+1715 N Fine Avenue, Fresno, CA
+CONTACT
+SERVICES Certified Public Accountant
+David Grandjean Wheeler
+Lmgw Certified Public Accountants LLP
+Tax Preparer
+Known To:1PersonKnown to your friends?
+20520 Prospect RD STE 200, Saratoga, CA
+CONTACT
+SERVICES Certified Public Accountant
+Kevin A. Madej
+Lmgw Certified Public Accountants, LLP
+Tax Preparer
+20520 Prospect Road, Suite 200, Saratoga, CA
+CONTACT
+SERVICES Certified Public Accountant
+Nicole ANN Jeffrey
+Tax Preparer
+PO BOX 2418, Livermore, CA
+CONTACT
+SERVICES Certified Public Accountant
+Michael Kevin Schlimmer
+H & R Block
+Tax Preparer
+1774 Miramonte Ave, STE V, Mountain View, CA
+CONTACT
+SERVICES Certified Public Accountant, Enrolled Agent, Attorney, Reg. Tax Return Preparer, Certified Acceptance Agent, Enrolled Actuary, Enrolled Retirement Plan Agent, Supervised Reg. Tax PreparerSEE MORE
+Debra KAY Hotter
+Debra K Hotter, CPA
+Tax Preparer
+838 W Dana Street, Suite B, Mountain View, CA
+CONTACT
+SERVICES Certified Public Accountant
+Ronda Janie Melton
+Intuit
+Tax Preparer
+2632 Marine WAY, Mountain View, CA
+CONTACT
+SERVICES Certified Public Accountant
+Robert Galen
+Young Craig & CO LLP
+Tax Preparer
+Known To:1PersonKnown to your friends?
+2570 W EL Camino Real, STE 150, Mountain View, CA
+CONTACT
+SERVICES Certified Public Accountant
+Varsha Belgal
+H&R Block
+Tax Preparer
+1280 Boulevard Way, STE 111, Walnut Creek, CA
+CONTACT
+SERVICES Certified Public Accountant, Enrolled Agent, Attorney, Reg. Tax Return Preparer, Certified Acceptance Agent, Enrolled Actuary, Enrolled Retirement Plan Agent, Supervised Reg. Tax PreparerSEE MORE
+2015-08-21 12:23:51 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:23:51 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:23:53 INFO  Log.java:43 - SERVICES Certified Public Accountant
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - java.util.regex.Matcher[pattern=SERVICES Certified Public Accountant region=0,2771 lastmatch=SERVICES Certified Public Accountant]
+2015-08-21 12:23:53 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:23:53 INFO  Log.java:43 - chrome
+2015-08-21 12:23:53 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:23:53 INFO  Log.java:43 - canary
+2015-08-21 12:23:54 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:23:55 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=&vertical=&city=Los+Angeles%2C+CA&neighbourhood=-118.3617443%2C34.0900091
+2015-08-21 12:24:05 INFO  Log.java:43 - Checking for element present: .search-result-list.list
+2015-08-21 12:24:05 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:24:06 INFO  Log.java:43 - Checking for element present: .search-result-list.list
+2015-08-21 12:24:06 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:24:11 INFO  Log.java:43 - Unable to interact with TestCase Results Report with follwing error testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+2015-08-21 12:24:14 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:24:14 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:24:16 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:24:16 INFO  Log.java:43 - chrome
+2015-08-21 12:24:16 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:24:16 INFO  Log.java:43 - canary
+2015-08-21 12:24:18 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:24:18 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:24:30 INFO  Log.java:43 - Getting localized data for keyword los banos
+2015-08-21 12:24:30 INFO  Log.java:43 - Sending keys
+2015-08-21 12:24:30 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/section/div/section/div[1]/aside/form/div[2]/div/div[1]/div[1]/input using xpath
+2015-08-21 12:24:30 INFO  Log.java:43 - Waiting for element [.selectize-dropdown.single] to appear for 10 seconds.
+2015-08-21 12:24:30 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown.single using cssselector
+2015-08-21 12:24:32 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:24:34 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown-content using cssselector
+2015-08-21 12:24:34 INFO  Log.java:43 - Waiting for element [.selectize-dropdown-content] to appear for 12 seconds.
+2015-08-21 12:24:34 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown-content using cssselector
+2015-08-21 12:24:34 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:24:36 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (9e122b25d706ea719862f6fc3ce7a84a)] -> css selector: .selectize-dropdown-content]
+2015-08-21 12:24:36 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:24:36 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:24:36 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:24:38 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-21 12:24:39 INFO  Log.java:43 - Getting the text value...
+2015-08-21 12:24:39 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:24:40 INFO  Log.java:43 - The text value is:Grant Maples
+Leflore Benefits
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+330 LAS Colinas Blvd E, Suite 368, Irving, TX
+CONTACT
+SERVICES Life, Health, Disability
+BOB Barry
+Insurance Agent
+Known To:11PeopleKnown to your friends?
+3233 W Peoria AVE STE 100, Phoenix, AZ
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Financial, Health, Travel, Renters, UmbrellaSEE MORE
+Abraham Khalil
+A.K. Insurance Servivces
+Insurance Agent
+Known To:6PeopleKnown to your friends?
+444 S. California AVE, Palo Alto, CA
+CONTACT
+SERVICES Accident, Critical Illness, Dental, Disability, Hospital Indemnity, Life, Vision, General Liability, Product Liability, Professional Liability (E&O), Commercial Property, HomeBased Business, Worker�s Compensation, Directors & Officers, Commercial Umbrella, Commercial Autos & Fleet, Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, UmbrellaSEE MORE
+Denise Benoit
+Ganey, Byrd & Dunn Insurance Agency
+Insurance Agent
+Known To:7PeopleKnown to your friends?
+1107 NEW Pointe Blvd, STE 1, Leland, NC
+CONTACT
+SERVICES Life, Health, Disability
+Russell Steele
+Russell Steele CO
+Insurance Agent
+829 Rosemarie LN STE I, Stockton, CA
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Financial, Health, Travel, Renters, UmbrellaSEE MORE
+Raymond Barri
+Insurance Agent
+Known To:7PeopleKnown to your friends?
+1111 W EL Camino Real STE 213, Sunnyvale, CA
+CONTACT
+SERVICES General, Property, Casualty
+Nomita & Jagi Shahani
+Alain Pinel Realtors
+Real Estate Agent
+Known To:6PeopleKnown to your friends?
+12772 Saratoga Sunnyvale RD, Suite #1000, Saratoga, CA
+CONTACT
+SERVICES Buyer's Agent, Listing Agent, Relocation, Consulting
+Kyong Rhee
+Insurance Agent
+Known To:6PeopleKnown to your friends?
+315 5TH AVE STE 1004, NEW York City, NY
+CONTACT
+SERVICES General, Property, Casualty
+Michael Tirabassi
+Michael Tirabassi State Farm Agency
+Insurance Agent
+Known To:3PeopleKnown to your friends?
+4546 EL Camino Real STE B4, LOS Altos, CA
+CONTACT
+SERVICES Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, Umbrella, General Liability, Product Liability, Professional Liability (E&O), Commercial Property, HomeBased Business, Worker�s Compensation, Directors & Officers, Commercial Umbrella, Commercial Autos & Fleet, Accident, Critical Illness, Dental, Disability, Hospital Indemnity, LifeSEE MORE
+Mike Baker
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+3527 Mckinney AVE Corner OF Mckinney & Lemmon, Dallas, TX
+CONTACT
+SERVICES General, Property, Casualty
+James J Sheppard
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+515 Madison AVE, NEW York City, NY
+CONTACT
+SERVICES General, Property, Casualty
+Knowncircle
+Socialtwist INC
+Dentist
+Known To:5PeopleKnown to your friends?
+CONTACT
+SERVICES Cleanings & Prevention, Cosmetic, Pediatric, Periodontal, Restorative, Surgical
+James Hunt
+James Hunt
+Insurance Agent
+Known To:4PeopleKnown to your friends?
+1075 Camino Real, Mountain View, CA
+CONTACT
+SERVICES Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, Umbrella
+Justin Choy
+Insurance Agent
+Known To:3PeopleKnown to your friends?
+2308 Clement ST, SAN Francisco, CA
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Health, Travel, Renters, Umbrella
+Ritchie Castro
+Insurance Agent
+Known To:4PeopleKnown to your friends?
+1435 Huntington AVE STE 200, South SAN Francisco, CA
+CONTACT
+SERVICES General, Property, Casualty
+2015-08-21 12:24:43 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:24:43 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:24:45 INFO  Log.java:43 - LOS Banos, CA
+2015-08-21 12:24:45 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:24:45 INFO  Log.java:43 - chrome
+2015-08-21 12:24:45 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:24:45 INFO  Log.java:43 - canary
+2015-08-21 12:24:46 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:24:47 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:24:57 INFO  Log.java:43 - Getting localized data for keyword 93635
+2015-08-21 12:24:57 INFO  Log.java:43 - Sending keys
+2015-08-21 12:24:57 INFO  Log.java:43 - Finding element by identifier /html/body/div[2]/div/section/div/section/div[1]/aside/form/div[2]/div/div[1]/div[1]/input using xpath
+2015-08-21 12:24:59 INFO  Log.java:43 - Waiting for element [.selectize-dropdown.single] to appear for 10 seconds.
+2015-08-21 12:24:59 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown.single using cssselector
+2015-08-21 12:25:00 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:02 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown-content using cssselector
+2015-08-21 12:25:02 INFO  Log.java:43 - Waiting for element [.selectize-dropdown-content] to appear for 12 seconds.
+2015-08-21 12:25:02 INFO  Log.java:43 - Finding element by identifier .selectize-dropdown-content using cssselector
+2015-08-21 12:25:02 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:04 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (4e8d5ea500c07ad81a26f235e181f5a6)] -> css selector: .selectize-dropdown-content]
+2015-08-21 12:25:04 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:25:04 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:25:04 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:06 INFO  Log.java:43 - Waiting for time: 1 seconds 
+2015-08-21 12:25:07 INFO  Log.java:43 - Getting the text value...
+2015-08-21 12:25:07 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:25:08 INFO  Log.java:43 - The text value is:Grant Maples
+Leflore Benefits
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+330 LAS Colinas Blvd E, Suite 368, Irving, TX
+CONTACT
+SERVICES Life, Health, Disability
+BOB Barry
+Insurance Agent
+Known To:11PeopleKnown to your friends?
+3233 W Peoria AVE STE 100, Phoenix, AZ
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Financial, Health, Travel, Renters, UmbrellaSEE MORE
+Abraham Khalil
+A.K. Insurance Servivces
+Insurance Agent
+Known To:6PeopleKnown to your friends?
+444 S. California AVE, Palo Alto, CA
+CONTACT
+SERVICES Accident, Critical Illness, Dental, Disability, Hospital Indemnity, Life, Vision, General Liability, Product Liability, Professional Liability (E&O), Commercial Property, HomeBased Business, Worker�s Compensation, Directors & Officers, Commercial Umbrella, Commercial Autos & Fleet, Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, UmbrellaSEE MORE
+Denise Benoit
+Ganey, Byrd & Dunn Insurance Agency
+Insurance Agent
+Known To:7PeopleKnown to your friends?
+1107 NEW Pointe Blvd, STE 1, Leland, NC
+CONTACT
+SERVICES Life, Health, Disability
+Russell Steele
+Russell Steele CO
+Insurance Agent
+829 Rosemarie LN STE I, Stockton, CA
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Financial, Health, Travel, Renters, UmbrellaSEE MORE
+Raymond Barri
+Insurance Agent
+Known To:7PeopleKnown to your friends?
+1111 W EL Camino Real STE 213, Sunnyvale, CA
+CONTACT
+SERVICES General, Property, Casualty
+Nomita & Jagi Shahani
+Alain Pinel Realtors
+Real Estate Agent
+Known To:6PeopleKnown to your friends?
+12772 Saratoga Sunnyvale RD, Suite #1000, Saratoga, CA
+CONTACT
+SERVICES Buyer's Agent, Listing Agent, Relocation, Consulting
+Kyong Rhee
+Insurance Agent
+Known To:6PeopleKnown to your friends?
+315 5TH AVE STE 1004, NEW York City, NY
+CONTACT
+SERVICES General, Property, Casualty
+Michael Tirabassi
+Michael Tirabassi State Farm Agency
+Insurance Agent
+Known To:3PeopleKnown to your friends?
+4546 EL Camino Real STE B4, LOS Altos, CA
+CONTACT
+SERVICES Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, Umbrella, General Liability, Product Liability, Professional Liability (E&O), Commercial Property, HomeBased Business, Worker�s Compensation, Directors & Officers, Commercial Umbrella, Commercial Autos & Fleet, Accident, Critical Illness, Dental, Disability, Hospital Indemnity, LifeSEE MORE
+Mike Baker
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+3527 Mckinney AVE Corner OF Mckinney & Lemmon, Dallas, TX
+CONTACT
+SERVICES General, Property, Casualty
+James J Sheppard
+Insurance Agent
+Known To:5PeopleKnown to your friends?
+515 Madison AVE, NEW York City, NY
+CONTACT
+SERVICES General, Property, Casualty
+Knowncircle
+Socialtwist INC
+Dentist
+Known To:5PeopleKnown to your friends?
+CONTACT
+SERVICES Cleanings & Prevention, Cosmetic, Pediatric, Periodontal, Restorative, Surgical
+James Hunt
+James Hunt
+Insurance Agent
+Known To:4PeopleKnown to your friends?
+1075 Camino Real, Mountain View, CA
+CONTACT
+SERVICES Auto, Home, Motorcycle, Recreational, Renter, Condominium, Flood, Earthquake, Umbrella
+Justin Choy
+Insurance Agent
+Known To:3PeopleKnown to your friends?
+2308 Clement ST, SAN Francisco, CA
+CONTACT
+SERVICES Auto, Home, Life, Business, Motorcycle, Recreational, Health, Travel, Renters, Umbrella
+Ritchie Castro
+Insurance Agent
+Known To:4PeopleKnown to your friends?
+1435 Huntington AVE STE 200, South SAN Francisco, CA
+CONTACT
+SERVICES General, Property, Casualty
+2015-08-21 12:25:11 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:25:11 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:13 INFO  Log.java:43 - LOS Banos
+2015-08-21 12:25:13 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:25:13 INFO  Log.java:43 - chrome
+2015-08-21 12:25:13 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:25:13 INFO  Log.java:43 - canary
+2015-08-21 12:25:15 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:25:15 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:25:25 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:25:25 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:25:25 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:25:27 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:29 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (46cd7d95d95af0bb1d922f9c3750bea5)] -> id: dropdownMenu-business]
+2015-08-21 12:25:29 INFO  Log.java:43 - Finding element by identifier a[data-vertical='architects'] using cssselector
+2015-08-21 12:25:29 INFO  Log.java:43 - Waiting for element [a[data-vertical='architects']] to appear for 12 seconds.
+2015-08-21 12:25:29 INFO  Log.java:43 - Finding element by identifier a[data-vertical='architects'] using cssselector
+2015-08-21 12:25:29 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:31 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (46cd7d95d95af0bb1d922f9c3750bea5)] -> css selector: a[data-vertical='architects']]
+2015-08-21 12:25:32 INFO  Log.java:43 - Waiting for time: 5 seconds 
+2015-08-21 12:25:37 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:25:37 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:25:37 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:42 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:25:42 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:44 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Architect?(.*?)<\/p>
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect, Interior Designer</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect, Professional Services, Other Services</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Architect?(.*?)<\/p> region=0,29338 lastmatch=<p class="prof-label js-biz-profession">Architect</p>]
+2015-08-21 12:25:44 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:25:44 INFO  Log.java:43 - chrome
+2015-08-21 12:25:44 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:25:44 INFO  Log.java:43 - canary
+2015-08-21 12:25:45 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:25:46 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:25:56 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:25:56 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:25:56 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:25:56 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:25:58 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1d4cd92a3873a857023c424343be573e)] -> id: dropdownMenu-business]
+2015-08-21 12:25:58 INFO  Log.java:43 - Finding element by identifier a[data-vertical='builders'] using cssselector
+2015-08-21 12:25:58 INFO  Log.java:43 - Waiting for element [a[data-vertical='builders']] to appear for 12 seconds.
+2015-08-21 12:25:58 INFO  Log.java:43 - Finding element by identifier a[data-vertical='builders'] using cssselector
+2015-08-21 12:25:58 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:00 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1d4cd92a3873a857023c424343be573e)] -> css selector: a[data-vertical='builders']]
+2015-08-21 12:26:00 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:26:00 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:26:00 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:05 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:26:05 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:07 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Builder?(.*?)<\/p>
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:07 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Builder?(.*?)<\/p> region=0,30794 lastmatch=<p class="prof-label js-biz-profession">Builder</p>]
+2015-08-21 12:26:08 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:26:08 INFO  Log.java:43 - chrome
+2015-08-21 12:26:08 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:26:08 INFO  Log.java:43 - canary
+2015-08-21 12:26:09 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:26:10 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:26:21 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:26:22 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:26:22 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:26:22 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:24 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (337f993f7933f1e21b5ce37f6e85f0b4)] -> id: dropdownMenu-business]
+2015-08-21 12:26:24 INFO  Log.java:43 - Finding element by identifier a[data-vertical='dentists'] using cssselector
+2015-08-21 12:26:25 INFO  Log.java:43 - Waiting for element [a[data-vertical='dentists']] to appear for 12 seconds.
+2015-08-21 12:26:25 INFO  Log.java:43 - Finding element by identifier a[data-vertical='dentists'] using cssselector
+2015-08-21 12:26:25 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:27 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (337f993f7933f1e21b5ce37f6e85f0b4)] -> css selector: a[data-vertical='dentists']]
+2015-08-21 12:26:27 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:26:27 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:26:27 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:30 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:26:30 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:32 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Dentist?(.*?)<\/p>
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist, Health Care</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Dentist?(.*?)<\/p> region=0,34883 lastmatch=<p class="prof-label js-biz-profession">Dentist</p>]
+2015-08-21 12:26:32 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:26:32 INFO  Log.java:43 - chrome
+2015-08-21 12:26:32 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:26:32 INFO  Log.java:43 - canary
+2015-08-21 12:26:33 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:26:34 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:26:44 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:26:44 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:26:44 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:26:46 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:48 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1304d2e4aefa09bf0ca98d53dcd26003)] -> id: dropdownMenu-business]
+2015-08-21 12:26:48 INFO  Log.java:43 - Finding element by identifier a[data-vertical='insurance'] using cssselector
+2015-08-21 12:26:48 INFO  Log.java:43 - Waiting for element [a[data-vertical='insurance']] to appear for 12 seconds.
+2015-08-21 12:26:48 INFO  Log.java:43 - Finding element by identifier a[data-vertical='insurance'] using cssselector
+2015-08-21 12:26:48 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:50 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1304d2e4aefa09bf0ca98d53dcd26003)] -> css selector: a[data-vertical='insurance']]
+2015-08-21 12:26:50 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:26:50 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:26:50 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:55 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:26:55 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:26:57 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p>
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Insurance Agent?(.*?)<\/p> region=0,38582 lastmatch=<p class="prof-label js-biz-profession">Insurance Agent</p>]
+2015-08-21 12:26:57 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:26:57 INFO  Log.java:43 - chrome
+2015-08-21 12:26:57 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:26:57 INFO  Log.java:43 - canary
+2015-08-21 12:26:59 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:26:59 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:27:10 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:27:12 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:27:12 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:27:12 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:14 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (28309ab2f5fb8149b59de193c8ebb8b6)] -> id: dropdownMenu-business]
+2015-08-21 12:27:14 INFO  Log.java:43 - Finding element by identifier a[data-vertical='interior_designers'] using cssselector
+2015-08-21 12:27:14 INFO  Log.java:43 - Waiting for element [a[data-vertical='interior_designers']] to appear for 12 seconds.
+2015-08-21 12:27:14 INFO  Log.java:43 - Finding element by identifier a[data-vertical='interior_designers'] using cssselector
+2015-08-21 12:27:14 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:16 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (28309ab2f5fb8149b59de193c8ebb8b6)] -> css selector: a[data-vertical='interior_designers']]
+2015-08-21 12:27:16 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:27:16 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:27:16 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:21 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:27:21 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:23 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p>
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Interior Designer?(.*?)<\/p> region=0,31937 lastmatch=<p class="prof-label js-biz-profession">Interior Designer</p>]
+2015-08-21 12:27:23 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:27:23 INFO  Log.java:43 - chrome
+2015-08-21 12:27:23 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:27:23 INFO  Log.java:43 - canary
+2015-08-21 12:27:25 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:27:26 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:27:37 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:27:37 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:27:37 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:27:37 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:39 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (4c6296dd7c234b5c4a44c0eaa9fe76e4)] -> id: dropdownMenu-business]
+2015-08-21 12:27:39 INFO  Log.java:43 - Finding element by identifier a[data-vertical='opticians'] using cssselector
+2015-08-21 12:27:39 INFO  Log.java:43 - Waiting for element [a[data-vertical='opticians']] to appear for 12 seconds.
+2015-08-21 12:27:39 INFO  Log.java:43 - Finding element by identifier a[data-vertical='opticians'] using cssselector
+2015-08-21 12:27:39 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:41 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (4c6296dd7c234b5c4a44c0eaa9fe76e4)] -> css selector: a[data-vertical='opticians']]
+2015-08-21 12:27:41 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:27:41 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:27:42 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:46 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:27:46 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:27:48 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p>
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:48 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Optometrist?(.*?)<\/p> region=0,32660 lastmatch=<p class="prof-label js-biz-profession">Optometrist</p>]
+2015-08-21 12:27:49 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:27:49 INFO  Log.java:43 - chrome
+2015-08-21 12:27:49 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:27:49 INFO  Log.java:43 - canary
+2015-08-21 12:27:50 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:27:51 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:28:00 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:28:00 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:28:00 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:28:02 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:04 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1062649970723c3c62ae5baf3581b45c)] -> id: dropdownMenu-business]
+2015-08-21 12:28:04 INFO  Log.java:43 - Finding element by identifier a[data-vertical='real_estate_agency'] using cssselector
+2015-08-21 12:28:04 INFO  Log.java:43 - Waiting for element [a[data-vertical='real_estate_agency']] to appear for 12 seconds.
+2015-08-21 12:28:04 INFO  Log.java:43 - Finding element by identifier a[data-vertical='real_estate_agency'] using cssselector
+2015-08-21 12:28:04 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:06 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (1062649970723c3c62ae5baf3581b45c)] -> css selector: a[data-vertical='real_estate_agency']]
+2015-08-21 12:28:06 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:28:06 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:28:06 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:11 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:28:11 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:13 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p>
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Real Estate Agent?(.*?)<\/p> region=0,33855 lastmatch=<p class="prof-label js-biz-profession">Real Estate Agent</p>]
+2015-08-21 12:28:13 INFO  Log.java:43 - {4443:chrome,5443:browserx,6443:browserx}
+2015-08-21 12:28:13 INFO  Log.java:43 - chrome
+2015-08-21 12:28:13 INFO  Log.java:43 - {4443:canary,5443:serverx,6443:serverx}
+2015-08-21 12:28:13 INFO  Log.java:43 - canary
+2015-08-21 12:28:15 INFO  Log.java:43 - Initializing driver for chrome
+2015-08-21 12:28:15 INFO  Log.java:43 - Setting URL: https://kcadmin:Kc@dm1n@canary.knowncircle.com/search?q=
+2015-08-21 12:28:26 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:28:26 INFO  Log.java:43 - Waiting for element [dropdownMenu-business] to appear for 12 seconds.
+2015-08-21 12:28:26 INFO  Log.java:43 - Finding element by identifier dropdownMenu-business using id
+2015-08-21 12:28:26 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:28 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (67a443d41fd510957e0c4e4ec0b8de41)] -> id: dropdownMenu-business]
+2015-08-21 12:28:28 INFO  Log.java:43 - Finding element by identifier a[data-vertical='taxprep'] using cssselector
+2015-08-21 12:28:28 INFO  Log.java:43 - Waiting for element [a[data-vertical='taxprep']] to appear for 12 seconds.
+2015-08-21 12:28:28 INFO  Log.java:43 - Finding element by identifier a[data-vertical='taxprep'] using cssselector
+2015-08-21 12:28:28 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:30 INFO  Log.java:43 - Clicking on element: [[ChromeDriver: chrome on XP (67a443d41fd510957e0c4e4ec0b8de41)] -> css selector: a[data-vertical='taxprep']]
+2015-08-21 12:28:30 INFO  Log.java:43 - Waiting for element [.search-result-list.list] to appear for 60 seconds.
+2015-08-21 12:28:30 INFO  Log.java:43 - Finding element by identifier .search-result-list.list using cssselector
+2015-08-21 12:28:30 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:35 INFO  Log.java:43 - Closing browser.
+2015-08-21 12:28:35 INFO  Log.java:43 - Waiting for time: 2 seconds 
+2015-08-21 12:28:37 INFO  Log.java:43 - <p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p>
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+2015-08-21 12:28:37 INFO  Log.java:43 - java.util.regex.Matcher[pattern=<p class="prof-label js-biz-profession">Tax Preparer?(.*?)<\/p> region=0,30345 lastmatch=<p class="prof-label js-biz-profession">Tax Preparer</p>]
+}}}
+----
+'''Standard Error:'''
+{{{Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 29276
+Only local connections are allowed.
+testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1266)
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1195)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at tools.Testlink.executeTestCase(Testlink.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40)
+	at fitnesse.slim.SlimService.handle(SlimService.java:164)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172)
+	at fitnesse.slim.SlimService.accept(SlimService.java:134)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65)
+	at fitnesse.slim.SlimService.main(SlimService.java:51)
+Caused by: org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:161)
+	at org.apache.xmlrpc.client.XmlRpcHttpTransport.sendRequest(XmlRpcHttpTransport.java:143)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.sendRequest(XmlRpcSunHttpTransport.java:69)
+	at org.apache.xmlrpc.client.XmlRpcClientWorker.execute(XmlRpcClientWorker.java:56)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:167)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:158)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:147)
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1232)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.access$100(HttpURLConnection.java:90)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1249)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1247)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1246)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.writeRequest(XmlRpcSunHttpTransport.java:104)
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:151)
+	... 39 more
+Aug 21, 2015 12:22:33 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@1f59a598
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 7091
+Only local connections are allowed.
+testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1266)
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1195)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at tools.Testlink.executeTestCase(Testlink.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40)
+	at fitnesse.slim.SlimService.handle(SlimService.java:164)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172)
+	at fitnesse.slim.SlimService.accept(SlimService.java:134)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65)
+	at fitnesse.slim.SlimService.main(SlimService.java:51)
+Caused by: org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:161)
+	at org.apache.xmlrpc.client.XmlRpcHttpTransport.sendRequest(XmlRpcHttpTransport.java:143)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.sendRequest(XmlRpcSunHttpTransport.java:69)
+	at org.apache.xmlrpc.client.XmlRpcClientWorker.execute(XmlRpcClientWorker.java:56)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:167)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:158)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:147)
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1232)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.access$100(HttpURLConnection.java:90)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1249)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1247)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1246)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.writeRequest(XmlRpcSunHttpTransport.java:104)
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:151)
+	... 39 more
+Aug 21, 2015 12:23:06 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@2e55dd0c
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 37286
+Only local connections are allowed.
+testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1266)
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1195)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at tools.Testlink.executeTestCase(Testlink.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40)
+	at fitnesse.slim.SlimService.handle(SlimService.java:164)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172)
+	at fitnesse.slim.SlimService.accept(SlimService.java:134)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65)
+	at fitnesse.slim.SlimService.main(SlimService.java:51)
+Caused by: org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:161)
+	at org.apache.xmlrpc.client.XmlRpcHttpTransport.sendRequest(XmlRpcHttpTransport.java:143)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.sendRequest(XmlRpcSunHttpTransport.java:69)
+	at org.apache.xmlrpc.client.XmlRpcClientWorker.execute(XmlRpcClientWorker.java:56)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:167)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:158)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:147)
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1232)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.access$100(HttpURLConnection.java:90)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1249)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1247)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1246)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.writeRequest(XmlRpcSunHttpTransport.java:104)
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:151)
+	... 39 more
+Aug 21, 2015 12:23:29 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@44821a96
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 26459
+Only local connections are allowed.
+Aug 21, 2015 12:23:51 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@20f5239f
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 48038
+Only local connections are allowed.
+testlink.api.java.client.TestLinkAPIException: The call to the xml-rpc client failed.
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1266)
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1195)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at tools.Testlink.executeTestCase(Testlink.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40)
+	at fitnesse.slim.SlimService.handle(SlimService.java:164)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172)
+	at fitnesse.slim.SlimService.accept(SlimService.java:134)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65)
+	at fitnesse.slim.SlimService.main(SlimService.java:51)
+Caused by: org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:161)
+	at org.apache.xmlrpc.client.XmlRpcHttpTransport.sendRequest(XmlRpcHttpTransport.java:143)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.sendRequest(XmlRpcSunHttpTransport.java:69)
+	at org.apache.xmlrpc.client.XmlRpcClientWorker.execute(XmlRpcClientWorker.java:56)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:167)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:158)
+	at org.apache.xmlrpc.client.XmlRpcClient.execute(XmlRpcClient.java:147)
+	at testlink.api.java.client.TestLinkAPIClient.executeXmlRpcMethod(TestLinkAPIClient.java:1232)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.access$100(HttpURLConnection.java:90)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1249)
+	at sun.net.www.protocol.http.HttpURLConnection$8.run(HttpURLConnection.java:1247)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged(AccessController.java:713)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1246)
+	at org.apache.xmlrpc.client.XmlRpcSunHttpTransport.writeRequest(XmlRpcSunHttpTransport.java:104)
+	at org.apache.xmlrpc.client.XmlRpcStreamTransport.sendRequest(XmlRpcStreamTransport.java:151)
+	... 39 more
+Aug 21, 2015 12:24:14 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@33990a0c
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 35967
+Only local connections are allowed.
+Aug 21, 2015 12:24:43 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@73700b80
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 43731
+Only local connections are allowed.
+Aug 21, 2015 12:25:11 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@fa49800
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 23487
+Only local connections are allowed.
+Aug 21, 2015 12:25:42 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@7fee8714
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 37684
+Only local connections are allowed.
+Aug 21, 2015 12:26:05 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@1a18644
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 41057
+Only local connections are allowed.
+Aug 21, 2015 12:26:30 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@2c35e847
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 36251
+Only local connections are allowed.
+Aug 21, 2015 12:26:55 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@43dac38f
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 21255
+Only local connections are allowed.
+Aug 21, 2015 12:27:21 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@3c7f66c4
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 47210
+Only local connections are allowed.
+Aug 21, 2015 12:27:46 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@21282ed8
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 8539
+Only local connections are allowed.
+Aug 21, 2015 12:28:11 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@201a4587
+Starting ChromeDriver 2.13.307647 (5a7d0541ebc58e69994a6fb2ed930f45261f3c29) on port 37377
+Only local connections are allowed.
+Aug 21, 2015 12:28:35 PM org.openqa.selenium.os.UnixProcess$SeleniumWatchDog destroyHarder
+INFO: Command failed to close cleanly. Destroying forcefully (v2). org.openqa.selenium.os.UnixProcess$SeleniumWatchDog@29215f06
+}}}

@@ -1,0 +1,17 @@
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingProfilePageInProfileDashboard.LoginHeaderForProfileDashboard
+!define businessName { Knowncircle Test$randomChar }
+
+!|Script|Selenium|
+| click; |button[data-ng-click="section.main = 'edit'"]|cssselector|
+| clearValue; | businessName | id |
+| sendKeys; | businessName | id | ${businessName} |
+| click; |button[data-ng-click="saveBusinessName()"] |cssselector            |
+| $addressData= | getText; |.profile-section.profile-main-section| cssselector |
+|closeBrowser;|
+
+!|Script| Common |
+| check  | checkIfStringExistsIn; | ${businessName} | $addressData | true |
+
+
+
+

@@ -1,0 +1,22 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!define subject {Your Inquiry to KnownCircle}
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}contactus|
+|$name=|getValue;|name|id|
+|$email=|getValue;|email|id|
+|$bname=|getValue;|company|id|
+|sendKeys;|message|name|Test Contact Page|
+|click;|.btn.btn-contact-submit.text-bold.text-upper|cssselector|
+|wait;|10|
+|closeBrowser;|
+
+!|Script|Common|
+|check|checkIfStringAreEqualIgnoreCase;|$name|${profileid}|true|
+|check|checkIfStringAreEqualIgnoreCase;|$email|${businessLoginEmail}|true|
+|check|checkIfStringAreEqualIgnoreCase;|$bname|${profileBusinessName}|true|
+
+!|Script|Mail|
+|mailConfig;|${gImap}|${adminMail}|${adminPassword}|
+|check|searchEmail;|${subject}|true|
+|closeMail;|

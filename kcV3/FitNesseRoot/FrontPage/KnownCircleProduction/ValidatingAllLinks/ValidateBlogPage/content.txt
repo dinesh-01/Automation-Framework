@@ -1,0 +1,8 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURL}|
+|click;|a[href*='blog.knowncircle.com']|cssselector|
+|selectBrowserTab;|3|
+|wait;|3|
+|check|isElementPresent;|.container|cssselector|true|
+|closeBrowser;|

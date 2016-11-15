@@ -1,0 +1,16 @@
+!define businessLoginEmail { ${agentContact} }
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+
+!|Script|Selenium|
+|navigateToUrl;|${mainURLCanary}business/dashboard/contacts|
+|getTable;|class|contacts-table|
+|$row=|getTableRowCount;|
+
+!|Script|Common|
+|$randrow=|getRandomNumber;|1|$row|
+
+!|Script|Selenium|
+|$cfName=|getTableCellValue;|$randrow|1|
+|$clName=|getTableCellValue;|$randrow|2|
+|$cEmail=|getTableCellValue;|$randrow|3|
+|$cbName=|getTableCellValue;|$randrow|4|

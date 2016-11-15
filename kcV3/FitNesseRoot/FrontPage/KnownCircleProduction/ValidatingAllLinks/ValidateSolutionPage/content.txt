@@ -1,0 +1,6 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURL}|
+|click;|a[href*='solutions']|cssselector|
+|check|isElementPresent;|solutions|id|true|
+|closeBrowser;|

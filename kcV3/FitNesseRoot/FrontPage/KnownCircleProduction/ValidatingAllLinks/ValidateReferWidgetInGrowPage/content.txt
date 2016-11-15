@@ -1,0 +1,6 @@
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!|Script|Selenium|
+|navigateToUrl;|${mainURL}business/dashboard/grow/|
+|click;|.automated-referrals.endorse-website|cssselector|
+|check|isElementPresent;|codeblock|id|true|
+|closeBrowser;|

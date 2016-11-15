@@ -1,0 +1,13 @@
+!define pageName {forgot_password}
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderUiPath
+!|Script|Selenium|
+|initialize;|${uiBrowser}|${locale}|
+|launchBrowser;|${uiMainURL}business|
+|click;|.btn.login-btn.text-bold|cssselector|
+|click;|Forgot password?|linktext|
+|wait;|10|
+|takeScreenshot;|$screenPath|
+|closeBrowser;|
+!|Script|Image|
+|check|validateImage;|$oldPath|$newPath|${uiFolder}|$errorPath|true|
+!include -c .FrontPage.KnownCircleUiValidation.ValidateUiInAllPages.HeaderImagePath

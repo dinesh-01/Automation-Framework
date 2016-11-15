@@ -1,0 +1,17 @@
+!include .FrontPage.KnownCircle.OperationDashBoard.AuthenticationForm
+!define search {http://www.knowncircle.com} 
+!|Script|Selenium|
+|sendKeys;|.form-control.search-input|cssselector|${search}|
+|click;|.glyphicon.glyphicon-search|cssselector|
+|click;|.profile-link|cssselector|
+|$result=|getText;|.profile|cssselector|
+
+!|Script|Common|
+|check|checkIfStringExistsIn;|${search}|$result|true|
+|$status=|checkIfStringExistsIn;|${search}|$result|
+
+!|Script|Testlink|${devKey}|${TestlinkApiUrl}|
+|executeTestCase;|${testProject}|${testPlan}|OperationDashboardSearchBywebsite|${build}||$status|
+
+!|Script|Selenium|
+|closeBrowser;|

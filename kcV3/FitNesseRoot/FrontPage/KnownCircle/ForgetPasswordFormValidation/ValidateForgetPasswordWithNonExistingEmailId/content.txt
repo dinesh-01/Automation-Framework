@@ -1,0 +1,11 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!include -c .FrontPage.KnownCircle.CommonLoginHeader
+
+!|Script|Selenium|
+|click;|Forgot password?|linktext|
+|waitForElementToBeDisplayed;|forgotPasswordModal|id|60|
+|sendKeys;|email|id|${businessEmail}|
+|wait;|1|
+|check|isElementEnabled;|sendEmailBtn|id|fail|
+|check|isElementPresent;|.error|cssselector|true|
+|closeBrowser;|

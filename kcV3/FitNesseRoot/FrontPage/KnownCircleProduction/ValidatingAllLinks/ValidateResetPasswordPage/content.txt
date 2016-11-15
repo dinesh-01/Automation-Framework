@@ -1,0 +1,7 @@
+!|Script|Selenium|
+|initialize;|${prodBrowser}|${locale}|
+|launchBrowser;|${mainURL}|
+|click;|.login-btn.nav-link|cssselector|
+|click;|Forgot password?|linktext|
+|check|isElementPresent;|.modal-body|cssselector|true|
+|closeBrowser;|

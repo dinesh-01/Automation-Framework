@@ -1,0 +1,13 @@
+!define name {demoprofile} 
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search|
+|sendControlKey;|searchBox|id|SPACE|
+|sendKeys;|searchBox|id|${name}|
+|click;|.btn-link.btn-search|cssselector|
+|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|10|
+|$data=|getText;|.search-result-list.list|cssselector|
+|closeBrowser;|
+
+!|Script|Regex|
+|check|totalCountOfString;|$data|Demo Profile|4|

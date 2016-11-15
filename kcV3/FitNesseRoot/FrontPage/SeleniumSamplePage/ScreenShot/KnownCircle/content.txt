@@ -1,0 +1,7 @@
+!|Script|Common|
+|$image1=|getPath;|ui/home.png|fullpath|
+|$image2=|getPath;|ui/home1.png|fullpath|
+|$error=|getPath;|ui/error.png|fullpath|
+
+!|Script|Image|
+|$percent=|validateImage;|$image1|$image2|new|$error|

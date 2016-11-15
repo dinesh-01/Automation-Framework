@@ -1,0 +1,4 @@
+!|Script|Common                               |
+|$path= |getPath;|profile/invalid.txt|fullpath|
+
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ProfileImageValidation.ValidateTeamProfileImage.CommonTeamProfileInvalidImageUpload

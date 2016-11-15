@@ -1,0 +1,20 @@
+!define cardName {Dinesh Singh.R}
+!define cardNumber1 {4000}
+!define cardNumber2 {0000}
+!define cardNumber3 {0000}
+!define cardNumber4 {0127}
+!define cvv {600}
+!define month {04}
+!define year {2019}
+
+!define businessLoginEmail {invalidcard@knowncircle.com}
+!include -c .FrontPage.KnownCircle.LoginHeaderVariable
+!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingPaymentSystemInBusinessDashboard.CommonFailureCardProcess
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|.payment-errors|cssselector|60|
+|check|isElementPresent;|.payment-errors|cssselector|true|
+|closeBrowser;|
+
+
+

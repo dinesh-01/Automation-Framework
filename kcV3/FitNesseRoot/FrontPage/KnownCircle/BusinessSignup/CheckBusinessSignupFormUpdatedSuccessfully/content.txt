@@ -1,0 +1,27 @@
+!include -c .FrontPage.KnownCircle.DynamicVariables
+!define subject {${profileName}, Welcome to KnownCircle!}
+!define subject1 {${profileName}, Verify your Email address that you used for KnownCircle sign-up}
+
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}signup|
+
+!include -c .FrontPage.KnownCircle.CommonSignupContent
+
+!|Script|Selenium|
+|waitForElementToBeDisplayed;|.onboarding-view|cssselector|60|
+|check|isElementDisplayed;|.onboarding-view|cssselector|pass|
+|closeBrowser;|
+
+!* Mail
+!define businessLoginEmail { ${adminMail} }
+!define gpass { ${adminPassword} }
+!define body {Hello ${profileName}}
+
+!define subject {${profileName}, Welcome to KnownCircle!}
+!include -c .FrontPage.KnownCircle.EmailDeliveryHeader
+
+!define subject {${profileName}, Verify your Email address that you used for KnownCircle sign-up}
+!include -c .FrontPage.KnownCircle.EmailDeliveryHeader
+*!
+

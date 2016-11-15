@@ -1,0 +1,12 @@
+!|Script|Selenium|
+|initialize;|${browser}|${locale}|
+|launchBrowser;|${mainURLCanary}search?q=|
+|click;|dropdownMenu-business|id|
+|click;|a[data-vertical='architects']|cssselector|
+|wait;|5|
+|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|60|
+|$data=|innerHtmlCode;|Id|searchResults|
+|closeBrowser;|
+!define value {<p class="prof-label js-biz-profession">Architect?(.*?)<\/p>}
+!|Script|Regex|
+|check|totalCountOfString;|$data|${value}|15|

@@ -1,0 +1,10 @@
+!|Script|Selenium|
+|initialize;|android|$apk|00a9f3a03896c686|
+|launchApplication;|
+|waitForElementToBeDisplayed;|com.knowncircle${package}:id/toolbar|id|60|
+|sendKeys;|com.knowncircle${package}:id/bizzEditText|id|${bzid}|
+|click;|com.knowncircle${package}:id/spinner|id|
+|waitForElementToBeDisplayed;|android.widget.CheckedTextView|classname|10|
+|click;|//android.widget.CheckedTextView[@text='${mobileserver}']|xpath|
+|click;|com.knowncircle${package}:id/syncContacts|id|
+|waitForElementToBeDisplayed;|android.widget.RelativeLayout|classname|60|

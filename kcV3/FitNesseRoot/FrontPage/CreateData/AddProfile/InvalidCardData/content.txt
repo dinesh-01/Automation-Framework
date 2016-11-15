@@ -1,0 +1,5 @@
+!define ownerNameClaim {Invalid Card}
+!define businessNameClaim {Invalidcard KnownCircle}
+!define businessEmail {invalidcard@knowncircle.com}
+
+!include .FrontPage.KnownCircle.BusinessDashboard.RegistrationHeader
