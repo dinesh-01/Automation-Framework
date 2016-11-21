@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.dinesh</groupId>
-  <artifactId>Demo Project</artifactId>
+  <artifactId>demo-project</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>KnownCircle</name>
+  <name>Sample Project</name>
   <url>http://maven.apache.org</url>
 
    <properties>
