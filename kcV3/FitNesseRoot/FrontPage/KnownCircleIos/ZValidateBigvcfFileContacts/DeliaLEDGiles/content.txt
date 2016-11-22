@@ -1,1 +1,0 @@
-!define name {Delia L.E.D. Giles}

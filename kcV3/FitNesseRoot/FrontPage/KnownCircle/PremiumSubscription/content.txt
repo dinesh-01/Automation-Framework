@@ -1,2 +1,0 @@
-!1 Test suite for validating premium subscription
-!contents -R2 -g -p -f -h

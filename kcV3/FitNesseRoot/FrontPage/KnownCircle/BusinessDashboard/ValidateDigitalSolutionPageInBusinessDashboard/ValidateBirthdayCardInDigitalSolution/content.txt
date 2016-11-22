@@ -1,2 +1,0 @@
-!1 Test suite for birthday card
-!contents -R2 -g -p -f -h

@@ -1,1 +1,0 @@
-!define name {Magda Y. van Diedenhoven}

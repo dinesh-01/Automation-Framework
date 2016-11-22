@@ -1,1 +1,0 @@
-!define name {Waldo T. van Eyk}

@@ -1,1 +1,0 @@
-!define name {Olin F.C.G. Kerkum}

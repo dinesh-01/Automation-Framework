@@ -1,1 +1,0 @@
-!define name {Ulysses L.O. Kinney}

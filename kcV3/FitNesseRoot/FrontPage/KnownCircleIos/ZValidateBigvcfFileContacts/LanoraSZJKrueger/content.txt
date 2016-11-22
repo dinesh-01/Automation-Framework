@@ -1,1 +1,0 @@
-!define name {Lanora S.Z.J. Krueger}

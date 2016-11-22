@@ -1,1 +1,0 @@
-!define name {Theodore F.J. Gendringen}

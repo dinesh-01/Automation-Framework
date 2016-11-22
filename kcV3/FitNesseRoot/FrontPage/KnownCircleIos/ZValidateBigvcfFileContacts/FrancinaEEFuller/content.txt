@@ -1,1 +1,0 @@
-!define name {Francina E.E. Fuller}

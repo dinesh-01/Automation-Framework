@@ -1,1 +1,0 @@
-!define name {Anton X.P. White}

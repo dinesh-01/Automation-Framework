@@ -1,9 +1,0 @@
-!define searchTerm {New York City, NY}
-
-!include -c .FrontPage.KnownCircle.SearchValidation.ValidateSearchForm.HeaderSearchForm
-
-!|Script|Regex|
-|check|totalCountOfString;|$data|${searchTerm}|15|
-
-!|Script|Selenium|
-|closeBrowser;|

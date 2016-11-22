@@ -1,1 +1,0 @@
-!define name {Roderick M.Z.W. Deleon}

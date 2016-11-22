@@ -1,3 +1,0 @@
-!|Script|Selenium|
-|resetApplication;|
-|closeApplication;|

@@ -1,4 +1,0 @@
-!define businessLoginEmail {profileedit@knowncircle.com}
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|navigateToUrl;|${mainURLCanary}business/dashboard/profile|

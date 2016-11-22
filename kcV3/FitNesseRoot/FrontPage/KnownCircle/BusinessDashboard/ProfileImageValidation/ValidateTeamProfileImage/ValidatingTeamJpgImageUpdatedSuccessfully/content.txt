@@ -1,5 +1,0 @@
-!|Script|Common|
-|$path=|getPath;|profile/profile.jpg|fullpath|
-
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ProfileImageValidation.ValidateTeamProfileImage.CommonTeamProfileImageUpload

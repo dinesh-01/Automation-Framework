@@ -1,1 +1,0 @@
-!define name {Jon N.O.N. Steijn}

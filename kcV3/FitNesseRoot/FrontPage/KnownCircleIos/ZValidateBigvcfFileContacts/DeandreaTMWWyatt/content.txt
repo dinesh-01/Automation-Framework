@@ -1,1 +1,0 @@
-!define name {Deandrea T.M.W. Wyatt}

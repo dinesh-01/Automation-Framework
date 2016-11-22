@@ -1,5 +1,0 @@
-!|Script|Selenium|
-|initialize;|${browser}|${locale}|
-|launchBrowser;|${mainURLCanary}|
-|wait;|2|
-|click;|.login-btn.nav-link|cssselector|

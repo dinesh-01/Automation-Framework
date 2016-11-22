@@ -1,1 +1,0 @@
-!define name {Caridad Q.D.Z. Hoogerwaard}

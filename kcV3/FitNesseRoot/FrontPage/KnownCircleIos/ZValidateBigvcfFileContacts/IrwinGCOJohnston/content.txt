@@ -1,1 +1,0 @@
-!define name {Irwin G.C.O. Johnston}

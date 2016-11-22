@@ -1,1 +1,0 @@
-!define name {Carl M.L.G. de Graaf}

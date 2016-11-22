@@ -1,8 +1,0 @@
-!|Script|Selenium|
-|initialize;|${prodBrowser}|${locale}|
-|launchBrowser;|${mainURL}|
-|click;|a[href*='about/terms']|cssselector|
-|wait;|2|
-|selectBrowserTab;|2|
-|check|isElementPresent;|.intro-content|cssselector|true|
-|closeBrowser;|

@@ -1,1 +1,0 @@
-!define name {Lanny D.V. Manning}

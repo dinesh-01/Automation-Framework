@@ -1,4 +1,0 @@
-!|Script|Selenium|
-|waitForElementToBeDisplayed;|com.knowncircle${package}:id/alertIcon|id|30|
-|click;|com.knowncircle${package}:id/alertIcon|id|
-|wait;|3|

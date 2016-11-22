@@ -1,1 +1,0 @@
-!define name {Chadwick A.O.O. Ello}

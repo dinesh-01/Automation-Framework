@@ -1,2 +1,0 @@
-!1 Test suite for Business Claim Registration Form
-!contents -R2 -g -p -f -h

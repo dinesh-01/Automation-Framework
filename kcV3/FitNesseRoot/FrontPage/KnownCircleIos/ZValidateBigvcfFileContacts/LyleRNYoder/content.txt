@@ -1,1 +1,0 @@
-!define name {Lyle R.N. Yoder}

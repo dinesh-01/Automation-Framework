@@ -1,4 +1,0 @@
-!|Script|Selenium|
-|initialize;|android|$apk|moto|
-|launchApplication;|
-|waitForElementToBeDisplayed;|android.widget.RelativeLayout|classname|60|

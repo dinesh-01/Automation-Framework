@@ -1,1 +1,0 @@
-!define name {Roy F. Kool}

@@ -1,1 +1,0 @@
-!define name {Dick X.F. Madden}

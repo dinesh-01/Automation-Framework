@@ -1,4 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|check|isElementPresent;|.cust-eng-heading|cssselector|true|
-|closeBrowser;|

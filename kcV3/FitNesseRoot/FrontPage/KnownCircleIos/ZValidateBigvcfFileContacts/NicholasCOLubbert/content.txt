@@ -1,1 +1,0 @@
-!define name {Nicholas C.O. Lubbert}

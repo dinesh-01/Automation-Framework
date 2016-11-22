@@ -1,1 +1,0 @@
-!define name {Chas M.B. Harmon}

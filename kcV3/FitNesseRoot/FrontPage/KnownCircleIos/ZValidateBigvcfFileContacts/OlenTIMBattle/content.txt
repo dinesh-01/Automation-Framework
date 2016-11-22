@@ -1,1 +1,0 @@
-!define name {Olen T.I.M. Battle}

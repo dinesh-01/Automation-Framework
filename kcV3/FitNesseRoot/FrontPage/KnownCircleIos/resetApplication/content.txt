@@ -1,8 +1,0 @@
-!include -c .FrontPage.KnownCircleIos.IosSettings
-
-!|Script|Selenium|
-|initialize;|android|$apk|moto|
-|launchApplication;|
-|resetApplication;|
-|closeApplication;|
-

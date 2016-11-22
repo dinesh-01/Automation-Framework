@@ -1,1 +1,0 @@
-!define name {Eldon M.C. Duffy}

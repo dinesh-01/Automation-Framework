@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|navigateToUrl;|${mainURL}business/dashboard/grow/|
-|click;|.customer-engagement.holiday-cards|cssselector|
-|check|isElementPresent;|mailer|id|true|
-|closeBrowser;|

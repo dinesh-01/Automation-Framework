@@ -1,2 +1,0 @@
-!1 Test suite Search Validation
-!contents -R2 -g -p -f -h

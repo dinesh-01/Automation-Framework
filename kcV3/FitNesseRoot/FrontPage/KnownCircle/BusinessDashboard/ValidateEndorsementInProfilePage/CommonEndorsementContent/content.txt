@@ -1,7 +1,0 @@
-!|Script|Selenium|
-|closeBrowser;|
-|initialize;   |${browser}|${locale}|
-|launchBrowser;|${mainURLCanary}business/profile/$profileId|
-|click;|.btn.btn-endorse|cssselector|
-
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateEndorsementInProfilePage.CommonFacebookLoginContent

@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircleIos.IosSettings
-!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
-
-!define search {john@fullcontact.com}
-!include -c .FrontPage.KnownCircleAndroid.ValidatingContactSearch.CommonContactSearch
-

@@ -1,2 +1,0 @@
-!1 Test suite for validating all links 
-!contents -R2 -g -p -f -h

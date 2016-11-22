@@ -1,1 +1,0 @@
-!define name {Denny K.Q. Lynn}

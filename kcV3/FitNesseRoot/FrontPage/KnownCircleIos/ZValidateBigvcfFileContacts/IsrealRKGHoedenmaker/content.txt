@@ -1,1 +1,0 @@
-!define name {Isreal R.K.G. Hoedenmaker}

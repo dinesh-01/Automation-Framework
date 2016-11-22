@@ -1,1 +1,0 @@
-!define name {Micki L.T.T. de Groot}

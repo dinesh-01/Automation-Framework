@@ -1,4 +1,0 @@
-!|Script|Selenium|
-|initialize;|${browser}|${locale}|
-|launchBrowser;|${mainURL}login|
-

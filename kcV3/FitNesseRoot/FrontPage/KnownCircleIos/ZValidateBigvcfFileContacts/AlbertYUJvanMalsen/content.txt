@@ -1,1 +1,0 @@
-!define name {Albert Y.U.J. van Malsen}

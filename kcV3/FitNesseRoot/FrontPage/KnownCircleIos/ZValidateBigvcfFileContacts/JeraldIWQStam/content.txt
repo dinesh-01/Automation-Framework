@@ -1,1 +1,0 @@
-!define name {Jerald I.W.Q. Stam}

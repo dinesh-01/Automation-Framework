@@ -1,1 +1,0 @@
-!define name {Johna E.R. Guthrie}

@@ -1,1 +1,0 @@
-!define name {Mariko U.N. Stuart}

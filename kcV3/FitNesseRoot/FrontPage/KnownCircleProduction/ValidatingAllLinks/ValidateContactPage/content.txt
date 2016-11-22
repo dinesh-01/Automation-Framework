@@ -1,5 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|click;|a[href*='dashboard/contacts']|cssselector|
-|check|isElementPresent;|.contacts-table|cssselector|true|
-|closeBrowser;|

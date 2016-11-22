@@ -1,1 +1,0 @@
-!define name {Marcelino J.R.R. van Egmond}

@@ -1,1 +1,0 @@
-!define name {Darrin van der May}

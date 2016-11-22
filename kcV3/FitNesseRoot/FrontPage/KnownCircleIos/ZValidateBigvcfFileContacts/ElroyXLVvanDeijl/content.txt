@@ -1,1 +1,0 @@
-!define name {Elroy X.L.V. van Deijl}

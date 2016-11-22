@@ -1,7 +1,0 @@
-!** Check for Email delivary
-!|Script|Mail|
-|wait;|10|
-|mailConfig;|${gImap}|${businessLoginEmail}|${gpass}|
-|check|searchEmail;|${subject}|${body}|true|
-|closeMail;|
-*!

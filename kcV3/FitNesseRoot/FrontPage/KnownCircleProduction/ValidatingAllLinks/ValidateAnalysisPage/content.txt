@@ -1,5 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|click;|a[href*='dashboard/analytics']|cssselector|
-|check|isElementPresent;|.dashboard-analytics|cssselector|true|
-|closeBrowser;|

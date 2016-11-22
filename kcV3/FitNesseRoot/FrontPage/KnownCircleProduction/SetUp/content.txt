@@ -1,7 +1,0 @@
-!include -c .GlobalSettings.CommonInclude
-!include -c .GlobalSettings.BrowserAndServerSettings
-
-
-!define mainURLCanary      {${mainURL}}
-!define businessLoginEmail { ${productionLoginEmail} }
-!define businessLoginPassword {support10}

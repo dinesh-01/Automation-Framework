@@ -1,8 +1,0 @@
-!define businessLoginEmail { ${agentContact} }
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-
-!|Script|Selenium|
-|navigateToUrl;|${mainURLCanary}business/dashboard/contacts|
-|click;|//*[@id="react-root"]/div/table/thead/tr/th[1]/input|xpath|
-|click;|select[data-reactid=".0.1.1.2.0"]|cssselector|
-

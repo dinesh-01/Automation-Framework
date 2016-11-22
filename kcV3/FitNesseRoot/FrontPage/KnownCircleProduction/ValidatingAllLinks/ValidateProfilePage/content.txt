@@ -1,5 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|click;|a[href*='dashboard/profile']|cssselector|
-|check|isElementPresent;|.dashboard-profile.ng-scope|cssselector|true|
-|closeBrowser;|

@@ -1,4 +1,0 @@
-!define action1 {button.btn.btn-link.btn-analytics.quote-requests div.count.ng-binding}
-!define action2 {processing} 
-
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingAnalyticsPageInProfileDashboard.CommonAnalyticsPage

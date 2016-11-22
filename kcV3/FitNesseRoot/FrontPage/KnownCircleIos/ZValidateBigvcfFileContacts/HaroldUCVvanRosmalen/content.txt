@@ -1,1 +1,0 @@
-!define name {Harold U.C.V. van Rosmalen}

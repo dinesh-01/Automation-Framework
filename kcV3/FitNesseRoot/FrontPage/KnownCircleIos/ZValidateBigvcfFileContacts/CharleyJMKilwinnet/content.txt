@@ -1,1 +1,0 @@
-!define name {Charley J.M. Kilwinnet}

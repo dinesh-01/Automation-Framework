@@ -1,1 +1,0 @@
-!define name {Erasmo R.B.F. de Moor}

@@ -1,2 +1,0 @@
-!include -c .FrontPage.KnownCircleIos.IosSettings
-!include -c .FrontPage.KnownCircleAndroid.ZValidateBigvcfFileContacts.CommonLaunchPageBigVcf

@@ -1,1 +1,0 @@
-!define name {Kalyn U.V.D. Verkerk}

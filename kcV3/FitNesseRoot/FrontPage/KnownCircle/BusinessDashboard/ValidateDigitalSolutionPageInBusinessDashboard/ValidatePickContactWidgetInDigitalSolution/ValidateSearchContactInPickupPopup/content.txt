@@ -1,2 +1,0 @@
-!1 Test suite for search contatcs in pickup popup
-!contents -R2 -g -p -f -h

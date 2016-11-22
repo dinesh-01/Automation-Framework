@@ -1,1 +1,0 @@
-!define name {Jan Z.O. Cordova}

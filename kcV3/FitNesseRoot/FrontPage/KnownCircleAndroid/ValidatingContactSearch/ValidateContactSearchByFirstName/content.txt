@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
-!include -c .FrontPage.KnownCircleAndroid.CommonLaunchPage
-
-!define search {Jaclyn}
-!include -c .FrontPage.KnownCircleAndroid.ValidatingContactSearch.CommonContactSearch
-

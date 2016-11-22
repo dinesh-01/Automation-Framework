@@ -1,1 +1,0 @@
-!define name {Bernie D.F. Owen}

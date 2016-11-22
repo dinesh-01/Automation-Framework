@@ -1,1 +1,0 @@
-!define name {Forrest S.G.L. Ulrich}

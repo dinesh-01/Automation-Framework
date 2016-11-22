@@ -9,6 +9,9 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 
 import java.io.File;
 import java.io.IOException;
@@ -51,6 +54,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -63,10 +67,6 @@ import common.Log;
 public class Selenium {
 	private static final String NEW_LINE = "\n";
 	public  static RemoteWebDriver webDriver = null;
-	public static  AndroidDriver androidDriver = null;
-	public static  IOSDriver iosDriver = null;
-	public  static AppiumDriver mobileDriver = null;
-	private static String webdriverFile = "";
 	private static String url = "";
 	private static URL remoteUrl = null;
 	private static final int timeout = 12;
@@ -98,20 +98,17 @@ public class Selenium {
 	 */
 	public static void initialize(String browser, String locale)
 			throws Exception {
+		
 		if (Selenium.webDriver != null) {
 			return;
 		}
-		String driverRelativePath = new File("").getAbsolutePath();
-		driverRelativePath = ".." + File.separator + "commonlibrary"
-				+ File.separator + "target" + File.separator + "classes"
-				+ File.separator;
+		
+		
 		switch (browser.toLowerCase()) {
 		
 		case "ie":
-			webdriverFile = "IEDriverServer_64.exe";
-			System.setProperty("webdriver.ie.driver", driverRelativePath
-					+ Selenium.webdriverFile);
-			System.setProperty("webdriver.ie.driver.logfile", logFile);
+			InternetExplorerDriverManager.getInstance().setup();
+            System.setProperty("webdriver.ie.driver.logfile", logFile);
 			System.setProperty("webdriver.ie.driver.loglevel", logLevel);
 			System.setProperty("webdriver.ie.driver.host", "127.0.0.1");
 			capabilities.setCapability("nativeEvents", false);    
@@ -125,28 +122,20 @@ public class Selenium {
 			break;
 			
 		case "chrome":
-			webdriverFile = "chromedriver.exe";
-			System.setProperty("webdriver.log.file", logFile);
-			System.setProperty("webdriver.chrome.driver.loglevel", logLevel);
-			System.setProperty("webdriver.chrome.driver",  driverRelativePath + Selenium.webdriverFile);
-			ChromeOptions options = new ChromeOptions();
-			List<String> arguments = new ArrayList<String>();
-			arguments.add("--lang=" + locale);
-			arguments.add("--allow-file-access-from-files");
-			arguments.add("test-type");
-			options.addArguments(arguments);
-			Selenium.webDriver = new ChromeDriver(options);
+			ChromeDriverManager.getInstance().setup();
+			Selenium.webDriver = new ChromeDriver();
 			Log.info("Initializing driver for " + browser);
 			break;
 		
 		case "safari":
-			remoteUrl = new URL(url);
-			capabilities.setBrowserName("safari");
-			capabilities.setPlatform(Platform.MAC);
-			Selenium.webDriver = new RemoteWebDriver(remoteUrl,capabilities);
+			SafariOptions options = new SafariOptions();
+			options.setUseCleanSession(true);
+			Selenium.webDriver = new SafariDriver(options);
+			Log.info("Initializing driver for safari");
 			break;
 			
 		default:
+			FirefoxDriverManager.getInstance().setup();
 			Selenium.webDriver = new FirefoxDriver();
 			Log.info("Initializing driver for Firefox");
 			System.setProperty("webdriver.firefox.driver.logfile", logFile);
@@ -156,56 +145,12 @@ public class Selenium {
 		// Wait for browser to load.
 		Selenium.webDriver.manage().window().maximize();
 		//Selenium.webDriver.manage().timeouts()
-			//	.implicitlyWait(5, TimeUnit.SECONDS);
+		//		.implicitlyWait(5, TimeUnit.SECONDS);
 
 	}
 	
 	
-	/**
-	 * Initializes Mobile the Selenium object <code>webDriver</code> fro mobile web 
-	 * 
-	 * @param platform
-	 *            the possible values are 'anriod', 'ios'.
-	 *            In case this value is set anything apart from these values or
-	 *            blank, the default browser set is ios.
-	          
-	 *@param devictype
-	 *             the possiable values are emulator or real device            
-	 *            
-	 * @throws Exception
-	 */
-	
-	public static void mobileWeb(String platform, String deviceType)
-			throws Exception {
 		
-		if (Selenium.webDriver != null) {
-			return; 	
-		}
-		
-	switch (platform.toLowerCase()) {
-	    case "android":
-			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceType);
-			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
-			remoteUrl = new URL(url);
-			Selenium.mobileDriver = new AndroidDriver (remoteUrl, capabilities);
-			Selenium.webDriver = Selenium.mobileDriver;
-            break;
-		default:
-			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceType);
-			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
-			remoteUrl = new URL(url);
-			Selenium.mobileDriver = new IOSDriver (remoteUrl, capabilities);
-			Selenium.webDriver = Selenium.mobileDriver;
-			break;
-		}
-		
-			
-	     
-	}
-	
-	
-	
-	
 	
 	
 
@@ -2222,293 +2167,6 @@ public class Selenium {
      	  executor.executeScript("return document.forms."+action+".submit();");
      	
       }
-      
- /********************************************************************************************************/     
-  /* List of below functionality futures works only with mobile automation */
-      
-      /**
-  	 * Initializes Mobile the Selenium object <code>webDriver</code> fro Native Web 
-  	 * 
-  	 * @param platform
-  	 *            the possible values are 'anriod', 'ios'.
-  	 *            In case this value is set anything apart from these values or
-  	 *            blank, the default browser set is ios.
-  	          
-  	 *@param devictype
-  	 *             the possiable values are emulator or real device            
-  	 *            
-  	 * @throws Exception
-  	 */
-  	
-  	public static void initialize (String platform,String appPath ,String deviceType)
-  			throws Exception {
-  		
-  		if (Selenium.webDriver != null) { return; 	}
-  		
-  		
-  	switch (platform.toLowerCase()) {
-  		case "android":
-  			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceType);
-  			capabilities.setCapability(MobileCapabilityType.APP, appPath);
-  			capabilities.setCapability("autoLaunch", false);
-  			capabilities.setCapability("newCommandTimeout", 60 * 500);
-  			remoteUrl = new URL(url);
-  			Selenium.androidDriver = new AndroidDriver (remoteUrl, capabilities);
-  			Selenium.webDriver     = Selenium.androidDriver;
-  			Selenium.mobileDriver  = Selenium.androidDriver;
-  			break;
-  		default:
-  			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceType);
-  			remoteUrl = new URL(url);
-  			Selenium.iosDriver    = new IOSDriver (remoteUrl, capabilities);
-  			Selenium.webDriver    = Selenium.iosDriver;
-  			Selenium.mobileDriver = Selenium.iosDriver;
-  			break;
-  		}
-  		
-  			
-  	     
-  	}
-  	   
-      
-   /**
-    * 
-    * Launching Application
-    * 
-    */
-      
-     public void launchApplication() {
-    	 Selenium.mobileDriver.launchApp();
-    }
-     
-     /**
-      * Switching from native to web or vice versa
-      * 
-      */
-     
-	@SuppressWarnings("unchecked")
-	public static Set<String>  appView() {
-    	 
-    	Set<String> contextNames = Selenium.mobileDriver.getContextHandles();
-    	return contextNames;
-    	 
-     }
-     
-      
-    /**
-     * Scroll  and click the element by specfifing the text
-     * @param text
-     */
-      
-   /*   public void scrollToClick(String text) {
-  		Selenium.mobileDriver.scrollTo(text).click();
-  	  }
-    */  
-      
-      /**
-       * Swipe Function
-             @param elementIdentifier
-	   *            - element identifier value
-	   *      @param findBy
-	   *            - element identifier type e.g. id, xpath, css, class 
-	   *      @param direction
-	   *            - direction to perform e.g up,down,right,left. 
-       */
-      
-      public void swipeScreen(String elementIdentifier,String findBy,String direction) {
-    	  
-    	MobileElement element = (MobileElement) getElement(elementIdentifier, findBy);
-  		waitForElementToBeDisplayed(elementIdentifier, findBy,
-  				String.valueOf(timeout));
-  		Log.info("Swiping the screen on element: " + element);
-  		
-  		
-	  		switch (direction.toLowerCase()) {
-				case "up":
-					element.swipe(SwipeElementDirection.UP,2000);
-					break; 
-					
-				case "down":
-					element.swipe(SwipeElementDirection.DOWN,2000);
-				    break; 
-				    
-				case "left":
-					element.swipe(SwipeElementDirection.LEFT,2000);
-					break; 
-					
-				case "right":
-					element.swipe(SwipeElementDirection.RIGHT,2000);
-					 break;
-	    	}
-    	  
-      }
-      
-      /**
-       * 
-       * @param elementIdentifier
-       * @param findBy
-       * @param direction
-       * @param cycle
-       */
-      
-      public static void swipeMultipleTimes(String elementIdentifier,String findBy,String direction,int cycle){
-    	  
-    	  MobileElement element = (MobileElement) getElement(elementIdentifier, findBy);
-    	  Log.info("Swiping the screen on element: " + element);
-    	  Dimension dimensions = Selenium.mobileDriver.manage().window().getSize();
-    		
-  	  		switch (direction.toLowerCase()) {
-  				
-  				case "down":
-	  					 for(int i = 0;i<cycle;i++) {
-	  					    Double screenHeightStart = dimensions.getHeight() * 0.5;
-	  						int scrollStart = screenHeightStart.intValue();
-	  						Double screenHeightEnd = dimensions.getHeight() * 0.2;
-	  						int scrollEnd = screenHeightEnd.intValue();
-	  						Selenium.mobileDriver.swipe(0,scrollStart,0,scrollEnd,2000);
-	  						wait(1);
-	  					 }	
-  				break; 
-  			
-  	    	}
-      	  
-    	  
-    	  
-      }
-      
-      /**
-       * Zoom Function
-             @param elementIdentifier
-	   *            - element identifier value
-	   *      @param findBy
-	   *            - element identifier type e.g. id, xpath, css, class 
-       */
-      
-      public void zoomElement(String elementIdentifier,String findBy) {
-    	  
-    	MobileElement element = (MobileElement) getElement(elementIdentifier, findBy);
-  		waitForElementToBeDisplayed(elementIdentifier, findBy,
-  				String.valueOf(timeout));
-  		Log.info("Zooming on element: " + element);
-  		element.zoom();
-  		
-	  	}
-      
-      /**
-       * Tab a Element
-       *  @param elementIdentifier
-	   *            - element identifier value
-	   *      @param findBy
-	   *            - element identifier type e.g. id, xpath, css, class 
-       */
-      
-      
-      public void tabElement(String elementIdentifier,String findBy) {
-    	  
-    	    WebElement element = getElement(elementIdentifier, findBy);
-    		waitForElementToBeDisplayed(elementIdentifier, findBy,
-    				String.valueOf(timeout));
-    		Log.info("Tab on element: " + element);
-    		
-    		//Performing touchAction
-    		TouchAction touchAction = new TouchAction(Selenium.mobileDriver);
-    		touchAction.tap(element).perform();
-    	  
-      }
-      
-      /**
-       * Scroll Text with direction
-       * 
-       */
-      public void scrollText() {
-    	  
-    	  JavascriptExecutor js = (JavascriptExecutor) Selenium.mobileDriver;
-    	  HashMap<String, Double> scrollObjects = new HashMap<String, Double>();
-    	  scrollObjects.put("startX", 116.00);
-    	  scrollObjects.put("startY", 1268.00); 
-    	  scrollObjects.put("endX", 164.00);
-    	  scrollObjects.put("endY", 1118.00); 
-    	  js.executeScript("mobile: scroll", scrollObjects);
-    	
-      }
-      
-      /**
-       * Hide the keypad
-       * 
-       */
-      public void hideKeypad() {
-    	  Selenium.mobileDriver.hideKeyboard();;
-    	}
-      
-      /**
-       *  Long Press Element
-       *  @param elementIdentifier
-	   *            - element identifier value
-	   *      @param findBy
-	   *            - element identifier type e.g. id, xpath, css, class 
-       */
-      
-      
-      public void longPress(String elementIdentifier,String findBy) {
-    	  
-    	    WebElement element = getElement(elementIdentifier, findBy);
-    		waitForElementToBeDisplayed(elementIdentifier, findBy,
-    				String.valueOf(timeout));
-    		Log.info("Tab on element: " + element);
-    		
-    		//Performing touchAction
-    		TouchAction touchAction = new TouchAction(Selenium.mobileDriver);
-    		touchAction.longPress(element).release().perform();
-    	  
-      }
-      
-      /**
-       *   Rotate Screen
-       * 
-       */
-      
-      public void rotateScreen(String position) {
-    	  
-    	  switch (position.toLowerCase()) {
-			case "landscape":
-				 Selenium.mobileDriver.rotate(ScreenOrientation.LANDSCAPE);
-				break; 
-			case "portrait":
-				 Selenium.mobileDriver.rotate(ScreenOrientation.PORTRAIT);
-				break; 
-    	  }		
-    	 
-      }
-      
-      
-     /**
-      * Uninstall the app
-      * 
-      */
-  	 public static void removeApplication(String path) {
-  		Selenium.mobileDriver.removeApp(path);
-  	 }
-  	 
-  	 /**
-  	  * Reset Application
-  	  * 
-  	  */
-  	 public static void resetApplication() {
-  		 Selenium.mobileDriver.resetApp();
-  	 }
-  	
-      
-      /**
-  	 * Closes the Application instance associated with Mobile driver.
-  	 */
-  	public static void closeApplication() {
-  		try {
-  			Selenium.mobileDriver.closeApp();
-  			Log.info("Closing Application.");
-  		} catch (Exception exception) {
-  			Log.error("Error in closing Application: " + exception.getMessage());
-  		}
-  	}
-      
+ 
 }
     

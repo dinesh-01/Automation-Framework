@@ -1,2 +1,0 @@
-!1 Test suite for App Installation
-!contents -R2 -g -p -f -h

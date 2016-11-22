@@ -1,9 +1,0 @@
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidateEmailPublishFromContactPage.HeaderEmailPublishContent
-
-!|Script|Selenium|
-|click;|option[data-reactid=".0.1.1.2.0.$request_referral"]|cssselector|
-
-!define body {We would like to notify that your Request for endorsements has been sent to our servers for delivery. We cannot guarantee delivery, if the recipient email addresses are invalid or not accepting incoming messages.}
-!define subject {KnownCircle - Request for endorsements sent successfully}
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingContactPageInBusinessDashboard.ValidateEmailPublishFromContactPage.FooterEmailPublishContent
-

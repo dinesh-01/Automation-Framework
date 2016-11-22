@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-!|Script|Selenium|
-|click;|a[href*='dashboard/settings']|cssselector|
-|click;|a[href='#gift_cards']|cssselector|
-|check|isElementPresent;|gift_cards|id|true|
-|closeBrowser;|

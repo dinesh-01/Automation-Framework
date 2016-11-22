@@ -1,0 +1,191 @@
+2016-11-22 16:00:01 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:00:01 INFO  file:43 - Sending keys
+2016-11-22 16:00:01 INFO  file:43 - Finding element by identifier redactor_editor using classname
+2016-11-22 16:00:02 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:00:02 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:00:02 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:00:02 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:00:04 INFO  file:43 - Clicking on element: [[FirefoxDriver: firefox on MAC (dae3fd8d-b5a6-004d-a322-031ee5541915)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:00:06 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:00:06 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:00:06 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:00:08 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:00:09 INFO  file:43 - Getting the text value...
+2016-11-22 16:00:09 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:00:09 INFO  file:43 - The text value is:×
+Your ticket has been created.
+2016-11-22 16:01:58 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:01:58 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:02:04 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:02:04 INFO  file:43 - Sending keys
+2016-11-22 16:02:04 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:02:04 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:02:04 INFO  file:43 - Sending keys
+2016-11-22 16:02:04 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:02:04 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:02:04 INFO  file:43 - Sending keys
+2016-11-22 16:02:04 INFO  file:43 - Finding element by identifier redactor_editor using classname
+2016-11-22 16:02:05 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:02:05 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:02:05 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:02:05 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:02:07 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:02:07 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:02:07 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:02:17 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:02:18 INFO  file:43 - Getting the text value...
+2016-11-22 16:02:18 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:02:19 INFO  file:43 - Closing browser.
+2016-11-22 16:02:19 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:05:21 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:05:21 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:05:26 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:05:26 INFO  file:43 - Sending keys
+2016-11-22 16:05:26 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:05:26 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:05:26 INFO  file:43 - Sending keys
+2016-11-22 16:05:26 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:05:27 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:05:27 INFO  file:43 - Sending keys
+2016-11-22 16:05:27 INFO  file:43 - Finding element by identifier redactor_editor using classname
+2016-11-22 16:05:27 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:05:27 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:05:27 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:05:27 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:05:29 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:05:29 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:05:29 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:05:40 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:05:41 INFO  file:43 - Getting the text value...
+2016-11-22 16:05:41 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:05:41 INFO  file:43 - Closing browser.
+2016-11-22 16:05:41 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:07:29 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:07:29 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:07:34 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:07:34 INFO  file:43 - Sending keys
+2016-11-22 16:07:34 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:07:34 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:07:34 INFO  file:43 - Sending keys
+2016-11-22 16:07:34 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:07:34 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:07:34 INFO  file:43 - Sending keys
+2016-11-22 16:07:34 INFO  file:43 - Finding element by identifier //*[@id="new_helpdesk_ticket"]/div[4]/div/div[1]/div[2] using xpath
+2016-11-22 16:07:34 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:07:34 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:07:34 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:07:34 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:07:36 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:07:36 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:07:36 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:07:47 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:07:48 INFO  file:43 - Getting the text value...
+2016-11-22 16:07:48 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:07:48 INFO  file:43 - Closing browser.
+2016-11-22 16:07:48 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:17:29 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:17:29 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:17:32 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:17:32 INFO  file:43 - Sending keys
+2016-11-22 16:17:32 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:17:33 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:17:33 INFO  file:43 - Sending keys
+2016-11-22 16:17:33 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:17:33 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:17:33 INFO  file:43 - block style has been executed successfully
+2016-11-22 16:17:33 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:17:33 INFO  file:43 - Sending keys
+2016-11-22 16:17:33 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:17:33 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:17:33 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:17:33 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:17:33 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:17:35 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:17:35 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:17:35 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:17:37 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:17:39 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:17:40 INFO  file:43 - Getting the text value...
+2016-11-22 16:17:40 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:17:40 INFO  file:43 - The text value is:×
+Your ticket has been created.
+2016-11-22 16:17:40 INFO  file:43 - Closing browser.
+2016-11-22 16:17:40 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:18:59 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:18:59 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:19:00 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:19:00 INFO  file:43 - Sending keys
+2016-11-22 16:19:00 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:19:01 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:19:01 INFO  file:43 - Sending keys
+2016-11-22 16:19:01 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:19:01 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:19:01 INFO  file:43 - block style has been executed successfully
+2016-11-22 16:19:01 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:19:01 INFO  file:43 - Sending keys
+2016-11-22 16:19:01 INFO  file:43 - Finding element by identifier redactor_editor using classname
+2016-11-22 16:19:01 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:19:01 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:19:01 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:19:01 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:19:03 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:19:03 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:19:03 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:19:13 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:19:14 INFO  file:43 - Getting the text value...
+2016-11-22 16:19:14 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:19:14 INFO  file:43 - Closing browser.
+2016-11-22 16:19:14 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:20:09 INFO  file:43 - Initializing driver for safari
+2016-11-22 16:20:09 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:20:11 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:20:11 INFO  file:43 - Sending keys
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:20:11 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:20:11 INFO  file:43 - Sending keys
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:20:11 INFO  file:43 - block style has been executed successfully
+2016-11-22 16:20:11 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:20:11 INFO  file:43 - Sending keys
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier redactor_box using classname
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:20:11 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:20:11 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:20:11 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:20:14 INFO  file:43 - Clicking on element: [[SafariDriver: safari on MAC (null)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:20:14 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:20:14 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:20:24 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:20:25 INFO  file:43 - Getting the text value...
+2016-11-22 16:20:25 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:20:25 INFO  file:43 - Closing browser.
+2016-11-22 16:20:25 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:21:55 INFO  file:43 - Initializing driver for chrome
+2016-11-22 16:21:55 INFO  file:43 - Setting URL: https://kctest.freshdesk.com/support/tickets/new
+2016-11-22 16:21:58 INFO  file:43 - Getting localized data for keyword uxasennewq-0081@yopmail.com
+2016-11-22 16:21:58 INFO  file:43 - Sending keys
+2016-11-22 16:21:58 INFO  file:43 - Finding element by identifier helpdesk_ticket_email using id
+2016-11-22 16:21:59 INFO  file:43 - Getting localized data for keyword Creating Sample Ticket in Subject Form
+2016-11-22 16:21:59 INFO  file:43 - Sending keys
+2016-11-22 16:21:59 INFO  file:43 - Finding element by identifier helpdesk_ticket_subject using id
+2016-11-22 16:21:59 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:21:59 INFO  file:43 - block style has been executed successfully
+2016-11-22 16:21:59 INFO  file:43 - Getting localized data for keyword Creating Sample Description for description form
+2016-11-22 16:21:59 INFO  file:43 - Sending keys
+2016-11-22 16:21:59 INFO  file:43 - Finding element by identifier helpdesk_ticket_ticket_body_attributes_description_html using id
+2016-11-22 16:21:59 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:21:59 INFO  file:43 - Waiting for element [helpdesk_ticket_submit] to appear for 12 seconds.
+2016-11-22 16:21:59 INFO  file:43 - Finding element by identifier helpdesk_ticket_submit using id
+2016-11-22 16:21:59 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:22:01 INFO  file:43 - Clicking on element: [[ChromeDriver: chrome on MAC (3fd4c9bf7baf0ce1ecbcf85b95ce0332)] -> id: helpdesk_ticket_submit]
+2016-11-22 16:22:03 INFO  file:43 - Waiting for element [notice] to appear for 10 seconds.
+2016-11-22 16:22:03 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:22:03 INFO  file:43 - Waiting for time: 2 seconds 
+2016-11-22 16:22:05 INFO  file:43 - Waiting for time: 1 seconds 
+2016-11-22 16:22:06 INFO  file:43 - Getting the text value...
+2016-11-22 16:22:06 INFO  file:43 - Finding element by identifier notice using id
+2016-11-22 16:22:06 INFO  file:43 - The text value is:×
+Your ticket has been created.
+2016-11-22 16:22:07 INFO  file:43 - Closing browser.
+2016-11-22 16:22:07 INFO  file:43 - Waiting for time: 2 seconds 

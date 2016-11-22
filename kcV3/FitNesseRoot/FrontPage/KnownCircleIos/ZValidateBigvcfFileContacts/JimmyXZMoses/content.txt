@@ -1,1 +1,0 @@
-!define name {Jimmy X.Z. Moses}

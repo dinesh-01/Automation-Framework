@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircleAndroid.AndroidSettings
-
-
-!|Script|Selenium|
-|initialize;|android|$apk|00a9f3a03896c686|
-|removeApplication;|${uninstall}|

@@ -1,1 +1,0 @@
-!define name {Jimmie Q.H. van der Linden}

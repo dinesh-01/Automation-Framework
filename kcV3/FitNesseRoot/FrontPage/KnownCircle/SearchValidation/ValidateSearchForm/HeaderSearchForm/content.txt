@@ -1,8 +1,0 @@
-!|Script|Selenium|
-|initialize;|${browser}|${locale}|
-|launchBrowser;|${mainURLCanary}search|
-|sendKeys;|searchBox|id|${searchTerm}|
-|click;|.btn-link.btn-search|cssselector|
-|waitForElementToBeDisplayed;|.search-result-list.list|cssselector|10|
-|$data=|getText;|.search-result-list.list|cssselector|
-

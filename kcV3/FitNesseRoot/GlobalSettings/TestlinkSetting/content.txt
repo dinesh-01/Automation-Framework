@@ -3,8 +3,8 @@
 !define TestlinkApiUrl {http://localhost/testlink/lib/api/xmlrpc/v1/xmlrpc.php}
 !define loginName {admin}
 !define testProjectNo {1}
-!define testProject {Known Circle}
-!define testPlan {KnownCircle}
-!define build {Known Circle Build 2}
+!define testProject {testProject}
+!define testPlan {testPlan}
+!define build {build}
 
 *!

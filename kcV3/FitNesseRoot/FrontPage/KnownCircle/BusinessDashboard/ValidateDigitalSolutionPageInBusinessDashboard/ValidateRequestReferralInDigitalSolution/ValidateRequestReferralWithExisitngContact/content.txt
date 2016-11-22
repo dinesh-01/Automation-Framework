@@ -1,5 +1,0 @@
-!define emailToValidate {kctestk1@gmail.com}
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidateRequestReferralInDigitalSolution.CommonReferralPageContent
-
-!|Script|Selenium|
-|closeBrowser;|

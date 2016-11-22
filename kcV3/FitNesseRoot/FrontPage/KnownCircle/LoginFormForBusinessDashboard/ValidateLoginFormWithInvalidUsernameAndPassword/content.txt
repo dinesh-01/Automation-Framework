@@ -1,8 +1,0 @@
-!include -c .FrontPage.KnownCircle.LoginFormForBusinessDashboard.CommonLoginHeader
-
-!|Script|Selenium|
-|sendKeys;|username|id|${businessLoginEmail}|
-|sendKeys;|password|id|wrong password|
-|click;|.btn.btn-primary.login-btn-lg|cssselector|
-|check|isElementPresent;|.error-alert.alert.alert-danger|cssselector|true|
-|closeBrowser;|

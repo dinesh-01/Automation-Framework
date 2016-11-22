@@ -1,6 +1,0 @@
-!|Script|Selenium|
-|initialize;|${prodBrowser}|${locale}|
-|launchBrowser;|${mainURL}|
-|click;|a[href*='sitemap']|cssselector|
-|check|isElementPresent;|.sitemap-page|cssselector|true|
-|closeBrowser;|

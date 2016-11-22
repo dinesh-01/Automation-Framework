@@ -1,5 +1,0 @@
-!include -c .GlobalSettings.CommonInclude
-!include -c .GlobalSettings.BrowserAndServerSettings
-!include -c .FrontPage.KnownCircle.DynamicVariables
-!|Script|Log|
-|info;|${PAGE_PATH}.${PAGE_NAME}|

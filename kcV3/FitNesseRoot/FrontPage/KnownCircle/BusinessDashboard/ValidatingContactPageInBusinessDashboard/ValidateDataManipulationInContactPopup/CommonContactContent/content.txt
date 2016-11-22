@@ -1,8 +1,0 @@
-!define businessLoginEmail { ${agentContact} }
-!include -c .FrontPage.KnownCircle.LoginHeaderVariable
-
-!|Script|Common|
-|$randYear=|getRandomNumber;|1970|2015|
-
-!|Script|Selenium|
-|navigateToUrl;|${mainURLCanary}business/dashboard/contacts|

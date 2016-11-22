@@ -1,1 +1,0 @@
-!define name {Mollie R.S.S. Stuart}

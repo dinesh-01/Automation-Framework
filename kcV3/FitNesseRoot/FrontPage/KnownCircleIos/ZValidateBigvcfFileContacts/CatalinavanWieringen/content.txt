@@ -1,1 +1,0 @@
-!define name {Catalina van Wieringen}

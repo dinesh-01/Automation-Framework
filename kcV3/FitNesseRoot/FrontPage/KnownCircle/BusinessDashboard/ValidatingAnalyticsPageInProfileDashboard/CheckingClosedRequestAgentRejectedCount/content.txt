@@ -1,4 +1,0 @@
-!define action1 {button.btn.btn-link.btn-analytics.closed-requests div.count.ng-binding}
-!define action2 {agent-rejected} 
-
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidatingAnalyticsPageInProfileDashboard.CommonAnalyticsPage

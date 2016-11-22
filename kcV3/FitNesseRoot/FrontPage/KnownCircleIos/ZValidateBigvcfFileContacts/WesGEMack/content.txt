@@ -1,1 +1,0 @@
-!define name {Wes G.E. Mack}

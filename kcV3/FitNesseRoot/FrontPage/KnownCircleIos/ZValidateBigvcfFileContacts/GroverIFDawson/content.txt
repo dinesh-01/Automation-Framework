@@ -1,1 +1,0 @@
-!define name {Grover I.F. Dawson}

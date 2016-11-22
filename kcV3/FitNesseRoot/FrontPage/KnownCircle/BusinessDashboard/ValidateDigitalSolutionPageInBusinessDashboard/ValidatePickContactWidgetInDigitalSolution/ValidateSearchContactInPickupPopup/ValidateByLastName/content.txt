@@ -1,6 +1,0 @@
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidatePickContactWidgetInDigitalSolution.ValidateSearchContactInPickupPopup.HeaderSearchContent
-
-!define searchContent {$lname}
-
-
-!include -c .FrontPage.KnownCircle.BusinessDashboard.ValidateDigitalSolutionPageInBusinessDashboard.ValidatePickContactWidgetInDigitalSolution.ValidateSearchContactInPickupPopup.FooterSearchContent
