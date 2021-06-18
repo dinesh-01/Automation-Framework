@@ -116,13 +116,13 @@
 		<dependency>
 			  <groupId>br.eti.kinoshita</groupId>
 			  <artifactId>testlink-java-api</artifactId>
-			  <version>1.9.16-0</version>
+			  <version>1.9.16-1</version>
         </dependency>
 	   
 	     <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.32</version>
+			<version>8.0.16</version>
 		</dependency>
 		
 		<dependency>
@@ -186,7 +186,7 @@
 		<dependency>
 			<groupId>org.fitnesse</groupId>
 			<artifactId>fitnesse</artifactId>
-			<version>20140630</version>
+			<version>20151230</version>
 		</dependency>
 		
 			
@@ -217,7 +217,7 @@
 		 <dependency>
 		        <groupId>org.seleniumhq.selenium</groupId>
 		        <artifactId>selenium-server</artifactId>
-		        <version>3.0.1</version>
+		        <version>3.13.0</version>
 		 </dependency>  
 		 
 		
@@ -225,7 +225,7 @@
 		<dependency>
 		  <groupId>io.appium</groupId>
 		  <artifactId>java-client</artifactId>
-		  <version>4.1.2</version>
+		  <version>7.4.0</version>
 		</dependency>
 				
 		<dependency>
@@ -243,7 +243,7 @@
         <dependency>
 		    <groupId>io.github.bonigarcia</groupId>
 		    <artifactId>webdrivermanager</artifactId>
-		    <version>1.5.0</version>
+		    <version>3.2.0</version>
 		</dependency>
         
 
