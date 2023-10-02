@@ -116,7 +116,7 @@
 		<dependency>
 			  <groupId>br.eti.kinoshita</groupId>
 			  <artifactId>testlink-java-api</artifactId>
-			  <version>1.9.16-0</version>
+			  <version>1.9.16-1</version>
         </dependency>
 	   
 	     <dependency>
@@ -186,7 +186,7 @@
 		<dependency>
 			<groupId>org.fitnesse</groupId>
 			<artifactId>fitnesse</artifactId>
-			<version>20140630</version>
+			<version>20190119</version>
 		</dependency>
 		
 			
@@ -217,7 +217,7 @@
 		 <dependency>
 		        <groupId>org.seleniumhq.selenium</groupId>
 		        <artifactId>selenium-server</artifactId>
-		        <version>3.0.1</version>
+		        <version>3.2.0</version>
 		 </dependency>  
 		 
 		
